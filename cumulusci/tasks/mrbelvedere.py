@@ -58,6 +58,7 @@ class MrbelvederePublish(BaseMrbelvedereTask):
             self.project_config.get_static_dependencies())
         # determine diffs vs current dependencies
         diffs = []
+        package_namespace = self.project_config.project__package__namespace
         for current_dependency in self.current_dependencies:
             match = False
             for dependency in dependencies:
@@ -74,14 +75,18 @@ class MrbelvederePublish(BaseMrbelvedereTask):
                         )
                         diffs.append(dependency)
                     break
-            if not match:
+            if not match and current_dependency['namespace'] != package_namespace:
                 self.logger.info('No change for %s',
                                  current_dependency['namespace'])
+        package_version = self.project_config.get_version_for_tag(self.options['tag'])
         diffs.append({
-            'namespace': self.project_config.project__package__namespace,
-            'number': self.project_config.get_version_for_tag(
-                self.options['tag']),
+            'namespace': package_namespace,
+            'number': package_version,
         })
+        self.logger.info('Setting {} to version {}'.format(
+            package_namespace,
+            package_version,
+        ))
         return diffs
 
     def _clean_dependencies(self, dependency_list):
