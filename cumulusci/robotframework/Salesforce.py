@@ -52,11 +52,11 @@ class Salesforce(object):
         current_page = self.selenium.get_location()
         if current_page != self.current_page:
             self.current_page = current_page
-            self._handle_page_load()
+            #self._handle_page_load()
 
         result = None
         try:
-            self._wait_until_loading_is_complete()
+            #self._wait_until_loading_is_complete()
             method = getattr(self, method_name)
             result = method(*args, **kwargs)
         except ElementNotFound as e:
@@ -285,6 +285,7 @@ class Salesforce(object):
     
     def _populate_lookup_field(self, locator):
         self.selenium.set_focus_to_element(locator)
+        time.sleep(2)
         self.selenium.get_webelement(locator).click()
         time.sleep(.5)
 
@@ -455,9 +456,9 @@ class Salesforce(object):
         self.selenium.wait_until_element_is_not_visible(
             lex_locators['spinner'],
         )
-        self.selenium.wait_until_page_contains_element(
-            lex_locators['desktop_rendered'],
-        )
+#         self.selenium.wait_until_page_contains_element(
+#             lex_locators['desktop_rendered'],
+#         )
 
     def _handle_page_load(self):
         """ EXPERIMENTAL!!! """
