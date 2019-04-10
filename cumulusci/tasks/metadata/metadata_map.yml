@@ -50,6 +50,9 @@ duplicateRules:
 email:
     - type: EmailTemplate
       class: MetadataFolderParser
+emailservices:
+    - type: EmailServicesFunction
+      class: MetadataFilenameParser
 featureParameters:
     - type: FeatureParameterBoolean
       class: MetadataFilenameParser
@@ -185,6 +188,10 @@ pages:
     - type: ApexPage
       class: MetadataFilenameParser
       extension: page
+portals:
+    - type: Portal
+      class: MetadataFilenameParser
+      extension: portal
 profiles:
     - type: Profile
       class: MetadataFilenameParser
