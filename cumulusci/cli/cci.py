@@ -1138,7 +1138,7 @@ def flow_list(config):
     click.echo("")
     click.echo(
         "Use "
-        + click.style("cci flow info <task_name>", bold=True)
+        + click.style("cci flow info <flow_name>", bold=True)
         + " to get more information about a flow."
     )
 
