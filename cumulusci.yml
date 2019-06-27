@@ -6,7 +6,9 @@ project:
 tasks:
     robot:
         options:
-            suites: cumulusci/robotframework/tests
+            suites: cumulusci/robotframework/tests/performance.robot
+            options:
+              prerunmodifier: cumulusci/robotframework/PerformanceVisitor.py
     robot_testdoc:
         options:
             path: cumulusci/robotframework/tests
