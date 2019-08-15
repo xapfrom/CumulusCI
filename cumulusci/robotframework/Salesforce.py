@@ -601,21 +601,56 @@ class Salesforce(object):
                 self.selenium.wait_for_condition(
                     "return (document.readyState == 'complete')"
                 )
+                self.builtin.log("Top of the loop")
                 self.wait_for_aura()
+                self.selenium.log_location()
+
+                if self._page_contains_login_error():
+                    self.selenium.capture_page_screenshot()
+                    self._attempt_login()
+
                 # If the following doesn't throw an error, we're good to go.
                 self.selenium.get_webelement(locator)
                 break
 
             except Exception as e:
                 self.builtin.log(
-                    "caught exception while waiting: {}".format(str(e)), "DEBUG"
+                    "caught exception while waiting: {}".format(str(e)), "WARN"
                 )
                 if time.time() - start_time > timeout_seconds:
                     self.selenium.log_location()
                     self.selenium.capture_page_screenshot()
                     raise Exception("Timed out waiting for a lightning page")
 
-            self.builtin.log("waiting for a refresh...", "DEBUG")
+            self.builtin.log("waiting for a refresh...", "INFO")
+            self.selenium.log_location()
             self.selenium.capture_page_screenshot()
             time.sleep(interval)
             self.selenium.go_to(login_url)
+
+    def _page_contains_login_error(self):
+        login_error_xpath = "//div[@id='error' and @class='loginError']"
+        try:
+            self.selenium.driver.find_element_by_xpath(login_error_xpath)
+            return True
+        except Exception:
+            return False
+
+    def _attempt_login(self):
+        self.builtin.log("attempting to log in...", "WARN")
+        org_info = self.cumulusci.get_org_info()
+        username = org_info["username"]
+        password = org_info["password"]
+        self.selenium.input_text("id=username", username)
+        self.selenium.input_text("id=password", password)
+        self.selenium.submit_form()
+        self.selenium.wait_for_condition("return (document.readyState == 'complete')")
+        self.selenium.go_to(self.cumulusci.login_url())
+        self.wait_for_aura()
+        self.builtin.log("after waiting for the page to settle down...")
+        self.selenium.capture_page_screenshot()
+        self.selenium.log_location()
+
+
+# setup link:
+# https://data-app-1222-dev-ed.lightning.force.com/lightning/setup/SetupOneHome/home?setupApp=all
