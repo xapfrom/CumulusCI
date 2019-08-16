@@ -615,7 +615,13 @@ class Salesforce(object):
 
                 if self._page_contains_login_error():
                     self.selenium.capture_page_screenshot()
-                    self._attempt_login()
+                    # let's try refreshing credentials
+                    self.cumulusci.org.refresh_oauth_token()
+                    previous_url = login_url
+                    login_url = self.cumulusci.login_url()
+                    self.builtin.log(" previous: {}".format(previous_url))
+                    self.builtin.log("refreshed: {}".format(login_url))
+                    continue
 
                 # If the following doesn't throw an error, we're good to go.
                 self.selenium.get_webelement(locator)
