@@ -602,6 +602,14 @@ class Salesforce(object):
                     "return (document.readyState == 'complete')"
                 )
                 self.builtin.log("Top of the loop")
+                # out of curiosity, I wonder if the login url changes on us
+                # while we're in this loop. I highly doubt it, though that would
+                # explain why repeatedly trying the same url over and over
+                # never seems to work.
+                lurl = self.cumulusci.login_url()
+                if login_url != lurl:
+                    message = "login_url 1: {}\nlogin_url 2: {}".format(login_url, lurl)
+                    raise Exception("WTF?\n" + message)
                 self.wait_for_aura()
                 self.selenium.log_location()
 
@@ -643,11 +651,16 @@ class Salesforce(object):
         password = org_info["password"]
         self.selenium.input_text("id=username", username)
         self.selenium.input_text("id=password", password)
+        self.selenium.capture_page_screenshot()
         self.selenium.submit_form()
         self.selenium.wait_for_condition("return (document.readyState == 'complete')")
+        self.builtin.log("after submitting form and waiting for document.readyState")
+        self.selenium.capture_page_screenshot()
         self.selenium.go_to(self.cumulusci.login_url())
         self.wait_for_aura()
-        self.builtin.log("after waiting for the page to settle down...")
+        self.builtin.log(
+            "after going to login url and  waiting for the page to settle down..."
+        )
         self.selenium.capture_page_screenshot()
         self.selenium.log_location()
 
