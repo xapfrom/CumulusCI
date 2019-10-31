@@ -438,7 +438,7 @@ def cd(path):
 
 
 @contextmanager
-def temporary_dir():
+def temporary_dir(chdir=True):
     """Context manager that creates a temporary directory and chdirs to it.
 
     When the context manager exits it returns to the previous cwd
@@ -446,7 +446,10 @@ def temporary_dir():
     """
     d = tempfile.mkdtemp()
     try:
-        with cd(d):
+        if chdir is True:
+            with cd(d):
+                yield d
+        else:
             yield d
     finally:
         if os.path.exists(d):
