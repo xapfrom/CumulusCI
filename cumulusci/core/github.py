@@ -141,3 +141,27 @@ def markdown_link_to_pr(change_note):
     return "{} [[PR{}]({})]".format(
         change_note.title, change_note.number, change_note.html_url
     )
+
+
+def find_latest_release(repo, include_beta=None):
+    try:
+        if include_beta:
+            return next(repo.releases())
+        else:
+            return repo.latest_release()
+    except (github3.exceptions.NotFoundError, StopIteration):
+        pass
+
+
+def find_previous_release(repo, prefix=None):
+    most_recent = None
+    for release in repo.releases():
+        if prefix and not release.tag_name.startswith(prefix):
+            continue
+        if not prefix and release.prerelease:
+            continue
+        # Return the second release
+        if most_recent is None:
+            most_recent = release
+        else:
+            return release
