@@ -300,7 +300,7 @@ class CreatePackageVersion(Deploy, BaseSalesforceApiTask):
                     "Recreating expired scratch org named 2gp_dependencies to resolve package dependencies"
                 )
                 org.create_org()
-                self.project_config.keychain.set_org("2gp_dependencies", org)
+                self.project_config.keychain.set_org(org)
             if org.created:
                 self.logger.info(
                     "Using existing scratch org named 2gp_dependencies to resolve dependencies"
@@ -549,7 +549,6 @@ class CreatePackageVersion(Deploy, BaseSalesforceApiTask):
             "version_name": package_name + "{{ version }}",
             "package_type": "unlocked",
             "path": path,
-            # FIXME: Ideally we'd do this without a namespace but that causes package creation errors
             "namespace": self.package_config.get("namespace"),
         }
         package_id = self._get_or_create_package(package_config)
@@ -604,10 +603,36 @@ class CreatePackageVersion(Deploy, BaseSalesforceApiTask):
         # Add the package.zip to version_info
         version_info.writestr("package.zip", package_bytes.getvalue())
 
+        # Create the package2-descriptor.json contents and write to version_info
+        version_number = self._get_next_version_number(package_id)
+        package_descriptor_info = {
+            "ancestorId": "",
+            "id": package_id,
+            "path": package_config["path"],
+            "versionName": package_config["version_name"],
+            "versionNumber": version_number,
+        }
+
+        # Get the dependencies for the package
+        is_dependency = package_config != self.package_config
+
+        if (
+            is_dependency is False
+            and self.package_config.get("dependencies") == "project"
+        ):
+            self.logger.info("Determining dependencies for package")
+            dependencies = self._get_dependencies()
+            if dependencies:
+                package_descriptor_info["dependencies"] = dependencies
+
+        version_info.writestr(
+            "package2-descriptor.json", json.dumps(package_descriptor_info)
+        )
+        fp = version_info.fp
+        version_info.close()
+        version_info = base64.b64encode(fp.getvalue()).decode("utf-8")
         # Get an md5 hash of the package.zip file
         package_hash = hashlib.blake2b(package_bytes.getvalue()).hexdigest()
-
-        is_dependency = package_config != self.package_config
 
         # Check for an existing package with the same contents
         if (is_dependency and self.options["force_create_dependencies"] is False) or (
@@ -626,32 +651,6 @@ class CreatePackageVersion(Deploy, BaseSalesforceApiTask):
                 )
                 return res["records"][0]["Id"]
 
-        # Create the package2-descriptor.json contents and write to version_info
-        version_number = self._get_next_version_number(package_id)
-        package_descriptor_info = {
-            "ancestorId": "",
-            "id": package_id,
-            "path": package_config["path"],
-            "versionName": package_config["version_name"],
-            "versionNumber": version_number,
-        }
-
-        # Get the dependencies for the package
-        if (
-            is_dependency is False
-            and self.package_config.get("dependencies") == "project"
-        ):
-            self.logger.info("Determining dependencies for package")
-            dependencies = self._get_dependencies()
-            if dependencies:
-                package_descriptor_info["dependencies"] = dependencies
-
-        version_info.writestr(
-            "package2-descriptor.json", json.dumps(package_descriptor_info)
-        )
-        fp = version_info.fp
-        version_info.close()
-        version_info = base64.b64encode(fp.getvalue()).decode("utf-8")
 
         Package2CreateVersionRequest = self._get_tooling_object(
             "Package2VersionCreateRequest"

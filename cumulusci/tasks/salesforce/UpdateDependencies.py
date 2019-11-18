@@ -288,7 +288,7 @@ class UpdateDependencies(BaseSalesforceMetadataApiTask, DependencyDownloadMixin)
     _download_extract_zip = staticmethod(download_extract_zip)
 
     def _install_dependency(self, dependency):
-        if "zip_url" or "repo_name" in dependency:
+        if "zip_url" in dependency or "repo_name" in dependency:
             package_zip_file = self._get_package_zip(dependency)
             package_zip = ZipfilePackageZipBuilder(package_zip_file)()
 

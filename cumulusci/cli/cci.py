@@ -1083,11 +1083,20 @@ def org_shell(config, org_name):
     org_config.refresh_oauth_token(config.keychain)
 
     sf = get_simple_salesforce_connection(config.project_config, org_config)
+    tooling = get_simple_salesforce_connection(config.project_config, org_config)
+    tooling.base_url += "tooling/"
+
+    def get_tooling_object(obj_name):
+        obj = getattr(tooling, obj_name)
+        obj.base_url = obj.base_url.replace("/sobjects/", "/tooling/sobjects/")
+        return obj
 
     code.interact(
-        banner=f"Use `sf` to access org `{org_name}` via simple_salesforce",
+        banner=f"Use `sf` or `tooling` to access org `{org_name}` via simple_salesforce",
         local={
             "sf": sf,
+            "tooling": tooling,
+            "get_tooling_object": get_tooling_object,
             "org_config": org_config,
             "project_config": config.project_config,
         },
