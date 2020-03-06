@@ -131,22 +131,6 @@ jobs:
             true
 
 
-
-  report:
-    <<: *defaults
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run:
-          name: Report coverage
-          command: |
-            virtualenv venv
-            venv/bin/pip install coverage coveralls
-            venv/bin/coverage combine .coverage.*
-            venv/bin/coverage report -m
-            venv/bin/coveralls
-
 workflows:
   version: 2
   build_test_report:
@@ -187,10 +171,3 @@ workflows:
               only:
                 - master
                 - /.*windows.*/
-      - report:
-          requires:
-            - test_py36
-            - test_py37
-            - test_py38
-            - test_robot
-            - test_release
