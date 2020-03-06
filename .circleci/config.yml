@@ -118,10 +118,6 @@ jobs:
       - store_artifacts:
           path: robot_results/
           destination: robot
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .coverage.robot
 
   test_release:
     <<: *defaults
