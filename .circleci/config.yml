@@ -91,9 +91,18 @@ jobs:
             # we need to modify our task to make it easier to save the
             # output.xml file with a unique name. Until then, we have
             # to manually preserve each file under a different name
-            venv/bin/cci task run robot -o suites cumulusci/robotframework/perftests -o xunit robot_results/robot/perftests.xml || true
+            venv/bin/cci task run robot -o "PerfTests" -o suites cumulusci/robotframework/perftests -o xunit robot_results/robot/perftests.xml || true
             mv output.xml robot_results/robot/perftests-output.xml
-            mv selenium-screenshot-* robot_results/robot || true
+      - run:
+          name: LS 1
+          when: always
+          command: |
+            ls  robot_results/robot/*-output.xml || true
+      - run:
+          name: LS 2
+          when: always
+          command: |
+            ls  robot_results/robot/* || true
       - run:
           name: Consolidate robot outputs into a single report and log
           when: always
