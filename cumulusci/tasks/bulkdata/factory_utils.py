@@ -70,7 +70,7 @@ class Factories:
 
         return fact
 
-    def create_batch(self, classname, batchsize, **kwargs):
+    def create_batch(self, classname, batchsize, logger=None, **kwargs):
         cls = self.factory_classes.get(classname, None)
         assert cls, (
             "Cannot find a factory class named %s. Did you misspell it?" % classname
@@ -78,6 +78,7 @@ class Factories:
         for i in range(batchsize):
             if i % 5000 == 0:
                 print(i)
+                logger.warning("%d", i)
             cls.create(**kwargs)
 
     def __getitem__(self, name):
