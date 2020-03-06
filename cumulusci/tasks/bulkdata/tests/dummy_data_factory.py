@@ -8,11 +8,13 @@ class GenerateDummyData(ModuleDataFactory):
     def make_records(self, num_records, factories, current_batch_num):
         assert num_records % 4 == 0, "Use a batch size divisible by 4"
         print("A")
-        factories.create_batch("ContactFactory", num_records // 2)
-        print("B")
+        self.logger.warning("A")
+        factories.create_batch("ContactFactory", num_records // 2, logger=self.logger)
+        self.logger.warning("B")
         factories["ContactFactory"].create_batch(num_records // 4)
         print("C")
-        factories.create_batch("AccountFactory", num_records // 4)
+        self.logger.warning("B")
+        factories.create_batch("AccountFactory", num_records // 4, logger=self.logger)
 
 
 class AccountFactory(factory.alchemy.SQLAlchemyModelFactory):
