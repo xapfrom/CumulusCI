@@ -17,7 +17,7 @@ Generate Data
 *** Test Cases ***
 
 Perftest - Generate
-    Generate Data   1000
+    Generate Data   1000000
 
 Perftest - Load 1000
     Run Task Class   cumulusci.tasks.bulkdata.LoadData
