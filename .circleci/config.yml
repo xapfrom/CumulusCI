@@ -16,9 +16,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Run black
+          name: Do Nothing
           command: |
-            venv/bin/black --check --diff .
+            true
 
   lint:
     <<: *defaults
@@ -27,9 +27,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Run black
+          name: Do Nothing
           command: |
-            venv/bin/black --check --diff .
+            true
 
   test_py36:
     <<: *defaults
@@ -38,18 +38,18 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Run black
+          name: Do Nothing
           command: |
-            venv/bin/black --check --diff .
+            true
 
   test_py37:
     <<: *defaults
     steps:
       - checkout
       - run:
-          name: Run black
+          name: Do Nothing
           command: |
-            venv/bin/black --check --diff .
+            true
 
   test_py38:
     <<: *defaults
@@ -58,9 +58,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Run black
+          name: Do Nothing
           command: |
-            venv/bin/black --check --diff .
+            true
 
   test_robot:
     <<: *defaults
@@ -126,9 +126,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Run black
+          name: Do Nothing
           command: |
-            venv/bin/black --check --diff .
+            true
 
 
 

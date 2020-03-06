@@ -17,9 +17,9 @@ Generate Data
 *** Test Cases ***
 
 Perftest - Generate
-    Generate Data   1000000
+    Generate Data   1000
 
-Perftest - Load
+Perftest - Load 1000
     Run Task Class   cumulusci.tasks.bulkdata.LoadData
     ...     mapping=cumulusci/tasks/bulkdata/tests/mapping_vanilla_sf.yml
     ...     database_url=sqlite:////tmp/data.db
