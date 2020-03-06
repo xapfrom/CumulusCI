@@ -16,14 +16,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install python3
-          command: choco install python
-      - run:
-          name: pip install dependencies
-          command: pip install -r requirements_dev.txt
-      - run:
-          name: Run Tests
-          command: pytest
+          name: Do Nothing
+          command: |
+            true
 
   lint:
     <<: *defaults
@@ -32,14 +27,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install dependencies
+          name: Do Nothing
           command: |
-            virtualenv venv
-            venv/bin/pip install $(grep black requirements_dev.txt | cut -d';' -f 1)
-      - run:
-          name: Run black
-          command: |
-            venv/bin/black --check --diff .
+            true
 
   test_py36:
     <<: *defaults
@@ -48,44 +38,18 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install Python dependencies
+          name: Do Nothing
           command: |
-            virtualenv venv
-            venv/bin/pip install tox
-      - run:
-          name: Run Python tests
-          command: |
-            mkdir -p testresults/py36
-            venv/bin/tox -e py36 -- --junitxml=testresults/py36/junit.xml
-            mv .coverage .coverage.py36
-      - store_test_results:
-          path: testresults
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .coverage.py36
+            true
 
   test_py37:
     <<: *defaults
     steps:
       - checkout
       - run:
-          name: Install Python dependencies
+          name: Do Nothing
           command: |
-            virtualenv venv
-            venv/bin/pip install tox
-      - run:
-          name: Run Python tests
-          command: |
-            mkdir -p testresults/py37
-            venv/bin/tox -e py37 -- --junitxml=testresults/py37/junit.xml
-            mv .coverage .coverage.py37
-      - store_test_results:
-          path: testresults
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .coverage.py37
+            true
 
   test_py38:
     <<: *defaults
@@ -94,22 +58,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install Python dependencies
+          name: Do Nothing
           command: |
-            virtualenv venv
-            venv/bin/pip install tox
-      - run:
-          name: Run Python tests
-          command: |
-            mkdir -p testresults/py38
-            venv/bin/tox -e py38 -- --junitxml=testresults/py38/junit.xml
-            mv .coverage .coverage.py38
-      - store_test_results:
-          path: testresults
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .coverage.py38
+            true
 
   test_robot:
     <<: *defaults
@@ -140,15 +91,18 @@ jobs:
             # we need to modify our task to make it easier to save the
             # output.xml file with a unique name. Until then, we have
             # to manually preserve each file under a different name
-            venv/bin/coverage run --append venv/bin/cci task run robot -o name "CumulusCI" -o suites cumulusci/robotframework/tests/cumulusci  -o xunit robot_results/robot/cumulusci.xml || true
-            mv output.xml robot_results/robot/cumulusci-output.xml
-            venv/bin/coverage run --append venv/bin/cci task run robot -o name "Salesforce API" -o suites cumulusci/robotframework/tests/salesforce -o include api -o xunit robot_results/robot/salesforce_api.xml || true
-            mv output.xml robot_results/robot/salesforce_api-output.xml
-            venv/bin/coverage run --append venv/bin/cci task run robot -o name "Salesforce UI Chrome" -o suites cumulusci/robotframework/tests/salesforce -o exclude api -o xunit robot_results/robot/salesforce_ui_chrome.xml || true
-            mv output.xml robot_results/robot/salesforce_ui_chrome-output.xml
-            venv/bin/coverage run --append venv/bin/cci task run robot -o name "Salesforce UI Firefox" -o suites cumulusci/robotframework/tests/salesforce -o exclude api -o vars BROWSER:headlessfirefox -o xunit robot_results/robot/salesforce_ui_firefox.xml || true
-            mv output.xml robot_results/robot/salesforce_ui_firefox-output.xml
-            mv selenium-screenshot-* robot_results/robot || true
+            venv/bin/cci task run robot -o name "PerfTests" -o suites cumulusci/robotframework/perftests -o xunit robot_results/robot/perftests.xml || true
+            mv output.xml robot_results/robot/perftests-output.xml || true
+      - run:
+          name: LS 1
+          when: always
+          command: |
+            ls  robot_results/robot/*-output.xml || true
+      - run:
+          name: LS 2
+          when: always
+          command: |
+            ls  robot_results/robot/* || true
       - run:
           name: Consolidate robot outputs into a single report and log
           when: always
@@ -159,20 +113,11 @@ jobs:
           command: |
             venv/bin/cci org scratch_delete prerelease
           when: always
-      - run:
-          name: Preserve coverage
-          command: |
-            mv .coverage .coverage.robot
-          when: always
       - store_test_results:
           path: robot_results
       - store_artifacts:
           path: robot_results/
           destination: robot
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .coverage.robot
 
   test_release:
     <<: *defaults
@@ -181,73 +126,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Skip unless master or PR build
+          name: Do Nothing
           command: |
-            if [ "$CIRCLE_BRANCH" != "master" ] && [ -z "$CIRCLE_PULL_REQUEST" ]; then
-              circleci step halt
-            fi
-      - run:
-          name: Install Python dependencies
-          command: |
-            virtualenv venv
-            venv/bin/pip install -r requirements_dev.txt
-      - run:
-          name: Check out CumulusCI-Test
-          command: |
-            git clone https://github.com/SFDO-Tooling/CumulusCI-Test
-      - run:
-          name: Install sfdx
-          command: |
-            mkdir sfdx
-            wget -qO- https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz | tar xJ -C sfdx --strip-components 1
-            ./sfdx/install
-            cd CumulusCI-Test
-            echo $SFDX_HUB_KEY_BASE64 | base64 --decode > sfdx.key
-            echo 'export SFDX_HUB_KEY="$(echo $SFDX_HUB_KEY_BASE64 | base64 --decode)"' >> $BASH_ENV
-            sfdx force:auth:jwt:grant --clientid $SFDX_CLIENT_ID --jwtkeyfile sfdx.key --username $SFDX_HUB_USERNAME --setdefaultdevhubusername -a hub
-      - run:
-          name: Run ci_feature flow
-          command: |
-            cd CumulusCI-Test
-            ../venv/bin/coverage run --append --rcfile=../.coveragerc --source=../cumulusci ../venv/bin/cci flow run ci_feature --org scratch --delete-org
-      - run:
-          name: Run ci_beta flow
-          command: |
-            cd CumulusCI-Test
-            ../venv/bin/coverage run --append --rcfile=../.coveragerc --source=../cumulusci ../venv/bin/cci flow run ci_beta --org scratch --delete-org
-      - run:
-          name: Run ci_master flow
-          command: |
-            cd CumulusCI-Test
-            ../venv/bin/coverage run --append --rcfile=../.coveragerc --source=../cumulusci ../venv/bin/cci flow run ci_master --org scratch --delete-org
-      - run:
-          name: Run release_beta flow
-          command: |
-            cd CumulusCI-Test
-            ../venv/bin/coverage run --append --rcfile=../.coveragerc --source=../cumulusci ../venv/bin/cci flow run release_beta --org packaging
-      - run:
-          name: Preserve coverage
-          command: |
-            mv CumulusCI-Test/.coverage .coverage.release
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .coverage.release
+            true
 
-  report:
-    <<: *defaults
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run:
-          name: Report coverage
-          command: |
-            virtualenv venv
-            venv/bin/pip install coverage coveralls
-            venv/bin/coverage combine .coverage.*
-            venv/bin/coverage report -m
-            venv/bin/coveralls
 
 workflows:
   version: 2
@@ -289,10 +171,3 @@ workflows:
               only:
                 - master
                 - /.*windows.*/
-      - report:
-          requires:
-            - test_py36
-            - test_py37
-            - test_py38
-            - test_robot
-            - test_release

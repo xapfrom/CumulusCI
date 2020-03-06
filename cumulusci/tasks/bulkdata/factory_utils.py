@@ -75,7 +75,9 @@ class Factories:
         assert cls, (
             "Cannot find a factory class named %s. Did you misspell it?" % classname
         )
-        for _ in range(batchsize):
+        for i in range(batchsize):
+            if i % 5000 == 0:
+                print(i)
             cls.create(**kwargs)
 
     def __getitem__(self, name):
