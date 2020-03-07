@@ -4,6 +4,8 @@ project:
         name: CumulusCI
 
 tasks:
+    delete_data:
+        class_path: cumulusci.tasks.bulkdata.delete.DeleteData
     robot:
         options:
             suites: cumulusci/robotframework/tests
