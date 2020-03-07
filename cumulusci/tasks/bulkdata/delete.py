@@ -50,6 +50,8 @@ class DeleteData(BaseSalesforceApiTask):
         )
 
     def _run_task(self):
+        self.logger.info("NEW DELETE.PY")
+
         for obj in self.options["objects"]:
             query = f"SELECT Id FROM {obj}"
             if self.options["where"]:

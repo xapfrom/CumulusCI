@@ -77,6 +77,7 @@ class LoadData(BaseSalesforceApiTask, SqlAlchemyMixin):
             raise TaskOptionsError("bulk_mode must be either Serial or Parallel")
 
     def _run_task(self):
+        self.logger.info("NEW LOAD.PY")
         self._init_mapping()
         self._init_db()
         self._expand_mapping()
