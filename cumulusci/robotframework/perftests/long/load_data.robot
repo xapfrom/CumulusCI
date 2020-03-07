@@ -17,9 +17,49 @@ Generate Data
 *** Test Cases ***
 
 Perftest - Generate
-    Generate Data   100000
+    Generate Data   1000000
 
-Perftest - Load 100000
+Perftest - Load 1000000
     Run Task Class   cumulusci.tasks.bulkdata.LoadData
     ...     mapping=cumulusci/tasks/bulkdata/tests/mapping_vanilla_sf.yml
     ...     database_url=sqlite:////tmp/data.db
+
+Perftest - Delete
+    Run Task Class   cumulusci.tasks.bulkdata.DeleteData
+    ...     objects=Account,Contact
+
+Perftest - Generate 2
+    Generate Data   1000000
+
+Perftest - Load 1000000 2
+    Run Task Class   cumulusci.tasks.bulkdata.LoadData
+    ...     mapping=cumulusci/tasks/bulkdata/tests/mapping_vanilla_sf.yml
+    ...     database_url=sqlite:////tmp/data.db
+
+Perftest - Delete 2
+    Run Task Class   cumulusci.tasks.bulkdata.DeleteData
+    ...     objects=Account,Contact
+
+Perftest - Generate 3
+    Generate Data   1000000
+
+Perftest - Load 1000000 3
+    Run Task Class   cumulusci.tasks.bulkdata.LoadData
+    ...     mapping=cumulusci/tasks/bulkdata/tests/mapping_vanilla_sf.yml
+    ...     database_url=sqlite:////tmp/data.db
+
+Perftest - Delete 3
+    Run Task Class   cumulusci.tasks.bulkdata.DeleteData
+    ...     objects=Account,Contact
+
+Perftest - Generate 4
+    Generate Data   1000000
+
+Perftest - Load 1000000 4
+    Run Task Class   cumulusci.tasks.bulkdata.LoadData
+    ...     mapping=cumulusci/tasks/bulkdata/tests/mapping_vanilla_sf.yml
+    ...     database_url=sqlite:////tmp/data.db
+
+Perftest - Delete 4
+    Run Task Class   cumulusci.tasks.bulkdata.DeleteData
+    ...     objects=Account,Contact
