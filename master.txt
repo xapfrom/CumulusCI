@@ -1,0 +1,1839 @@
+[01;34m~[00m [01;32m$ [00mgit clone https://github.com/SFDO-Tooling/CumulusCI.git
+Cloning into 'CumulusCI'...
+remote: Enumerating objects: 11, done.[K
+remote: Counting objects:   9% (1/11)[Kremote: Counting objects:  18% (2/11)[Kremote: Counting objects:  27% (3/11)[Kremote: Counting objects:  36% (4/11)[Kremote: Counting objects:  45% (5/11)[Kremote: Counting objects:  54% (6/11)[Kremote: Counting objects:  63% (7/11)[Kremote: Counting objects:  72% (8/11)[Kremote: Counting objects:  81% (9/11)[Kremote: Counting objects:  90% (10/11)[Kremote: Counting objects: 100% (11/11)[Kremote: Counting objects: 100% (11/11), done.[K
+remote: Compressing objects:  10% (1/10)[Kremote: Compressing objects:  20% (2/10)[Kremote: Compressing objects:  30% (3/10)[Kremote: Compressing objects:  40% (4/10)[Kremote: Compressing objects:  50% (5/10)[Kremote: Compressing objects:  60% (6/10)[Kremote: Compressing objects:  70% (7/10)[Kremote: Compressing objects:  80% (8/10)[Kremote: Compressing objects:  90% (9/10)[Kremote: Compressing objects: 100% (10/10)remote: Compressing objects: 100% (10/10), done.[K
+Receiving objects:   0% (1/35302)   Receiving objects:   1% (354/35302)   Receiving objects:   2% (707/35302)   Receiving objects:   3% (1060/35302)   Receiving objects:   4% (1413/35302)   Receiving objects:   5% (1766/35302)   Receiving objects:   6% (2119/35302)   Receiving objects:   7% (2472/35302)   Receiving objects:   8% (2825/35302)   Receiving objects:   9% (3178/35302)   Receiving objects:  10% (3531/35302)   Receiving objects:  11% (3884/35302)   Receiving objects:  12% (4237/35302)   Receiving objects:  13% (4590/35302)   Receiving objects:  14% (4943/35302)   Receiving objects:  15% (5296/35302)   Receiving objects:  16% (5649/35302)   Receiving objects:  17% (6002/35302)   Receiving objects:  18% (6355/35302)   Receiving objects:  19% (6708/35302)   Receiving objects:  20% (7061/35302)   Receiving objects:  21% (7414/35302)   Receiving objects:  22% (7767/35302)   Receiving objects:  23% (8120/35302)   Receiving objects:  24% (8473/35302)   Receiving objects:  25% (8826/35302)   Receiving objects:  26% (9179/35302)   Receiving objects:  27% (9532/35302)   Receiving objects:  28% (9885/35302)   Receiving objects:  29% (10238/35302)   Receiving objects:  30% (10591/35302)   Receiving objects:  31% (10944/35302)   Receiving objects:  32% (11297/35302)   Receiving objects:  33% (11650/35302)   Receiving objects:  34% (12003/35302)   Receiving objects:  35% (12356/35302)   Receiving objects:  36% (12709/35302)   Receiving objects:  37% (13062/35302)   Receiving objects:  38% (13415/35302)   Receiving objects:  39% (13768/35302)   Receiving objects:  40% (14121/35302)   Receiving objects:  41% (14474/35302)   Receiving objects:  42% (14827/35302)   Receiving objects:  43% (15180/35302)   Receiving objects:  44% (15533/35302)   Receiving objects:  45% (15886/35302)   Receiving objects:  46% (16239/35302)   Receiving objects:  47% (16592/35302)   Receiving objects:  48% (16945/35302)   Receiving objects:  49% (17298/35302)   Receiving objects:  50% (17651/35302)   Receiving objects:  51% (18005/35302)   Receiving objects:  52% (18358/35302)   Receiving objects:  53% (18711/35302)   Receiving objects:  54% (19064/35302)   Receiving objects:  55% (19417/35302)   Receiving objects:  56% (19770/35302)   Receiving objects:  57% (20123/35302)   Receiving objects:  58% (20476/35302), 10.13 MiB | 20.05 MiB/s   Receiving objects:  59% (20829/35302), 10.13 MiB | 20.05 MiB/s   Receiving objects:  60% (21182/35302), 10.13 MiB | 20.05 MiB/s   Receiving objects:  61% (21535/35302), 10.13 MiB | 20.05 MiB/s   Receiving objects:  61% (21709/35302), 13.89 MiB | 13.81 MiB/s   Receiving objects:  61% (21710/35302), 29.60 MiB | 14.74 MiB/s   Receiving objects:  62% (21888/35302), 29.60 MiB | 14.74 MiB/s   Receiving objects:  63% (22241/35302), 29.60 MiB | 14.74 MiB/s   Receiving objects:  64% (22594/35302), 29.60 MiB | 14.74 MiB/s   Receiving objects:  65% (22947/35302), 29.60 MiB | 14.74 MiB/s   Receiving objects:  66% (23300/35302), 29.60 MiB | 14.74 MiB/s   Receiving objects:  67% (23653/35302), 29.60 MiB | 14.74 MiB/s   Receiving objects:  68% (24006/35302), 29.60 MiB | 14.74 MiB/s   Receiving objects:  68% (24170/35302), 48.55 MiB | 16.14 MiB/s   Receiving objects:  69% (24359/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  70% (24712/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  71% (25065/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  72% (25418/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  73% (25771/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  74% (26124/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  75% (26477/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  76% (26830/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  77% (27183/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  78% (27536/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  79% (27889/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  80% (28242/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  81% (28595/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  82% (28948/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  83% (29301/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  84% (29654/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  85% (30007/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  86% (30360/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  87% (30713/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  88% (31066/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  89% (31419/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  90% (31772/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  91% (32125/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  92% (32478/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  93% (32831/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  94% (33184/35302), 56.33 MiB | 16.06 MiB/s   Receiving objects:  94% (33431/35302), 66.09 MiB | 16.49 MiB/s   Receiving objects:  95% (33537/35302), 74.50 MiB | 16.52 MiB/s   Receiving objects:  96% (33890/35302), 74.50 MiB | 16.52 MiB/s   Receiving objects:  97% (34243/35302), 74.50 MiB | 16.52 MiB/s   Receiving objects:  98% (34596/35302), 74.50 MiB | 16.52 MiB/s   Receiving objects:  99% (34949/35302), 74.50 MiB | 16.52 MiB/s   Receiving objects:  99% (35180/35302), 82.00 MiB | 15.95 MiB/s   remote: Total 35302 (delta 0), reused 7 (delta 0), pack-reused 35291[K
+Receiving objects: 100% (35302/35302), 82.00 MiB | 15.95 MiB/s   Receiving objects: 100% (35302/35302), 83.41 MiB | 16.36 MiB/s, done.
+Resolving deltas:   0% (0/26098)   Resolving deltas:   1% (284/26098)   Resolving deltas:   2% (572/26098)   Resolving deltas:   3% (867/26098)   Resolving deltas:   4% (1048/26098)   Resolving deltas:   5% (1398/26098)   Resolving deltas:   6% (1593/26098)   Resolving deltas:   7% (1836/26098)   Resolving deltas:   8% (2088/26098)   Resolving deltas:   9% (2430/26098)   Resolving deltas:  10% (2617/26098)   Resolving deltas:  11% (2871/26098)   Resolving deltas:  12% (3140/26098)   Resolving deltas:  13% (3401/26098)   Resolving deltas:  14% (3671/26098)   Resolving deltas:  15% (3917/26098)   Resolving deltas:  16% (4302/26098)   Resolving deltas:  17% (4438/26098)   Resolving deltas:  18% (4728/26098)   Resolving deltas:  19% (4966/26098)   Resolving deltas:  20% (5249/26098)   Resolving deltas:  21% (5489/26098)   Resolving deltas:  22% (5742/26098)   Resolving deltas:  23% (6075/26098)   Resolving deltas:  24% (6337/26098)   Resolving deltas:  25% (6536/26098)   Resolving deltas:  26% (6931/26098)   Resolving deltas:  27% (7099/26098)   Resolving deltas:  29% (7617/26098)   Resolving deltas:  32% (8364/26098)   Resolving deltas:  33% (8614/26098)   Resolving deltas:  34% (9126/26098)   Resolving deltas:  35% (9181/26098)   Resolving deltas:  36% (9515/26098)   Resolving deltas:  37% (9672/26098)   Resolving deltas:  38% (9959/26098)   Resolving deltas:  39% (10195/26098)   Resolving deltas:  40% (10440/26098)   Resolving deltas:  41% (10702/26098)   Resolving deltas:  42% (10981/26098)   Resolving deltas:  43% (11282/26098)   Resolving deltas:  45% (11873/26098)   Resolving deltas:  46% (12032/26098)   Resolving deltas:  47% (12381/26098)   Resolving deltas:  48% (12543/26098)   Resolving deltas:  49% (12882/26098)   Resolving deltas:  50% (13095/26098)   Resolving deltas:  51% (13362/26098)   Resolving deltas:  52% (13591/26098)   Resolving deltas:  53% (14000/26098)   Resolving deltas:  54% (14117/26098)   Resolving deltas:  55% (14359/26098)   Resolving deltas:  56% (14681/26098)   Resolving deltas:  57% (14891/26098)   Resolving deltas:  58% (15177/26098)   Resolving deltas:  59% (15470/26098)   Resolving deltas:  60% (15691/26098)   Resolving deltas:  61% (16075/26098)   Resolving deltas:  62% (16218/26098)   Resolving deltas:  63% (16448/26098)   Resolving deltas:  64% (16886/26098)   Resolving deltas:  65% (16970/26098)   Resolving deltas:  66% (17352/26098)   Resolving deltas:  67% (17495/26098)   Resolving deltas:  68% (17747/26098)   Resolving deltas:  69% (18091/26098)   Resolving deltas:  70% (18429/26098)   Resolving deltas:  71% (18554/26098)   Resolving deltas:  72% (18791/26098)   Resolving deltas:  73% (19056/26098)   Resolving deltas:  74% (19332/26098)   Resolving deltas:  75% (19586/26098)   Resolving deltas:  76% (19873/26098)   Resolving deltas:  77% (20143/26098)   Resolving deltas:  78% (20455/26098)   Resolving deltas:  79% (20673/26098)   Resolving deltas:  80% (20894/26098)   Resolving deltas:  81% (21206/26098)   Resolving deltas:  82% (21411/26098)   Resolving deltas:  83% (21671/26098)   Resolving deltas:  84% (21928/26098)   Resolving deltas:  85% (22247/26098)   Resolving deltas:  86% (22476/26098)   Resolving deltas:  87% (22768/26098)   Resolving deltas:  88% (22996/26098)   Resolving deltas:  89% (23286/26098)   Resolving deltas:  90% (23498/26098)   Resolving deltas:  91% (23759/26098)   Resolving deltas:  92% (24036/26098)   Resolving deltas:  93% (24272/26098)   Resolving deltas:  94% (24602/26098)   Resolving deltas:  95% (24799/26098)   Resolving deltas:  96% (25060/26098)   Resolving deltas:  97% (25319/26098)   Resolving deltas:  98% (25634/26098)   Resolving deltas:  99% (25853/26098)   Resolving deltas: 100% (26098/26098)   Resolving deltas: 100% (26098/26098), done.
+[01;34m~[00m [01;32m$ [00mcd CumulusCI
+[01;34m~/CumulusCI[00m [01;32m$ [00mgit checkout feature/performance-tests
+Branch 'feature/performance-tests' set up to track remote branch 'feature/performance-tests' from 'origin'.
+Switched to a new branch 'feature/performance-tests'
+[01;34m~/CumulusCI[00m [01;32m$ [00mexport PYTHONPATH=.
+[01;34m~/CumulusCI[00m [01;32m$ [00mpip install -r requirements.txt
+Requirement already satisfied: asn1crypto==1.3.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 1)) (1.3.0)
+Requirement already satisfied: certifi==2019.11.28 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 2)) (2019.11.28)
+Requirement already satisfied: cffi==1.14.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 3)) (1.14.0)
+Requirement already satisfied: chardet==3.0.4 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 4)) (3.0.4)
+Requirement already satisfied: click==7.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 5)) (7.0)
+Requirement already satisfied: coloredlogs==14.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 6)) (14.0)
+Requirement already satisfied: cryptography==2.8 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 7)) (2.8)
+Requirement already satisfied: docutils==0.16 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 8)) (0.16)
+Requirement already satisfied: github3.py==1.3.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 9)) (1.3.0)
+Requirement already satisfied: humanfriendly==7.1.1 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 10)) (7.1.1)
+Requirement already satisfied: jinja2==2.11.1 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 11)) (2.11.1)
+Requirement already satisfied: jwcrypto==0.7 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 12)) (0.7)
+Requirement already satisfied: keyring==21.1.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 13)) (21.1.0)
+Requirement already satisfied: lxml==4.5.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 14)) (4.5.0)
+Requirement already satisfied: MarkupSafe==1.1.1 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 15)) (1.1.1)
+Requirement already satisfied: pycparser==2.19 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 16)) (2.19)
+Requirement already satisfied: PyJWT==1.7.1 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 17)) (1.7.1)
+Requirement already satisfied: python-dateutil==2.8.1 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 18)) (2.8.1)
+Requirement already satisfied: pytz==2019.3 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 19)) (2019.3)
+Requirement already satisfied: PyYAML==5.3 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 20)) (5.3)
+Requirement already satisfied: raven==6.10.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 21)) (6.10.0)
+Requirement already satisfied: requests[security]==2.23.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 22)) (2.23.0)
+Requirement already satisfied: robotframework==3.1.2 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 23)) (3.1.2)
+Requirement already satisfied: robotframework-seleniumlibrary==4.3.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 24)) (4.3.0)
+Requirement already satisfied: rst2ansi==0.1.5 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 25)) (0.1.5)
+Requirement already satisfied: salesforce-bulk==2.1.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 26)) (2.1.0)
+Requirement already satisfied: sarge==0.1.5.post0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 27)) (0.1.5.post0)
+Requirement already satisfied: selenium==3.141.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 28)) (3.141.0)
+Requirement already satisfied: simple-salesforce==0.74.2 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 29)) (0.74.2)
+Requirement already satisfied: six==1.14.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 30)) (1.14.0)
+Requirement already satisfied: SQLAlchemy==1.3.13 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 31)) (1.3.13)
+Requirement already satisfied: terminaltables==3.1.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 32)) (3.1.0)
+Requirement already satisfied: unicodecsv==0.14.1 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 33)) (0.14.1)
+Requirement already satisfied: uritemplate==3.0.1 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 34)) (3.0.1)
+Requirement already satisfied: urllib3==1.25.8 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 35)) (1.25.8)
+Requirement already satisfied: xmltodict==0.12.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 36)) (0.12.0)
+Requirement already satisfied: robotframework-lint==1.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 37)) (1.0)
+Requirement already satisfied: factory-boy==2.12.0 in /app/.heroku/python/lib/python3.6/site-packages (from -r requirements.txt (line 38)) (2.12.0)
+Requirement already satisfied: importlib-metadata; python_version < "3.8" in /app/.heroku/python/lib/python3.6/site-packages (from keyring==21.1.0->-r requirements.txt (line 13)) (1.5.0)
+Requirement already satisfied: SecretStorage>=3; sys_platform == "linux" in /app/.heroku/python/lib/python3.6/site-packages (from keyring==21.1.0->-r requirements.txt (line 13)) (3.1.2)
+Requirement already satisfied: jeepney>=0.4.2; sys_platform == "linux" in /app/.heroku/python/lib/python3.6/site-packages (from keyring==21.1.0->-r requirements.txt (line 13)) (0.4.3)
+Requirement already satisfied: idna<3,>=2.5 in /app/.heroku/python/lib/python3.6/site-packages (from requests[security]==2.23.0->-r requirements.txt (line 22)) (2.9)
+Requirement already satisfied: pyOpenSSL>=0.14; extra == "security" in /app/.heroku/python/lib/python3.6/site-packages (from requests[security]==2.23.0->-r requirements.txt (line 22)) (19.1.0)
+Requirement already satisfied: Faker>=0.7.0 in /app/.heroku/python/lib/python3.6/site-packages (from factory-boy==2.12.0->-r requirements.txt (line 38)) (4.0.1)
+Requirement already satisfied: zipp>=0.5 in /app/.heroku/python/lib/python3.6/site-packages (from importlib-metadata; python_version < "3.8"->keyring==21.1.0->-r requirements.txt (line 13)) (3.1.0)
+Requirement already satisfied: text-unidecode==1.3 in /app/.heroku/python/lib/python3.6/site-packages (from Faker>=0.7.0->factory-boy==2.12.0->-r requirements.txt (line 38)) (1.3)
+[01;34m~/CumulusCI[00m [01;32m$ [00mpip install keyrings.alt
+Collecting keyrings.alt
+  Downloading keyrings.alt-3.4.0-py2.py3-none-any.whl (31 kB)
+Installing collected packages: keyrings.alt
+Successfully installed keyrings.alt-3.4.0
+[01;34m~/CumulusCI[00m [01;32m$ [00malias cci="python -m cumulusci"
+[01;34m~/CumulusCI[00m [01;32m$ [00mcci org connect abacus-perf-playground --default &
+[1] 31
+[01;34m~/CumulusCI[00m [01;32m$ [00mChecking the version!
+Launching web browser for URL https://login.salesforce.com/services/oauth2/authorize?response_type=code&client_id=3MVG9i1HRpGLXp.or6OVlWVWyn8DXi9xueKNM4npq_AWh.yqswojK9sE5WY7f.biP0w7bNJIENfXc7JMDZGO1&redirect_uri=http://localhost:8080/callback&scope=web%20full%20refresh_token&prompt=login
+Spawning HTTP server at http://localhost:8080/callback with timeout of 300 seconds.
+If you are unable to log in to Salesforce you can press ctrl+c to kill the server and return to the command line.
+
+[01;34m~/CumulusCI[00m [01;32m$ [00mhttp://localhost:8080/callback?code=aPrxsIcPf9nU.yP6hmhtxSHmJBU3mpaatPKJcf2i90qXCzjNGcpq_H1jsKCnU4LQWAdC.yJu2nw%3D%3D
+bash: http://localhost:8080/callback?code=aPrxsIcPf9nU.yP6hmhtxSHmJBU3mpatPKJcf2i90qXCzjNGcpq_H1jsKCnU4LQWAdC.yJu2nw%3D%3D: No such file or directory
+[01;34m~/CumulusCI[00m [01;32m$ [00mhttp://localhost:8080/callback?code=aPrxsIcPf9nU.yP6hmhtxSHmJBU3mpaatPKJcf2i90qXCzjNGcpq_H1jsKCnU4LQWAdC.yJu2nw%3D%3D[Achttp://localhost:8080/callback?code=aPrxsIcPf9nU.yP6hmhtxSHmJBU3mpatPKJcf2i90qXCzjNGcpq_H1jsKCnU4LQWAdC.yJu2nw%3D%3D[Auhttp://localhost:8080/callback?code=aPrxsIcPf9nU.yP6hmhtxSHmJBU3mpatPKJcf2i90qXCzjNGcpq_H1jsKCnU4LQWAdC.yJu2nw%3D%3D[Arhttp://localhost:8080/callback?code=aPrxsIcPf9nU.yP6hmhtxSHmJBU3mpatPKJcf2i90qXCzjNGcpq_H1jsKCnU4LQWAdC.yJu2nw%3D%3D[Alhttp://localhost:8080/callback?code=aPrxsIcPf9nU.yP6hmhtxSHmJBU3mpatPKJcf2i90qXCzjNGcpq_H1jsKCnU4LQWAdC.yJu2nw%3D%3D[A http://localhost:8080/callback?code=aPrxsIcPf9nU.yP6hmhtxSHmJBU3mpatPKJcf2i90qXCzjNGcpq_H1jsKCnU4LQWAdC.yJu2nw%3D%3D[A[H[2J[01;34m~/CumulusCI[00m [01;32m$ [00mcurl http://localhost:8080/callback?code=aPrxsIcPf9nU.yP6hmhtxSHmJBBU3mpatPKJcf2i90qXCzjNGcpq_H1jsKCnU4LQWAdC.yJu2nw%3D%3D[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+127.0.0.1 - - [07/Mar/2020 11:00:14] "GET /callback?code=aPrxsIcPf9nU.yP6hmhtxSHmJBU3mpatPKJcf2i90qXCzjNGcpq_H1jsKCnU4LQWAdC.yJu2nw%3D%3D HTTP/1.1" 200 -
+Congratulations! Your authentication succeeded.[01;34m~/CumulusCI[00m [01;32m$ [00mabacus-perf-playground is now the default org
+
+[1]+  Done                    python -m cumulusci org connect abacus-perf-playground --default
+[01;34m~/CumulusCI[00m [01;32m$ [00m
+[01;34m~/CumulusCI[00m [01;32m$ [00mcci task run delete_data -o objects Account,Contact
+[32m2020-03-07 11:00:37:[0m Org info updated, writing to keychain
+[32m2020-03-07 11:00:37:[0m Beginning task: DeleteData
+[32m2020-03-07 11:00:37:[0m        As user: pprescod.abacus-perf-playground@salesforce.com
+[32m2020-03-07 11:00:37:[0m         In org: 00D6g000003rbk5EAA
+[32m2020-03-07 11:00:37:[0m 
+[32m2020-03-07 11:00:37:[0m Deleting all Account objects 
+[32m2020-03-07 11:00:37:[0m   Querying for all Account objects
+[32m2020-03-07 11:00:51:[0m   Deleting 1 Account records
+[32m2020-03-07 11:00:51:[0m     Uploaded batch 7516g000004pTA8AAM
+[32m2020-03-07 11:00:52:[0m     Waiting for job 7506g000005E8CjAAK (0/1)
+[32m2020-03-07 11:01:03:[0m     Waiting for job 7506g000005E8CjAAK (0/1)
+[32m2020-03-07 11:01:13:[0m     Waiting for job 7506g000005E8CjAAK (1/1)
+[32m2020-03-07 11:01:13:[0m Job 7506g000005E8CjAAK finished with result: CompletedWithFailures
+[32m2020-03-07 11:01:13:[0m [31mBatch failure message: Failures detected: 1[0m
+
+[31mError: ('Job Error', ['Failures detected: 1'])[0m
+[33mType `cci error --help` for more information about debugging errors.[0m
+[01;34m~/CumulusCI[00m [01;32m$ [00mcci task run delete_data -o objects Contact,Account
+[32m2020-03-07 11:01:15:[0m Org info updated, writing to keychain
+[32m2020-03-07 11:01:15:[0m Beginning task: DeleteData
+[32m2020-03-07 11:01:15:[0m        As user: pprescod.abacus-perf-playground@salesforce.com
+[32m2020-03-07 11:01:15:[0m         In org: 00D6g000003rbk5EAA
+[32m2020-03-07 11:01:15:[0m 
+[32m2020-03-07 11:01:15:[0m Deleting all Contact objects 
+[32m2020-03-07 11:01:15:[0m   Querying for all Contact objects
+[32m2020-03-07 11:01:27:[0m   Deleting 1 Contact records
+[32m2020-03-07 11:01:28:[0m     Uploaded batch 7516g000004pTAcAAM
+[32m2020-03-07 11:01:28:[0m     Waiting for job 7506g000005E8D7AAK (0/1)
+[32m2020-03-07 11:01:39:[0m     Waiting for job 7506g000005E8D7AAK (1/1)
+[32m2020-03-07 11:01:39:[0m Job 7506g000005E8D7AAK finished with result: CompletedWithFailures
+[32m2020-03-07 11:01:39:[0m [31mBatch failure message: Failures detected: 1[0m
+
+[31mError: ('Job Error', ['Failures detected: 1'])[0m
+[33mType `cci error --help` for more information about debugging errors.[0m
+[01;34m~/CumulusCI[00m [01;32m$ [00mcci task run delete_data -o objects Account,Contact
+[32m2020-03-07 11:01:42:[0m Org info updated, writing to keychain
+[32m2020-03-07 11:01:42:[0m Beginning task: DeleteData
+[32m2020-03-07 11:01:42:[0m        As user: pprescod.abacus-perf-playground@salesforce.com
+[32m2020-03-07 11:01:42:[0m         In org: 00D6g000003rbk5EAA
+[32m2020-03-07 11:01:42:[0m 
+[32m2020-03-07 11:01:42:[0m Deleting all Account objects 
+[32m2020-03-07 11:01:42:[0m   Querying for all Account objects
+[32m2020-03-07 11:01:54:[0m   Deleting 1 Account records
+[32m2020-03-07 11:01:54:[0m     Uploaded batch 7516g000004pTAwAAM
+[32m2020-03-07 11:01:55:[0m     Waiting for job 7506g000005E8DRAA0 (0/1)
+[32m2020-03-07 11:02:06:[0m     Waiting for job 7506g000005E8DRAA0 (1/1)
+[32m2020-03-07 11:02:06:[0m Job 7506g000005E8DRAA0 finished with result: CompletedWithFailures
+[32m2020-03-07 11:02:06:[0m [31mBatch failure message: Failures detected: 1[0m
+
+[31mError: ('Job Error', ['Failures detected: 1'])[0m
+[33mType `cci error --help` for more information about debugging errors.[0m
+[01;34m~/CumulusCI[00m [01;32m$ [00mcci task run delete_data -o objects Contact,Account
+[32m2020-03-07 11:02:08:[0m Org info updated, writing to keychain
+[32m2020-03-07 11:02:08:[0m Beginning task: DeleteData
+[32m2020-03-07 11:02:08:[0m        As user: pprescod.abacus-perf-playground@salesforce.com
+[32m2020-03-07 11:02:08:[0m         In org: 00D6g000003rbk5EAA
+[32m2020-03-07 11:02:08:[0m 
+[32m2020-03-07 11:02:08:[0m Deleting all Contact objects 
+[32m2020-03-07 11:02:08:[0m   Querying for all Contact objects
+[32m2020-03-07 11:02:20:[0m   Deleting 1 Contact records
+[32m2020-03-07 11:02:21:[0m     Uploaded batch 7516g000004pT9pAAE
+[32m2020-03-07 11:02:22:[0m     Waiting for job 7506g000005E8DgAAK (0/1)
+[32m2020-03-07 11:02:32:[0m     Waiting for job 7506g000005E8DgAAK (0/1)
+[32m2020-03-07 11:02:44:[0m     Waiting for job 7506g000005E8DgAAK (1/1)
+[32m2020-03-07 11:02:44:[0m Job 7506g000005E8DgAAK finished with result: CompletedWithFailures
+[32m2020-03-07 11:02:44:[0m [31mBatch failure message: Failures detected: 1[0m
+
+[31mError: ('Job Error', ['Failures detected: 1'])[0m
+[33mType `cci error --help` for more information about debugging errors.[0m
+[01;34m~/CumulusCI[00m [01;32m$ [00mcci task run robot -o suites cumulusci/robotframework/perftests/lonng/ | tee /tmp/log.txt
+[32m2020-03-07 11:02:46:[0m Org info updated, writing to keychain
+[32m2020-03-07 11:02:46:[0m Beginning task: Robot
+[32m2020-03-07 11:02:46:[0m        As user: pprescod.abacus-perf-playground@salesforce.com
+[32m2020-03-07 11:02:46:[0m         In org: 00D6g000003rbk5EAA
+[32m2020-03-07 11:02:46:[0m 
+==============================================================================
+Long                                                                          
+==============================================================================
+Long.Load Data                                                                
+==============================================================================
+Perftest - Generate                                                   
+
+[32m2020-03-07 11:02:47:[0m Beginning task: GenerateDummyData
+[32m2020-03-07 11:02:47:[0m 
+[32m2020-03-07 11:02:47:[0m [33mA[0m
+[32m2020-03-07 11:02:47:[0m [33m0[0m
+[32m2020-03-07 11:03:03:[0m [33m5000[0m
+[32m2020-03-07 11:03:17:[0m [33m10000[0m
+[32m2020-03-07 11:03:29:[0m [33m15000[0m
+[32m2020-03-07 11:03:44:[0m [33m20000[0m
+[32m2020-03-07 11:03:59:[0m [33m25000[0m
+[32m2020-03-07 11:04:11:[0m [33m30000[0m
+[32m2020-03-07 11:04:23:[0m [33m35000[0m
+[32m2020-03-07 11:04:34:[0m [33m40000[0m
+[32m2020-03-07 11:04:48:[0m [33m45000[0m
+[32m2020-03-07 11:05:02:[0m [33m50000[0m
+[32m2020-03-07 11:05:15:[0m [33m55000[0m
+[32m2020-03-07 11:05:30:[0m [33m60000[0m
+[32m2020-03-07 11:05:43:[0m [33m65000[0m
+[32m2020-03-07 11:05:56:[0m [33m70000[0m
+[32m2020-03-07 11:06:11:[0m [33m75000[0m
+[32m2020-03-07 11:06:25:[0m [33m80000[0m
+[32m2020-03-07 11:06:40:[0m [33m85000[0m
+[32m2020-03-07 11:06:51:[0m [33m90000[0m
+[32m2020-03-07 11:07:05:[0m [33m95000[0m
+[32m2020-03-07 11:07:20:[0m [33m100000[0m
+[32m2020-03-07 11:07:32:[0m [33m105000[0m
+[32m2020-03-07 11:07:43:[0m [33m110000[0m
+[32m2020-03-07 11:07:54:[0m [33m115000[0m
+[32m2020-03-07 11:08:06:[0m [33m120000[0m
+[32m2020-03-07 11:08:17:[0m [33m125000[0m
+[32m2020-03-07 11:08:31:[0m [33m130000[0m
+[32m2020-03-07 11:08:43:[0m [33m135000[0m
+[32m2020-03-07 11:08:55:[0m [33m140000[0m
+[32m2020-03-07 11:09:06:[0m [33m145000[0m
+[32m2020-03-07 11:09:19:[0m [33m150000[0m
+[32m2020-03-07 11:09:31:[0m [33m155000[0m
+[32m2020-03-07 11:09:42:[0m [33m160000[0m
+[32m2020-03-07 11:09:53:[0m [33m165000[0m
+[32m2020-03-07 11:10:04:[0m [33m170000[0m
+\
+
+\\\\\\\\\\\\[32m2020-03-07 11:10:15:[0m [33m175000[0m
+[32m2020-03-07 11:10:26:[0m [33m180000[0m
+[32m2020-03-07 11:10:39:[0m [33m185000[0m
+[32m2020-03-07 11:10:52:[0m [33m190000[0m
+[32m2020-03-07 11:11:06:[0m [33m195000[0m
+[32m2020-03-07 11:11:19:[0m [33m200000[0m
+[32m2020-03-07 11:11:31:[0m [33m205000[0m
+[32m2020-03-07 11:11:45:[0m [33m210000[0m
+[32m2020-03-07 11:11:58:[0m [33m215000[0m
+[32m2020-03-07 11:12:14:[0m [33m220000[0m
+[32m2020-03-07 11:12:31:[0m [33m225000[0m
+[32m2020-03-07 11:12:45:[0m [33m230000[0m
+[32m2020-03-07 11:12:59:[0m [33m235000[0m
+[32m2020-03-07 11:13:14:[0m [33m240000[0m
+[32m2020-03-07 11:13:27:[0m [33m245000[0m
+[32m2020-03-07 11:13:41:[0m [33m250000[0m
+[32m2020-03-07 11:13:55:[0m [33m255000[0m
+[32m2020-03-07 11:14:11:[0m [33m260000[0m
+[32m2020-03-07 11:14:25:[0m [33m265000[0m
+[32m2020-03-07 11:14:37:[0m [33m270000[0m
+[32m2020-03-07 11:14:50:[0m [33m275000[0m
+[32m2020-03-07 11:15:02:[0m [33m280000[0m
+[32m2020-03-07 11:15:17:[0m [33m285000[0m
+[32m2020-03-07 11:15:32:[0m [33m290000[0m
+[32m2020-03-07 11:15:45:[0m [33m295000[0m
+[32m2020-03-07 11:15:57:[0m [33m300000[0m
+[32m2020-03-07 11:16:10:[0m [33m305000[0m
+[32m2020-03-07 11:16:24:[0m [33m310000[0m
+[32m2020-03-07 11:16:35:[0m [33m315000[0m
+[32m2020-03-07 11:16:46:[0m [33m320000[0m
+[32m2020-03-07 11:17:01:[0m [33m325000[0m
+[32m2020-03-07 11:17:13:[0m [33m330000[0m
+[32m2020-03-07 11:17:25:[0m [33m335000[0m
+[32m2020-03-07 11:17:37:[0m [33m340000[0m
+[32m2020-03-07 11:17:47:[0m [33m345000[0m
+[32m2020-03-07 11:18:00:[0m [33m350000[0m
+[32m2020-03-07 11:18:10:[0m [33m355000[0m
+[32m2020-03-07 11:18:21:[0m [33m360000[0m
+[32m2020-03-07 11:18:31:[0m [33m365000[0m
+[32m2020-03-07 11:18:42:[0m [33m370000[0m
+[32m2020-03-07 11:18:53:[0m [33m375000[0m
+[32m2020-03-07 11:19:06:[0m [33m380000[0m
+[32m2020-03-07 11:19:18:[0m [33m385000[0m
+[32m2020-03-07 11:19:29:[0m [33m390000[0m
+[32m2020-03-07 11:19:39:[0m [33m395000[0m
+[32m2020-03-07 11:19:50:[0m [33m400000[0m
+[32m2020-03-07 11:20:02:[0m [33m405000[0m
+[32m2020-03-07 11:20:13:[0m [33m410000[0m
+[32m2020-03-07 11:20:26:[0m [33m415000[0m
+[32m2020-03-07 11:20:37:[0m [33m420000[0m
+[32m2020-03-07 11:20:47:[0m [33m425000[0m
+[32m2020-03-07 11:20:57:[0m [33m430000[0m
+[32m2020-03-07 11:21:08:[0m [33m435000[0m
+[32m2020-03-07 11:21:17:[0m [33m440000[0m
+[32m2020-03-07 11:21:28:[0m [33m445000[0m
+[32m2020-03-07 11:21:38:[0m [33m450000[0m
+[32m2020-03-07 11:21:48:[0m [33m455000[0m
+[32m2020-03-07 11:21:58:[0m [33m460000[0m
+[32m2020-03-07 11:22:07:[0m [33m465000[0m
+[32m2020-03-07 11:22:17:[0m [33m470000[0m
+[32m2020-03-07 11:22:26:[0m [33m475000[0m
+[32m2020-03-07 11:22:38:[0m [33m480000[0m
+[32m2020-03-07 11:22:48:[0m [33m485000[0m
+[32m2020-03-07 11:22:58:[0m [33m490000[0m
+[32m2020-03-07 11:23:07:[0m [33m495000[0m
+[32m2020-03-07 11:23:17:[0m [33mB[0m
+[32m2020-03-07 11:31:49:[0m [33mB[0m
+[32m2020-03-07 11:31:49:[0m [33m0[0m
+[32m2020-03-07 11:31:52:[0m [33m5000[0m
+[32m2020-03-07 11:31:56:[0m [33m10000[0m
+[32m2020-03-07 11:31:59:[0m [33m15000[0m
+[32m2020-03-07 11:32:02:[0m [33m20000[0m
+[32m2020-03-07 11:32:06:[0m [33m25000[0m
+[32m2020-03-07 11:32:09:[0m [33m30000[0m
+[32m2020-03-07 11:32:12:[0m [33m35000[0m
+[32m2020-03-07 11:32:15:[0m [33m40000[0m
+[32m2020-03-07 11:32:18:[0m [33m45000[0m
+[32m2020-03-07 11:32:22:[0m [33m50000[0m
+[32m2020-03-07 11:32:25:[0m [33m55000[0m
+[32m2020-03-07 11:32:28:[0m [33m60000[0m
+[32m2020-03-07 11:32:31:[0m [33m65000[0m
+[32m2020-03-07 11:32:34:[0m [33m70000[0m
+[32m2020-03-07 11:32:38:[0m [33m75000[0m
+[32m2020-03-07 11:32:41:[0m [33m80000[0m
+[32m2020-03-07 11:32:44:[0m [33m85000[0m
+[32m2020-03-07 11:32:47:[0m [33m90000[0m
+[32m2020-03-07 11:32:51:[0m [33m95000[0m
+[32m2020-03-07 11:32:54:[0m [33m100000[0m
+[32m2020-03-07 11:32:57:[0m [33m105000[0m
+[32m2020-03-07 11:33:00:[0m [33m110000[0m
+[32m2020-03-07 11:33:04:[0m [33m115000[0m
+[32m2020-03-07 11:33:07:[0m [33m120000[0m
+[32m2020-03-07 11:33:11:[0m [33m125000[0m
+[32m2020-03-07 11:33:14:[0m [33m130000[0m
+[32m2020-03-07 11:33:17:[0m [33m135000[0m
+[32m2020-03-07 11:33:20:[0m [33m140000[0m
+[32m2020-03-07 11:33:23:[0m [33m145000[0m
+[32m2020-03-07 11:33:26:[0m [33m150000[0m
+[32m2020-03-07 11:33:30:[0m [33m155000[0m
+[32m2020-03-07 11:33:33:[0m [33m160000[0m
+[32m2020-03-07 11:33:37:[0m [33m165000[0m
+[32m2020-03-07 11:33:40:[0m [33m170000[0m
+[32m2020-03-07 11:33:43:[0m [33m175000[0m
+[32m2020-03-07 11:33:46:[0m [33m180000[0m
+[32m2020-03-07 11:33:49:[0m [33m185000[0m
+[32m2020-03-07 11:33:53:[0m [33m190000[0m
+[32m2020-03-07 11:33:56:[0m [33m195000[0m
+[32m2020-03-07 11:34:00:[0m [33m200000[0m
+[32m2020-03-07 11:34:04:[0m [33m205000[0m
+[32m2020-03-07 11:34:07:[0m [33m210000[0m
+[32m2020-03-07 11:34:10:[0m [33m215000[0m
+[32m2020-03-07 11:34:13:[0m [33m220000[0m
+[32m2020-03-07 11:34:17:[0m [33m225000[0m
+[32m2020-03-07 11:34:20:[0m [33m230000[0m
+[32m2020-03-07 11:34:23:[0m [33m235000[0m
+[32m2020-03-07 11:34:26:[0m [33m240000[0m
+[32m2020-03-07 11:34:30:[0m [33m245000[0m
+| PASS |
+------------------------------------------------------------------------------
+Perftest - Load 1000000                                               
+
+[32m2020-03-07 11:34:33:[0m Org info updated, writing to keychain
+[32m2020-03-07 11:34:33:[0m Beginning task: LoadData
+[32m2020-03-07 11:34:33:[0m        As user: pprescod.abacus-perf-playground@salesforce.com
+[32m2020-03-07 11:34:33:[0m         In org: 00D6g000003rbk5EAA
+[32m2020-03-07 11:34:33:[0m 
+[32m2020-03-07 11:34:33:[0m Running Job: Insert Accounts
+[32m2020-03-07 11:34:34:[0m   Created bulk job 7506g000005E8HJAA0
+[32m2020-03-07 11:34:34:[0m [32mSELECT "Account".id AS "Account_id", "Account"."Name" AS "Account_Name", "Account"."Description" AS "Account_Description", "Account"."BillingStreet" AS "Account_BillingStreet", "Account"."BillingCity" AS "Account_BillingCity", "Account"."BillingState" AS "Account_BillingState", "Account"."BillingPostalCode" AS "Account_BillingPostalCode", "Account"."BillingCountry" AS "Account_BillingCountry", "Account"."ParentId" AS "Account_ParentId", "Account"."ShippingStreet" AS "Account_ShippingStreet", "Account"."ShippingCity" AS "Account_ShippingCity", "Account"."ShippingState" AS "Account_ShippingState", "Account"."ShippingPostalCode" AS "Account_ShippingPostalCode", "Account"."ShippingCountry" AS "Account_ShippingCountry", "Account"."Phone" AS "Account_Phone", "Account"."Fax" AS "Account_Fax", "Account"."Website" AS "Account_Website", "Account"."NumberOfEmployees" AS "Account_NumberOfEmployees", "Account"."AccountNumber" AS "Account_AccountNumber", "Account"."Site" AS "Account_Site", "Account"."Type" AS "Account_Type" 
+FROM "Account"[0m
+[32m2020-03-07 11:34:34:[0m     Processing batch 1
+[32m2020-03-07 11:34:34:[0m     Uploaded batch 7516g000004pTDRAA2
+[32m2020-03-07 11:34:35:[0m     Processing batch 2
+[32m2020-03-07 11:34:35:[0m     Uploaded batch 7516g000004pTDWAA2
+[32m2020-03-07 11:34:35:[0m     Processing batch 3
+[32m2020-03-07 11:34:36:[0m     Uploaded batch 7516g000004pTDbAAM
+[32m2020-03-07 11:34:36:[0m     Processing batch 4
+[32m2020-03-07 11:34:37:[0m     Uploaded batch 7516g000004pTDgAAM
+[32m2020-03-07 11:34:37:[0m     Processing batch 5
+[32m2020-03-07 11:34:37:[0m     Uploaded batch 7516g000004pTDlAAM
+[32m2020-03-07 11:34:38:[0m     Processing batch 6
+[32m2020-03-07 11:34:38:[0m     Uploaded batch 7516g000004pTDSAA2
+[32m2020-03-07 11:34:38:[0m     Processing batch 7
+[32m2020-03-07 11:34:39:[0m     Uploaded batch 7516g000004pTDqAAM
+[32m2020-03-07 11:34:39:[0m     Processing batch 8
+[32m2020-03-07 11:34:39:[0m     Uploaded batch 7516g000004pTDvAAM
+[32m2020-03-07 11:34:40:[0m     Processing batch 9
+[32m2020-03-07 11:34:40:[0m     Uploaded batch 7516g000004pTE0AAM
+[32m2020-03-07 11:34:40:[0m     Processing batch 10
+[32m2020-03-07 11:34:41:[0m     Uploaded batch 7516g000004pTE5AAM
+[32m2020-03-07 11:34:41:[0m     Processing batch 11
+[32m2020-03-07 11:34:41:[0m     Uploaded batch 7516g000004pTEAAA2
+[32m2020-03-07 11:34:43:[0m     Processing batch 12
+[32m2020-03-07 11:34:44:[0m     Uploaded batch 7516g000004pTEFAA2
+[32m2020-03-07 11:34:44:[0m     Processing batch 13
+[32m2020-03-07 11:34:44:[0m     Uploaded batch 7516g000004pTDrAAM
+[32m2020-03-07 11:34:45:[0m     Processing batch 14
+[32m2020-03-07 11:34:45:[0m     Uploaded batch 7516g000004pTEKAA2
+[32m2020-03-07 11:34:45:[0m     Processing batch 15
+[32m2020-03-07 11:34:46:[0m     Uploaded batch 7516g000004pTEPAA2
+[32m2020-03-07 11:34:46:[0m     Processing batch 16
+[32m2020-03-07 11:34:46:[0m     Uploaded batch 7516g000004pTEUAA2
+[32m2020-03-07 11:34:47:[0m     Processing batch 17
+[32m2020-03-07 11:34:47:[0m     Uploaded batch 7516g000004pTEZAA2
+[32m2020-03-07 11:34:47:[0m     Processing batch 18
+[32m2020-03-07 11:34:48:[0m     Uploaded batch 7516g000004pTEeAAM
+[32m2020-03-07 11:34:48:[0m     Processing batch 19
+[32m2020-03-07 11:34:48:[0m     Uploaded batch 7516g000004pTEjAAM
+[32m2020-03-07 11:34:49:[0m     Processing batch 20
+[32m2020-03-07 11:34:49:[0m     Uploaded batch 7516g000004pTEoAAM
+[32m2020-03-07 11:34:49:[0m     Processing batch 21
+[32m2020-03-07 11:34:50:[0m     Uploaded batch 7516g000004pTEtAAM
+[32m2020-03-07 11:34:50:[0m     Processing batch 22
+[32m2020-03-07 11:34:50:[0m     Uploaded batch 7516g000004pTEyAAM
+[32m2020-03-07 11:34:51:[0m     Processing batch 23
+[32m2020-03-07 11:34:51:[0m     Uploaded batch 7516g000004pTF3AAM
+[32m2020-03-07 11:34:51:[0m     Processing batch 24
+[32m2020-03-07 11:34:52:[0m     Uploaded batch 7516g000004pTF8AAM
+[32m2020-03-07 11:34:52:[0m     Processing batch 25
+[32m2020-03-07 11:34:52:[0m     Uploaded batch 7516g000004pTFDAA2
+[32m2020-03-07 11:34:53:[0m     Processing batch 26
+[32m2020-03-07 11:34:54:[0m     Uploaded batch 7516g000004pTFIAA2
+[32m2020-03-07 11:34:54:[0m     Processing batch 27
+[32m2020-03-07 11:34:54:[0m     Uploaded batch 7516g000004pTFNAA2
+[32m2020-03-07 11:34:55:[0m     Processing batch 28
+[32m2020-03-07 11:34:55:[0m     Uploaded batch 7516g000004pTDTAA2
+[32m2020-03-07 11:34:55:[0m     Processing batch 29
+[32m2020-03-07 11:34:56:[0m     Uploaded batch 7516g000004pTFSAA2
+[32m2020-03-07 11:34:56:[0m     Processing batch 30
+[32m2020-03-07 11:34:56:[0m     Uploaded batch 7516g000004pTFXAA2
+[32m2020-03-07 11:34:57:[0m     Processing batch 31
+[32m2020-03-07 11:34:57:[0m     Uploaded batch 7516g000004pTFcAAM
+[32m2020-03-07 11:34:57:[0m     Processing batch 32
+[32m2020-03-07 11:34:58:[0m     Uploaded batch 7516g000004pTFhAAM
+[32m2020-03-07 11:34:58:[0m     Processing batch 33
+[32m2020-03-07 11:34:58:[0m     Uploaded batch 7516g000004pTFmAAM
+[32m2020-03-07 11:34:59:[0m     Processing batch 34
+[32m2020-03-07 11:34:59:[0m     Uploaded batch 7516g000004pTFrAAM
+[32m2020-03-07 11:34:59:[0m     Processing batch 35
+[32m2020-03-07 11:35:00:[0m     Uploaded batch 7516g000004pTDcAAM
+[32m2020-03-07 11:35:00:[0m     Processing batch 36
+[32m2020-03-07 11:35:00:[0m     Uploaded batch 7516g000004pTFOAA2
+[32m2020-03-07 11:35:01:[0m     Processing batch 37
+[32m2020-03-07 11:35:01:[0m     Uploaded batch 7516g000004pTFwAAM
+[32m2020-03-07 11:35:01:[0m     Processing batch 38
+[32m2020-03-07 11:35:02:[0m     Uploaded batch 7516g000004pTG1AAM
+[32m2020-03-07 11:35:02:[0m     Processing batch 39
+[32m2020-03-07 11:35:03:[0m     Uploaded batch 7516g000004pTG6AAM
+[32m2020-03-07 11:35:03:[0m     Processing batch 40
+[32m2020-03-07 11:35:04:[0m     Uploaded batch 7516g000004pTGBAA2
+[32m2020-03-07 11:35:04:[0m     Processing batch 41
+[32m2020-03-07 11:35:05:[0m     Uploaded batch 7516g000004pTGGAA2
+[32m2020-03-07 11:35:05:[0m     Processing batch 42
+[32m2020-03-07 11:35:05:[0m     Uploaded batch 7516g000004pTFJAA2
+[32m2020-03-07 11:35:05:[0m     Processing batch 43
+[32m2020-03-07 11:35:06:[0m     Uploaded batch 7516g000004pTGLAA2
+[32m2020-03-07 11:35:06:[0m     Processing batch 44
+[32m2020-03-07 11:35:07:[0m     Uploaded batch 7516g000004pTFEAA2
+[32m2020-03-07 11:35:07:[0m     Processing batch 45
+[32m2020-03-07 11:35:07:[0m     Uploaded batch 7516g000004pTGQAA2
+[32m2020-03-07 11:35:07:[0m     Processing batch 46
+[32m2020-03-07 11:35:08:[0m     Uploaded batch 7516g000004pTGVAA2
+[32m2020-03-07 11:35:08:[0m     Processing batch 47
+[32m2020-03-07 11:35:09:[0m     Uploaded batch 7516g000004pTGHAA2
+[32m2020-03-07 11:35:09:[0m     Processing batch 48
+[32m2020-03-07 11:35:10:[0m     Uploaded batch 7516g000004pTGaAAM
+[32m2020-03-07 11:35:10:[0m     Processing batch 49
+[32m2020-03-07 11:35:10:[0m     Uploaded batch 7516g000004pTGfAAM
+[32m2020-03-07 11:35:10:[0m     Processing batch 50
+[32m2020-03-07 11:35:11:[0m     Uploaded batch 7516g000004pTDsAAM
+[32m2020-03-07 11:35:11:[0m     Processing batch 51
+[32m2020-03-07 11:35:11:[0m     Uploaded batch 7516g000004pTGkAAM
+[32m2020-03-07 11:35:12:[0m     Processing batch 52
+[32m2020-03-07 11:35:12:[0m     Uploaded batch 7516g000004pTGpAAM
+[32m2020-03-07 11:35:12:[0m     Processing batch 53
+[32m2020-03-07 11:35:13:[0m     Uploaded batch 7516g000004pTGuAAM
+[32m2020-03-07 11:35:13:[0m     Processing batch 54
+[32m2020-03-07 11:35:13:[0m     Uploaded batch 7516g000004pTFTAA2
+[32m2020-03-07 11:35:14:[0m     Processing batch 55
+[32m2020-03-07 11:35:14:[0m     Uploaded batch 7516g000004pTGzAAM
+[32m2020-03-07 11:35:14:[0m     Processing batch 56
+[32m2020-03-07 11:35:15:[0m     Uploaded batch 7516g000004pTH4AAM
+[32m2020-03-07 11:35:15:[0m     Processing batch 57
+[32m2020-03-07 11:35:16:[0m     Uploaded batch 7516g000004pTH9AAM
+[32m2020-03-07 11:35:16:[0m     Processing batch 58
+[32m2020-03-07 11:35:17:[0m     Uploaded batch 7516g000004pTEBAA2
+[32m2020-03-07 11:35:17:[0m     Processing batch 59
+[32m2020-03-07 11:35:17:[0m     Uploaded batch 7516g000004pTHEAA2
+[32m2020-03-07 11:35:18:[0m     Processing batch 60
+[32m2020-03-07 11:35:19:[0m     Uploaded batch 7516g000004pTGWAA2
+[32m2020-03-07 11:35:19:[0m     Processing batch 61
+[32m2020-03-07 11:35:19:[0m     Uploaded batch 7516g000004pTHJAA2
+[32m2020-03-07 11:35:20:[0m     Processing batch 62
+[32m2020-03-07 11:35:20:[0m     Uploaded batch 7516g000004pTDdAAM
+[32m2020-03-07 11:35:20:[0m     Processing batch 63
+[32m2020-03-07 11:35:21:[0m     Uploaded batch 7516g000004pTHOAA2
+[32m2020-03-07 11:35:21:[0m     Processing batch 64
+[32m2020-03-07 11:35:22:[0m     Uploaded batch 7516g000004pTH0AAM
+[32m2020-03-07 11:35:22:[0m     Processing batch 65
+[32m2020-03-07 11:35:22:[0m     Uploaded batch 7516g000004pTEzAAM
+[32m2020-03-07 11:35:23:[0m     Processing batch 66
+[32m2020-03-07 11:35:23:[0m     Uploaded batch 7516g000004pTGRAA2
+[32m2020-03-07 11:35:24:[0m     Processing batch 67
+[32m2020-03-07 11:35:24:[0m     Uploaded batch 7516g000004pTDmAAM
+[32m2020-03-07 11:35:25:[0m     Processing batch 68
+[32m2020-03-07 11:35:25:[0m     Uploaded batch 7516g000004pTFnAAM
+[32m2020-03-07 11:35:26:[0m     Processing batch 69
+[32m2020-03-07 11:35:26:[0m     Uploaded batch 7516g000004pTHTAA2
+[32m2020-03-07 11:35:26:[0m     Processing batch 70
+[32m2020-03-07 11:35:27:[0m     Uploaded batch 7516g000004pTHUAA2
+[32m2020-03-07 11:35:27:[0m     Processing batch 71
+[32m2020-03-07 11:35:27:[0m     Uploaded batch 7516g000004pTHYAA2
+[32m2020-03-07 11:35:28:[0m     Processing batch 72
+[32m2020-03-07 11:35:28:[0m     Uploaded batch 7516g000004pTDeAAM
+[32m2020-03-07 11:35:28:[0m     Processing batch 73
+[32m2020-03-07 11:35:29:[0m     Uploaded batch 7516g000004pTFsAAM
+[32m2020-03-07 11:35:29:[0m     Processing batch 74
+[32m2020-03-07 11:35:29:[0m     Uploaded batch 7516g000004pTF0AAM
+[32m2020-03-07 11:35:30:[0m     Processing batch 75
+[32m2020-03-07 11:35:30:[0m     Uploaded batch 7516g000004pTHdAAM
+[32m2020-03-07 11:35:30:[0m     Processing batch 76
+[32m2020-03-07 11:35:31:[0m     Uploaded batch 7516g000004pTFdAAM
+[32m2020-03-07 11:35:31:[0m     Processing batch 77
+[32m2020-03-07 11:35:32:[0m     Uploaded batch 7516g000004pTHiAAM
+[32m2020-03-07 11:35:32:[0m     Processing batch 78
+[32m2020-03-07 11:35:32:[0m     Uploaded batch 7516g000004pTHnAAM
+[32m2020-03-07 11:35:33:[0m     Processing batch 79
+[32m2020-03-07 11:35:33:[0m     Uploaded batch 7516g000004pTHsAAM
+[32m2020-03-07 11:35:33:[0m     Processing batch 80
+[32m2020-03-07 11:35:33:[0m     Uploaded batch 7516g000004pTEQAA2
+[32m2020-03-07 11:35:34:[0m     Processing batch 81
+[32m2020-03-07 11:35:34:[0m     Uploaded batch 7516g000004pTHeAAM
+[32m2020-03-07 11:35:34:[0m     Processing batch 82
+[32m2020-03-07 11:35:35:[0m     Uploaded batch 7516g000004pTHxAAM
+[32m2020-03-07 11:35:35:[0m     Processing batch 83
+[32m2020-03-07 11:35:35:[0m     Uploaded batch 7516g000004pTI2AAM
+[32m2020-03-07 11:35:35:[0m     Processing batch 84
+[32m2020-03-07 11:35:36:[0m     Uploaded batch 7516g000004pTI3AAM
+[32m2020-03-07 11:35:36:[0m     Processing batch 85
+[32m2020-03-07 11:35:36:[0m     Uploaded batch 7516g000004pTI7AAM
+[32m2020-03-07 11:35:37:[0m     Processing batch 86
+[32m2020-03-07 11:35:37:[0m     Uploaded batch 7516g000004pTICAA2
+[32m2020-03-07 11:35:37:[0m     Processing batch 87
+[32m2020-03-07 11:35:38:[0m     Uploaded batch 7516g000004pTIHAA2
+[32m2020-03-07 11:35:38:[0m     Processing batch 88
+[32m2020-03-07 11:35:38:[0m     Uploaded batch 7516g000004pTG7AAM
+[32m2020-03-07 11:35:38:[0m     Processing batch 89
+[32m2020-03-07 11:35:39:[0m     Uploaded batch 7516g000004pTGXAA2
+[32m2020-03-07 11:35:39:[0m     Processing batch 90
+[32m2020-03-07 11:35:39:[0m     Uploaded batch 7516g000004pTF4AAM
+[32m2020-03-07 11:35:40:[0m     Processing batch 91
+[32m2020-03-07 11:35:40:[0m     Uploaded batch 7516g000004pTIMAA2
+[32m2020-03-07 11:35:40:[0m     Processing batch 92
+[32m2020-03-07 11:35:41:[0m     Uploaded batch 7516g000004pTIRAA2
+[32m2020-03-07 11:35:41:[0m     Processing batch 93
+[32m2020-03-07 11:35:41:[0m     Uploaded batch 7516g000004pTHyAAM
+[32m2020-03-07 11:35:42:[0m     Processing batch 94
+[32m2020-03-07 11:35:42:[0m     Uploaded batch 7516g000004pTINAA2
+[32m2020-03-07 11:35:42:[0m     Processing batch 95
+[32m2020-03-07 11:35:43:[0m     Uploaded batch 7516g000004pTH5AAM
+[32m2020-03-07 11:35:43:[0m     Processing batch 96
+[32m2020-03-07 11:35:43:[0m     Uploaded batch 7516g000004pTIWAA2
+[32m2020-03-07 11:35:43:[0m     Processing batch 97
+[32m2020-03-07 11:35:44:[0m     Uploaded batch 7516g000004pTIbAAM
+[32m2020-03-07 11:35:44:[0m     Processing batch 98
+[32m2020-03-07 11:35:45:[0m     Uploaded batch 7516g000004pTIgAAM
+[32m2020-03-07 11:35:45:[0m     Processing batch 99
+[32m2020-03-07 11:35:45:[0m     Uploaded batch 7516g000004pTF1AAM
+[32m2020-03-07 11:35:45:[0m     Processing batch 100
+[32m2020-03-07 11:35:46:[0m     Uploaded batch 7516g000004pTIlAAM
+[32m2020-03-07 11:35:46:[0m   Prepared 1000000 rows for insert to Account
+[32m2020-03-07 11:35:47:[0m     Waiting for job 7506g000005E8HJAA0 (8/100)
+[32m2020-03-07 11:35:57:[0m     Waiting for job 7506g000005E8HJAA0 (22/100)
+[32m2020-03-07 11:36:09:[0m     Waiting for job 7506g000005E8HJAA0 (29/100)
+[32m2020-03-07 11:36:19:[0m     Waiting for job 7506g000005E8HJAA0 (30/100)
+[32m2020-03-07 11:36:30:[0m     Waiting for job 7506g000005E8HJAA0 (30/100)
+[32m2020-03-07 11:36:40:[0m     Waiting for job 7506g000005E8HJAA0 (30/100)
+[32m2020-03-07 11:36:51:[0m     Waiting for job 7506g000005E8HJAA0 (37/100)
+[32m2020-03-07 11:37:01:[0m     Waiting for job 7506g000005E8HJAA0 (50/100)
+[32m2020-03-07 11:37:12:[0m     Waiting for job 7506g000005E8HJAA0 (58/100)
+[32m2020-03-07 11:37:22:[0m     Waiting for job 7506g000005E8HJAA0 (60/100)
+[32m2020-03-07 11:37:33:[0m     Waiting for job 7506g000005E8HJAA0 (60/100)
+[32m2020-03-07 11:37:44:[0m     Waiting for job 7506g000005E8HJAA0 (60/100)
+[32m2020-03-07 11:37:55:[0m     Waiting for job 7506g000005E8HJAA0 (65/100)
+[32m2020-03-07 11:38:05:[0m     Waiting for job 7506g000005E8HJAA0 (76/100)
+[32m2020-03-07 11:38:16:[0m     Waiting for job 7506g000005E8HJAA0 (87/100)
+[32m2020-03-07 11:38:26:[0m     Waiting for job 7506g000005E8HJAA0 (90/100)
+[32m2020-03-07 11:38:37:[0m     Waiting for job 7506g000005E8HJAA0 (90/100)
+[32m2020-03-07 11:38:47:[0m     Waiting for job 7506g000005E8HJAA0 (90/100)
+[32m2020-03-07 11:38:58:[0m     Waiting for job 7506g000005E8HJAA0 (98/100)
+[32m2020-03-07 11:39:09:[0m     Waiting for job 7506g000005E8HJAA0 (100/100)
+[32m2020-03-07 11:39:09:[0m Job 7506g000005E8HJAA0 finished with result: Completed
+[32m2020-03-07 11:39:09:[0m   Downloaded results for batch 7516g000004pTDRAA2
+[32m2020-03-07 11:39:10:[0m   Updated Account_sf_ids for batch 7516g000004pTDRAA2
+[32m2020-03-07 11:39:10:[0m   Downloaded results for batch 7516g000004pTDWAA2
+[32m2020-03-07 11:39:11:[0m   Updated Account_sf_ids for batch 7516g000004pTDWAA2
+[32m2020-03-07 11:39:11:[0m   Downloaded results for batch 7516g000004pTDbAAM
+[32m2020-03-07 11:39:12:[0m   Updated Account_sf_ids for batch 7516g000004pTDbAAM
+[32m2020-03-07 11:39:13:[0m   Downloaded results for batch 7516g000004pTDgAAM
+[32m2020-03-07 11:39:14:[0m   Updated Account_sf_ids for batch 7516g000004pTDgAAM
+[32m2020-03-07 11:39:14:[0m   Downloaded results for batch 7516g000004pTDlAAM
+[32m2020-03-07 11:39:15:[0m   Updated Account_sf_ids for batch 7516g000004pTDlAAM
+[32m2020-03-07 11:39:15:[0m   Downloaded results for batch 7516g000004pTDSAA2
+[32m2020-03-07 11:39:16:[0m   Updated Account_sf_ids for batch 7516g000004pTDSAA2
+[32m2020-03-07 11:39:16:[0m   Downloaded results for batch 7516g000004pTDqAAM
+[32m2020-03-07 11:39:18:[0m   Updated Account_sf_ids for batch 7516g000004pTDqAAM
+[32m2020-03-07 11:39:18:[0m   Downloaded results for batch 7516g000004pTDvAAM
+[32m2020-03-07 11:39:19:[0m   Updated Account_sf_ids for batch 7516g000004pTDvAAM
+[32m2020-03-07 11:39:19:[0m   Downloaded results for batch 7516g000004pTE0AAM
+[32m2020-03-07 11:39:20:[0m   Updated Account_sf_ids for batch 7516g000004pTE0AAM
+[32m2020-03-07 11:39:20:[0m   Downloaded results for batch 7516g000004pTE5AAM
+[32m2020-03-07 11:39:21:[0m   Updated Account_sf_ids for batch 7516g000004pTE5AAM
+[32m2020-03-07 11:39:21:[0m   Downloaded results for batch 7516g000004pTEAAA2
+[32m2020-03-07 11:39:23:[0m   Updated Account_sf_ids for batch 7516g000004pTEAAA2
+[32m2020-03-07 11:39:23:[0m   Downloaded results for batch 7516g000004pTEFAA2
+[32m2020-03-07 11:39:24:[0m   Updated Account_sf_ids for batch 7516g000004pTEFAA2
+[32m2020-03-07 11:39:24:[0m   Downloaded results for batch 7516g000004pTDrAAM
+[32m2020-03-07 11:39:26:[0m   Updated Account_sf_ids for batch 7516g000004pTDrAAM
+[32m2020-03-07 11:39:26:[0m   Downloaded results for batch 7516g000004pTEKAA2
+[32m2020-03-07 11:39:28:[0m   Updated Account_sf_ids for batch 7516g000004pTEKAA2
+[32m2020-03-07 11:39:28:[0m   Downloaded results for batch 7516g000004pTEPAA2
+[32m2020-03-07 11:39:29:[0m   Updated Account_sf_ids for batch 7516g000004pTEPAA2
+[32m2020-03-07 11:39:29:[0m   Downloaded results for batch 7516g000004pTEUAA2
+[32m2020-03-07 11:39:30:[0m   Updated Account_sf_ids for batch 7516g000004pTEUAA2
+[32m2020-03-07 11:39:30:[0m   Downloaded results for batch 7516g000004pTEZAA2
+[32m2020-03-07 11:39:31:[0m   Updated Account_sf_ids for batch 7516g000004pTEZAA2
+[32m2020-03-07 11:39:31:[0m   Downloaded results for batch 7516g000004pTEeAAM
+[32m2020-03-07 11:39:33:[0m   Updated Account_sf_ids for batch 7516g000004pTEeAAM
+[32m2020-03-07 11:39:33:[0m   Downloaded results for batch 7516g000004pTEjAAM
+[32m2020-03-07 11:39:34:[0m   Updated Account_sf_ids for batch 7516g000004pTEjAAM
+[32m2020-03-07 11:39:34:[0m   Downloaded results for batch 7516g000004pTEoAAM
+[32m2020-03-07 11:39:35:[0m   Updated Account_sf_ids for batch 7516g000004pTEoAAM
+[32m2020-03-07 11:39:36:[0m   Downloaded results for batch 7516g000004pTEtAAM
+[32m2020-03-07 11:39:37:[0m   Updated Account_sf_ids for batch 7516g000004pTEtAAM
+[32m2020-03-07 11:39:37:[0m   Downloaded results for batch 7516g000004pTEyAAM
+[32m2020-03-07 11:39:38:[0m   Updated Account_sf_ids for batch 7516g000004pTEyAAM
+[32m2020-03-07 11:39:38:[0m   Downloaded results for batch 7516g000004pTF3AAM
+[32m2020-03-07 11:39:39:[0m   Updated Account_sf_ids for batch 7516g000004pTF3AAM
+[32m2020-03-07 11:39:39:[0m   Downloaded results for batch 7516g000004pTF8AAM
+[32m2020-03-07 11:39:40:[0m   Updated Account_sf_ids for batch 7516g000004pTF8AAM
+[32m2020-03-07 11:39:40:[0m   Downloaded results for batch 7516g000004pTFDAA2
+[32m2020-03-07 11:39:41:[0m   Updated Account_sf_ids for batch 7516g000004pTFDAA2
+[32m2020-03-07 11:39:41:[0m   Downloaded results for batch 7516g000004pTFIAA2
+[32m2020-03-07 11:39:42:[0m   Updated Account_sf_ids for batch 7516g000004pTFIAA2
+[32m2020-03-07 11:39:43:[0m   Downloaded results for batch 7516g000004pTFNAA2
+[32m2020-03-07 11:39:44:[0m   Updated Account_sf_ids for batch 7516g000004pTFNAA2
+[32m2020-03-07 11:39:44:[0m   Downloaded results for batch 7516g000004pTDTAA2
+[32m2020-03-07 11:39:45:[0m   Updated Account_sf_ids for batch 7516g000004pTDTAA2
+[32m2020-03-07 11:39:45:[0m   Downloaded results for batch 7516g000004pTFSAA2
+[32m2020-03-07 11:39:46:[0m   Updated Account_sf_ids for batch 7516g000004pTFSAA2
+[32m2020-03-07 11:39:46:[0m   Downloaded results for batch 7516g000004pTFXAA2
+[32m2020-03-07 11:39:47:[0m   Updated Account_sf_ids for batch 7516g000004pTFXAA2
+[32m2020-03-07 11:39:47:[0m   Downloaded results for batch 7516g000004pTFcAAM
+[32m2020-03-07 11:39:48:[0m   Updated Account_sf_ids for batch 7516g000004pTFcAAM
+[32m2020-03-07 11:39:48:[0m   Downloaded results for batch 7516g000004pTFhAAM
+[32m2020-03-07 11:39:49:[0m   Updated Account_sf_ids for batch 7516g000004pTFhAAM
+[32m2020-03-07 11:39:50:[0m   Downloaded results for batch 7516g000004pTFmAAM
+[32m2020-03-07 11:39:51:[0m   Updated Account_sf_ids for batch 7516g000004pTFmAAM
+[32m2020-03-07 11:39:51:[0m   Downloaded results for batch 7516g000004pTFrAAM
+[32m2020-03-07 11:39:52:[0m   Updated Account_sf_ids for batch 7516g000004pTFrAAM
+[32m2020-03-07 11:39:52:[0m   Downloaded results for batch 7516g000004pTDcAAM
+[32m2020-03-07 11:39:53:[0m   Updated Account_sf_ids for batch 7516g000004pTDcAAM
+[32m2020-03-07 11:39:53:[0m   Downloaded results for batch 7516g000004pTFOAA2
+[32m2020-03-07 11:39:54:[0m   Updated Account_sf_ids for batch 7516g000004pTFOAA2
+[32m2020-03-07 11:39:54:[0m   Downloaded results for batch 7516g000004pTFwAAM
+[32m2020-03-07 11:39:56:[0m   Updated Account_sf_ids for batch 7516g000004pTFwAAM
+[32m2020-03-07 11:39:56:[0m   Downloaded results for batch 7516g000004pTG1AAM
+[32m2020-03-07 11:39:57:[0m   Updated Account_sf_ids for batch 7516g000004pTG1AAM
+[32m2020-03-07 11:39:57:[0m   Downloaded results for batch 7516g000004pTG6AAM
+[32m2020-03-07 11:39:58:[0m   Updated Account_sf_ids for batch 7516g000004pTG6AAM
+[32m2020-03-07 11:39:58:[0m   Downloaded results for batch 7516g000004pTGBAA2
+[32m2020-03-07 11:39:59:[0m   Updated Account_sf_ids for batch 7516g000004pTGBAA2
+[32m2020-03-07 11:39:59:[0m   Downloaded results for batch 7516g000004pTGGAA2
+[32m2020-03-07 11:40:01:[0m   Updated Account_sf_ids for batch 7516g000004pTGGAA2
+[32m2020-03-07 11:40:01:[0m   Downloaded results for batch 7516g000004pTFJAA2
+[32m2020-03-07 11:40:02:[0m   Updated Account_sf_ids for batch 7516g000004pTFJAA2
+[32m2020-03-07 11:40:03:[0m   Downloaded results for batch 7516g000004pTGLAA2
+[32m2020-03-07 11:40:04:[0m   Updated Account_sf_ids for batch 7516g000004pTGLAA2
+[32m2020-03-07 11:40:04:[0m   Downloaded results for batch 7516g000004pTFEAA2
+[32m2020-03-07 11:40:05:[0m   Updated Account_sf_ids for batch 7516g000004pTFEAA2
+[32m2020-03-07 11:40:05:[0m   Downloaded results for batch 7516g000004pTGQAA2
+[32m2020-03-07 11:40:06:[0m   Updated Account_sf_ids for batch 7516g000004pTGQAA2
+[32m2020-03-07 11:40:06:[0m   Downloaded results for batch 7516g000004pTGVAA2
+[32m2020-03-07 11:40:07:[0m   Updated Account_sf_ids for batch 7516g000004pTGVAA2
+[32m2020-03-07 11:40:07:[0m   Downloaded results for batch 7516g000004pTGHAA2
+[32m2020-03-07 11:40:08:[0m   Updated Account_sf_ids for batch 7516g000004pTGHAA2
+[32m2020-03-07 11:40:09:[0m   Downloaded results for batch 7516g000004pTGaAAM
+[32m2020-03-07 11:40:10:[0m   Updated Account_sf_ids for batch 7516g000004pTGaAAM
+[32m2020-03-07 11:40:10:[0m   Downloaded results for batch 7516g000004pTGfAAM
+[32m2020-03-07 11:40:11:[0m   Updated Account_sf_ids for batch 7516g000004pTGfAAM
+[32m2020-03-07 11:40:11:[0m   Downloaded results for batch 7516g000004pTDsAAM
+[32m2020-03-07 11:40:12:[0m   Updated Account_sf_ids for batch 7516g000004pTDsAAM
+[32m2020-03-07 11:40:12:[0m   Downloaded results for batch 7516g000004pTGkAAM
+[32m2020-03-07 11:40:13:[0m   Updated Account_sf_ids for batch 7516g000004pTGkAAM
+[32m2020-03-07 11:40:13:[0m   Downloaded results for batch 7516g000004pTGpAAM
+[32m2020-03-07 11:40:14:[0m   Updated Account_sf_ids for batch 7516g000004pTGpAAM
+[32m2020-03-07 11:40:14:[0m   Downloaded results for batch 7516g000004pTGuAAM
+[32m2020-03-07 11:40:16:[0m   Updated Account_sf_ids for batch 7516g000004pTGuAAM
+[32m2020-03-07 11:40:16:[0m   Downloaded results for batch 7516g000004pTFTAA2
+[32m2020-03-07 11:40:17:[0m   Updated Account_sf_ids for batch 7516g000004pTFTAA2
+[32m2020-03-07 11:40:17:[0m   Downloaded results for batch 7516g000004pTGzAAM
+[32m2020-03-07 11:40:18:[0m   Updated Account_sf_ids for batch 7516g000004pTGzAAM
+[32m2020-03-07 11:40:18:[0m   Downloaded results for batch 7516g000004pTH4AAM
+[32m2020-03-07 11:40:20:[0m   Updated Account_sf_ids for batch 7516g000004pTH4AAM
+[32m2020-03-07 11:40:20:[0m   Downloaded results for batch 7516g000004pTH9AAM
+[32m2020-03-07 11:40:21:[0m   Updated Account_sf_ids for batch 7516g000004pTH9AAM
+[32m2020-03-07 11:40:21:[0m   Downloaded results for batch 7516g000004pTEBAA2
+[32m2020-03-07 11:40:22:[0m   Updated Account_sf_ids for batch 7516g000004pTEBAA2
+[32m2020-03-07 11:40:22:[0m   Downloaded results for batch 7516g000004pTHEAA2
+[32m2020-03-07 11:40:23:[0m   Updated Account_sf_ids for batch 7516g000004pTHEAA2
+[32m2020-03-07 11:40:23:[0m   Downloaded results for batch 7516g000004pTGWAA2
+[32m2020-03-07 11:40:25:[0m   Updated Account_sf_ids for batch 7516g000004pTGWAA2
+[32m2020-03-07 11:40:25:[0m   Downloaded results for batch 7516g000004pTHJAA2
+[32m2020-03-07 11:40:27:[0m   Updated Account_sf_ids for batch 7516g000004pTHJAA2
+[32m2020-03-07 11:40:27:[0m   Downloaded results for batch 7516g000004pTDdAAM
+[32m2020-03-07 11:40:28:[0m   Updated Account_sf_ids for batch 7516g000004pTDdAAM
+[32m2020-03-07 11:40:28:[0m   Downloaded results for batch 7516g000004pTHOAA2
+[32m2020-03-07 11:40:30:[0m   Updated Account_sf_ids for batch 7516g000004pTHOAA2
+[32m2020-03-07 11:40:30:[0m   Downloaded results for batch 7516g000004pTH0AAM
+[32m2020-03-07 11:40:32:[0m   Updated Account_sf_ids for batch 7516g000004pTH0AAM
+[32m2020-03-07 11:40:32:[0m   Downloaded results for batch 7516g000004pTEzAAM
+[32m2020-03-07 11:40:33:[0m   Updated Account_sf_ids for batch 7516g000004pTEzAAM
+[32m2020-03-07 11:40:33:[0m   Downloaded results for batch 7516g000004pTGRAA2
+[32m2020-03-07 11:40:34:[0m   Updated Account_sf_ids for batch 7516g000004pTGRAA2
+[32m2020-03-07 11:40:34:[0m   Downloaded results for batch 7516g000004pTDmAAM
+[32m2020-03-07 11:40:35:[0m   Updated Account_sf_ids for batch 7516g000004pTDmAAM
+[32m2020-03-07 11:40:36:[0m   Downloaded results for batch 7516g000004pTFnAAM
+[32m2020-03-07 11:40:37:[0m   Updated Account_sf_ids for batch 7516g000004pTFnAAM
+[32m2020-03-07 11:40:37:[0m   Downloaded results for batch 7516g000004pTHTAA2
+[32m2020-03-07 11:40:38:[0m   Updated Account_sf_ids for batch 7516g000004pTHTAA2
+[32m2020-03-07 11:40:38:[0m   Downloaded results for batch 7516g000004pTHUAA2
+[32m2020-03-07 11:40:40:[0m   Updated Account_sf_ids for batch 7516g000004pTHUAA2
+[32m2020-03-07 11:40:40:[0m   Downloaded results for batch 7516g000004pTHYAA2
+[32m2020-03-07 11:40:42:[0m   Updated Account_sf_ids for batch 7516g000004pTHYAA2
+[32m2020-03-07 11:40:42:[0m   Downloaded results for batch 7516g000004pTDeAAM
+[32m2020-03-07 11:40:43:[0m   Updated Account_sf_ids for batch 7516g000004pTDeAAM
+[32m2020-03-07 11:40:43:[0m   Downloaded results for batch 7516g000004pTFsAAM
+[32m2020-03-07 11:40:44:[0m   Updated Account_sf_ids for batch 7516g000004pTFsAAM
+[32m2020-03-07 11:40:44:[0m   Downloaded results for batch 7516g000004pTF0AAM
+[32m2020-03-07 11:40:45:[0m   Updated Account_sf_ids for batch 7516g000004pTF0AAM
+[32m2020-03-07 11:40:45:[0m   Downloaded results for batch 7516g000004pTHdAAM
+[32m2020-03-07 11:40:47:[0m   Updated Account_sf_ids for batch 7516g000004pTHdAAM
+[32m2020-03-07 11:40:48:[0m   Downloaded results for batch 7516g000004pTFdAAM
+[32m2020-03-07 11:40:50:[0m   Updated Account_sf_ids for batch 7516g000004pTFdAAM
+[32m2020-03-07 11:40:50:[0m   Downloaded results for batch 7516g000004pTHiAAM
+[32m2020-03-07 11:40:51:[0m   Updated Account_sf_ids for batch 7516g000004pTHiAAM
+[32m2020-03-07 11:40:51:[0m   Downloaded results for batch 7516g000004pTHnAAM
+[32m2020-03-07 11:40:53:[0m   Updated Account_sf_ids for batch 7516g000004pTHnAAM
+[32m2020-03-07 11:40:53:[0m   Downloaded results for batch 7516g000004pTHsAAM
+[32m2020-03-07 11:40:54:[0m   Updated Account_sf_ids for batch 7516g000004pTHsAAM
+[32m2020-03-07 11:40:54:[0m   Downloaded results for batch 7516g000004pTEQAA2
+[32m2020-03-07 11:40:56:[0m   Updated Account_sf_ids for batch 7516g000004pTEQAA2
+[32m2020-03-07 11:40:56:[0m   Downloaded results for batch 7516g000004pTHeAAM
+[32m2020-03-07 11:40:57:[0m   Updated Account_sf_ids for batch 7516g000004pTHeAAM
+[32m2020-03-07 11:40:57:[0m   Downloaded results for batch 7516g000004pTHxAAM
+[32m2020-03-07 11:40:59:[0m   Updated Account_sf_ids for batch 7516g000004pTHxAAM
+[32m2020-03-07 11:40:59:[0m   Downloaded results for batch 7516g000004pTI2AAM
+[32m2020-03-07 11:41:01:[0m   Updated Account_sf_ids for batch 7516g000004pTI2AAM
+[32m2020-03-07 11:41:01:[0m   Downloaded results for batch 7516g000004pTI3AAM
+[32m2020-03-07 11:41:02:[0m   Updated Account_sf_ids for batch 7516g000004pTI3AAM
+[32m2020-03-07 11:41:02:[0m   Downloaded results for batch 7516g000004pTI7AAM
+[32m2020-03-07 11:41:04:[0m   Updated Account_sf_ids for batch 7516g000004pTI7AAM
+[32m2020-03-07 11:41:04:[0m   Downloaded results for batch 7516g000004pTICAA2
+[32m2020-03-07 11:41:05:[0m   Updated Account_sf_ids for batch 7516g000004pTICAA2
+[32m2020-03-07 11:41:05:[0m   Downloaded results for batch 7516g000004pTIHAA2
+[32m2020-03-07 11:41:06:[0m   Updated Account_sf_ids for batch 7516g000004pTIHAA2
+[32m2020-03-07 11:41:07:[0m   Downloaded results for batch 7516g000004pTG7AAM
+[32m2020-03-07 11:41:08:[0m   Updated Account_sf_ids for batch 7516g000004pTG7AAM
+[32m2020-03-07 11:41:08:[0m   Downloaded results for batch 7516g000004pTGXAA2
+[32m2020-03-07 11:41:09:[0m   Updated Account_sf_ids for batch 7516g000004pTGXAA2
+[32m2020-03-07 11:41:09:[0m   Downloaded results for batch 7516g000004pTF4AAM
+[32m2020-03-07 11:41:10:[0m   Updated Account_sf_ids for batch 7516g000004pTF4AAM
+[32m2020-03-07 11:41:10:[0m   Downloaded results for batch 7516g000004pTIMAA2
+[32m2020-03-07 11:41:12:[0m   Updated Account_sf_ids for batch 7516g000004pTIMAA2
+[32m2020-03-07 11:41:12:[0m   Downloaded results for batch 7516g000004pTIRAA2
+[32m2020-03-07 11:41:13:[0m   Updated Account_sf_ids for batch 7516g000004pTIRAA2
+[32m2020-03-07 11:41:13:[0m   Downloaded results for batch 7516g000004pTHyAAM
+[32m2020-03-07 11:41:14:[0m   Updated Account_sf_ids for batch 7516g000004pTHyAAM
+[32m2020-03-07 11:41:14:[0m   Downloaded results for batch 7516g000004pTINAA2
+[32m2020-03-07 11:41:15:[0m   Updated Account_sf_ids for batch 7516g000004pTINAA2
+[32m2020-03-07 11:41:15:[0m   Downloaded results for batch 7516g000004pTH5AAM
+[32m2020-03-07 11:41:17:[0m   Updated Account_sf_ids for batch 7516g000004pTH5AAM
+[32m2020-03-07 11:41:17:[0m   Downloaded results for batch 7516g000004pTIWAA2
+[32m2020-03-07 11:41:18:[0m   Updated Account_sf_ids for batch 7516g000004pTIWAA2
+[32m2020-03-07 11:41:19:[0m   Downloaded results for batch 7516g000004pTIbAAM
+[32m2020-03-07 11:41:20:[0m   Updated Account_sf_ids for batch 7516g000004pTIbAAM
+[32m2020-03-07 11:41:20:[0m   Downloaded results for batch 7516g000004pTIgAAM
+[32m2020-03-07 11:41:22:[0m   Updated Account_sf_ids for batch 7516g000004pTIgAAM
+[32m2020-03-07 11:41:22:[0m   Downloaded results for batch 7516g000004pTF1AAM
+[32m2020-03-07 11:41:24:[0m   Updated Account_sf_ids for batch 7516g000004pTF1AAM
+[32m2020-03-07 11:41:24:[0m   Downloaded results for batch 7516g000004pTIlAAM
+[32m2020-03-07 11:41:25:[0m   Updated Account_sf_ids for batch 7516g000004pTIlAAM
+[32m2020-03-07 11:41:25:[0m Running Job: Insert Contacts
+[32m2020-03-07 11:41:26:[0m   Created bulk job 7506g000005E8HxAAK
+[32m2020-03-07 11:41:26:[0m [32mSELECT "Contact".id AS "Contact_id", "Contact"."Salutation" AS "Contact_Salutation", "Contact"."FirstName" AS "Contact_FirstName", "Contact"."LastName" AS "Contact_LastName", "Contact"."Email" AS "Contact_Email", "Contact"."Phone" AS "Contact_Phone", "Contact"."MobilePhone" AS "Contact_MobilePhone", "Contact"."OtherPhone" AS "Contact_OtherPhone", "Contact"."HomePhone" AS "Contact_HomePhone", "Contact"."Title" AS "Contact_Title", "Contact"."Birthdate" AS "Contact_Birthdate", "Contact"."MailingStreet" AS "Contact_MailingStreet", "Contact"."MailingCity" AS "Contact_MailingCity", "Contact"."MailingState" AS "Contact_MailingState", "Contact"."MailingPostalCode" AS "Contact_MailingPostalCode", "Contact"."MailingCountry" AS "Contact_MailingCountry", "Account_sf_ids_1".sf_id AS "Account_sf_ids_1_sf_id" 
+FROM "Contact" LEFT OUTER JOIN "Account_sf_ids" AS "Account_sf_ids_1" ON "Account_sf_ids_1".id = "Contact"."AccountId" ORDER BY "Contact"."AccountId"[0m
+[32m2020-03-07 11:41:29:[0m     Processing batch 1
+[32m2020-03-07 11:41:30:[0m     Uploaded batch 7516g000004pTHVAA2
+[32m2020-03-07 11:41:30:[0m     Processing batch 2
+[32m2020-03-07 11:41:30:[0m     Uploaded batch 7516g000004pTJFAA2
+[32m2020-03-07 11:41:31:[0m     Processing batch 3
+[32m2020-03-07 11:41:31:[0m     Uploaded batch 7516g000004pTJKAA2
+[32m2020-03-07 11:41:31:[0m     Processing batch 4
+[32m2020-03-07 11:41:32:[0m     Uploaded batch 7516g000004pTJPAA2
+[32m2020-03-07 11:41:32:[0m     Processing batch 5
+[32m2020-03-07 11:41:32:[0m     Uploaded batch 7516g000004pTJUAA2
+[32m2020-03-07 11:41:33:[0m     Processing batch 6
+[32m2020-03-07 11:41:33:[0m     Uploaded batch 7516g000004pTHjAAM
+[32m2020-03-07 11:41:33:[0m     Processing batch 7
+[32m2020-03-07 11:41:34:[0m     Uploaded batch 7516g000004pTECAA2
+[32m2020-03-07 11:41:34:[0m     Processing batch 8
+[32m2020-03-07 11:41:34:[0m     Uploaded batch 7516g000004pTJZAA2
+[32m2020-03-07 11:41:34:[0m     Processing batch 9
+[32m2020-03-07 11:41:35:[0m     Uploaded batch 7516g000004pTJeAAM
+[32m2020-03-07 11:41:35:[0m     Processing batch 10
+[32m2020-03-07 11:41:36:[0m     Uploaded batch 7516g000004pTJjAAM
+[32m2020-03-07 11:41:36:[0m     Processing batch 11
+[32m2020-03-07 11:41:36:[0m     Uploaded batch 7516g000004pTJoAAM
+[32m2020-03-07 11:41:37:[0m     Processing batch 12
+[32m2020-03-07 11:41:37:[0m     Uploaded batch 7516g000004pTHZAA2
+[32m2020-03-07 11:41:37:[0m     Processing batch 13
+[32m2020-03-07 11:41:38:[0m     Uploaded batch 7516g000004pTJtAAM
+[32m2020-03-07 11:41:38:[0m     Processing batch 14
+[32m2020-03-07 11:41:38:[0m     Uploaded batch 7516g000004pTJyAAM
+[32m2020-03-07 11:41:39:[0m     Processing batch 15
+[32m2020-03-07 11:41:39:[0m     Uploaded batch 7516g000004pTK3AAM
+[32m2020-03-07 11:41:39:[0m     Processing batch 16
+[32m2020-03-07 11:41:40:[0m     Uploaded batch 7516g000004pTK8AAM
+[32m2020-03-07 11:41:40:[0m     Processing batch 17
+[32m2020-03-07 11:41:40:[0m     Uploaded batch 7516g000004pTKDAA2
+[32m2020-03-07 11:41:41:[0m     Processing batch 18
+[32m2020-03-07 11:41:41:[0m     Uploaded batch 7516g000004pTEfAAM
+[32m2020-03-07 11:41:41:[0m     Processing batch 19
+[32m2020-03-07 11:41:42:[0m     Uploaded batch 7516g000004pTKIAA2
+[32m2020-03-07 11:41:42:[0m     Processing batch 20
+[32m2020-03-07 11:41:42:[0m     Uploaded batch 7516g000004pTKNAA2
+[32m2020-03-07 11:41:43:[0m     Processing batch 21
+[32m2020-03-07 11:41:43:[0m     Uploaded batch 7516g000004pTIrAAM
+[32m2020-03-07 11:41:44:[0m     Processing batch 22
+[32m2020-03-07 11:41:44:[0m     Uploaded batch 7516g000004pTKSAA2
+[32m2020-03-07 11:41:44:[0m     Processing batch 23
+[32m2020-03-07 11:41:45:[0m     Uploaded batch 7516g000004pTEgAAM
+[32m2020-03-07 11:41:45:[0m     Processing batch 24
+[32m2020-03-07 11:41:45:[0m     Uploaded batch 7516g000004pTKXAA2
+[32m2020-03-07 11:41:45:[0m     Processing batch 25
+[32m2020-03-07 11:41:46:[0m     Uploaded batch 7516g000004pTKcAAM
+[32m2020-03-07 11:41:46:[0m     Processing batch 26
+[32m2020-03-07 11:41:47:[0m     Uploaded batch 7516g000004pTKhAAM
+[32m2020-03-07 11:41:47:[0m     Processing batch 27
+[32m2020-03-07 11:41:47:[0m     Uploaded batch 7516g000004pTJGAA2
+[32m2020-03-07 11:41:48:[0m     Processing batch 28
+[32m2020-03-07 11:41:48:[0m     Uploaded batch 7516g000004pTKOAA2
+[32m2020-03-07 11:41:48:[0m     Processing batch 29
+[32m2020-03-07 11:41:49:[0m     Uploaded batch 7516g000004pTKmAAM
+[32m2020-03-07 11:41:49:[0m     Processing batch 30
+[32m2020-03-07 11:41:49:[0m     Uploaded batch 7516g000004pTKrAAM
+[32m2020-03-07 11:41:50:[0m     Processing batch 31
+[32m2020-03-07 11:41:50:[0m     Uploaded batch 7516g000004pTIsAAM
+[32m2020-03-07 11:41:50:[0m     Processing batch 32
+[32m2020-03-07 11:41:51:[0m     Uploaded batch 7516g000004pTKwAAM
+[32m2020-03-07 11:41:51:[0m     Processing batch 33
+[32m2020-03-07 11:41:51:[0m     Uploaded batch 7516g000004pTL1AAM
+[32m2020-03-07 11:41:52:[0m     Processing batch 34
+[32m2020-03-07 11:41:52:[0m     Uploaded batch 7516g000004pTL6AAM
+[32m2020-03-07 11:41:52:[0m     Processing batch 35
+[32m2020-03-07 11:41:53:[0m     Uploaded batch 7516g000004pTKiAAM
+[32m2020-03-07 11:41:53:[0m     Processing batch 36
+[32m2020-03-07 11:41:53:[0m     Uploaded batch 7516g000004pTLBAA2
+[32m2020-03-07 11:41:54:[0m     Processing batch 37
+[32m2020-03-07 11:41:54:[0m     Uploaded batch 7516g000004pTLCAA2
+[32m2020-03-07 11:41:54:[0m     Processing batch 38
+[32m2020-03-07 11:41:55:[0m     Uploaded batch 7516g000004pTLGAA2
+[32m2020-03-07 11:41:55:[0m     Processing batch 39
+[32m2020-03-07 11:41:56:[0m     Uploaded batch 7516g000004pTLLAA2
+[32m2020-03-07 11:41:56:[0m     Processing batch 40
+[32m2020-03-07 11:41:56:[0m     Uploaded batch 7516g000004pTHaAAM
+[32m2020-03-07 11:41:56:[0m     Processing batch 41
+[32m2020-03-07 11:41:57:[0m     Uploaded batch 7516g000004pTLQAA2
+[32m2020-03-07 11:41:57:[0m     Processing batch 42
+[32m2020-03-07 11:41:57:[0m     Uploaded batch 7516g000004pTHbAAM
+[32m2020-03-07 11:41:58:[0m     Processing batch 43
+[32m2020-03-07 11:41:58:[0m     Uploaded batch 7516g000004pTEuAAM
+[32m2020-03-07 11:41:58:[0m     Processing batch 44
+[32m2020-03-07 11:41:59:[0m     Uploaded batch 7516g000004pTLVAA2
+[32m2020-03-07 11:41:59:[0m     Processing batch 45
+[32m2020-03-07 11:42:00:[0m     Uploaded batch 7516g000004pTLaAAM
+[32m2020-03-07 11:42:00:[0m     Processing batch 46
+[32m2020-03-07 11:42:00:[0m     Uploaded batch 7516g000004pTLfAAM
+[32m2020-03-07 11:42:01:[0m     Processing batch 47
+[32m2020-03-07 11:42:01:[0m     Uploaded batch 7516g000004pTLkAAM
+[32m2020-03-07 11:42:01:[0m     Processing batch 48
+[32m2020-03-07 11:42:02:[0m     Uploaded batch 7516g000004pTLpAAM
+[32m2020-03-07 11:42:02:[0m     Processing batch 49
+[32m2020-03-07 11:42:03:[0m     Uploaded batch 7516g000004pTLuAAM
+[32m2020-03-07 11:42:03:[0m     Processing batch 50
+[32m2020-03-07 11:42:03:[0m     Uploaded batch 7516g000004pTLzAAM
+[32m2020-03-07 11:42:04:[0m     Processing batch 51
+[32m2020-03-07 11:42:04:[0m     Uploaded batch 7516g000004pTM4AAM
+[32m2020-03-07 11:42:04:[0m     Processing batch 52
+[32m2020-03-07 11:42:05:[0m     Uploaded batch 7516g000004pTJBAA2
+[32m2020-03-07 11:42:05:[0m     Processing batch 53
+[32m2020-03-07 11:42:05:[0m     Uploaded batch 7516g000004pTIDAA2
+[32m2020-03-07 11:42:06:[0m     Processing batch 54
+[32m2020-03-07 11:42:06:[0m     Uploaded batch 7516g000004pTKxAAM
+[32m2020-03-07 11:42:06:[0m     Processing batch 55
+[32m2020-03-07 11:42:07:[0m     Uploaded batch 7516g000004pTM9AAM
+[32m2020-03-07 11:42:07:[0m     Processing batch 56
+[32m2020-03-07 11:42:07:[0m     Uploaded batch 7516g000004pTMEAA2
+[32m2020-03-07 11:42:08:[0m     Processing batch 57
+[32m2020-03-07 11:42:08:[0m     Uploaded batch 7516g000004pTMJAA2
+[32m2020-03-07 11:42:08:[0m     Processing batch 58
+[32m2020-03-07 11:42:09:[0m     Uploaded batch 7516g000004pTMOAA2
+[32m2020-03-07 11:42:09:[0m     Processing batch 59
+[32m2020-03-07 11:42:09:[0m     Uploaded batch 7516g000004pTMTAA2
+[32m2020-03-07 11:42:10:[0m     Processing batch 60
+[32m2020-03-07 11:42:10:[0m     Uploaded batch 7516g000004pTM0AAM
+[32m2020-03-07 11:42:10:[0m     Processing batch 61
+[32m2020-03-07 11:42:11:[0m     Uploaded batch 7516g000004pTMYAA2
+[32m2020-03-07 11:42:11:[0m     Processing batch 62
+[32m2020-03-07 11:42:11:[0m     Uploaded batch 7516g000004pTMKAA2
+[32m2020-03-07 11:42:12:[0m     Processing batch 63
+[32m2020-03-07 11:42:12:[0m     Uploaded batch 7516g000004pTKJAA2
+[32m2020-03-07 11:42:13:[0m     Processing batch 64
+[32m2020-03-07 11:42:13:[0m     Uploaded batch 7516g000004pTMdAAM
+[32m2020-03-07 11:42:13:[0m     Processing batch 65
+[32m2020-03-07 11:42:14:[0m     Uploaded batch 7516g000004pTMiAAM
+[32m2020-03-07 11:42:14:[0m     Processing batch 66
+[32m2020-03-07 11:42:14:[0m     Uploaded batch 7516g000004pTMZAA2
+[32m2020-03-07 11:42:14:[0m     Processing batch 67
+[32m2020-03-07 11:42:15:[0m     Uploaded batch 7516g000004pTMLAA2
+[32m2020-03-07 11:42:15:[0m     Processing batch 68
+[32m2020-03-07 11:42:15:[0m     Uploaded batch 7516g000004pTMPAA2
+[32m2020-03-07 11:42:16:[0m     Processing batch 69
+[32m2020-03-07 11:42:16:[0m     Uploaded batch 7516g000004pTMnAAM
+[32m2020-03-07 11:42:17:[0m     Processing batch 70
+[32m2020-03-07 11:42:17:[0m     Uploaded batch 7516g000004pTEVAA2
+[32m2020-03-07 11:42:17:[0m     Processing batch 71
+[32m2020-03-07 11:42:18:[0m     Uploaded batch 7516g000004pTMsAAM
+[32m2020-03-07 11:42:18:[0m     Processing batch 72
+[32m2020-03-07 11:42:18:[0m     Uploaded batch 7516g000004pTMxAAM
+[32m2020-03-07 11:42:18:[0m     Processing batch 73
+[32m2020-03-07 11:42:19:[0m     Uploaded batch 7516g000004pTN2AAM
+[32m2020-03-07 11:42:19:[0m     Processing batch 74
+[32m2020-03-07 11:42:20:[0m     Uploaded batch 7516g000004pTMeAAM
+[32m2020-03-07 11:42:20:[0m     Processing batch 75
+[32m2020-03-07 11:42:20:[0m     Uploaded batch 7516g000004pTN7AAM
+[32m2020-03-07 11:42:20:[0m   Prepared 750000 rows for insert to Contact
+[32m2020-03-07 11:42:21:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:42:31:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:42:42:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:42:52:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:43:03:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:43:13:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:43:24:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:43:34:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:43:45:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:43:55:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:44:06:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:44:16:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:44:27:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:44:38:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:44:48:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:44:59:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:45:09:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:45:20:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:45:30:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:45:41:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:45:51:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:46:02:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:46:12:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:46:23:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:46:33:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:46:44:[0m     Waiting for job 7506g000005E8HxAAK (0/75)
+[32m2020-03-07 11:46:55:[0m     Waiting for job 7506g000005E8HxAAK (1/75)
+[32m2020-03-07 11:47:05:[0m     Waiting for job 7506g000005E8HxAAK (1/75)
+[32m2020-03-07 11:47:16:[0m     Waiting for job 7506g000005E8HxAAK (3/75)
+[32m2020-03-07 11:47:26:[0m     Waiting for job 7506g000005E8HxAAK (6/75)
+[32m2020-03-07 11:47:37:[0m     Waiting for job 7506g000005E8HxAAK (7/75)
+[32m2020-03-07 11:47:47:[0m     Waiting for job 7506g000005E8HxAAK (9/75)
+[32m2020-03-07 11:47:57:[0m     Waiting for job 7506g000005E8HxAAK (15/75)
+[32m2020-03-07 11:48:08:[0m     Waiting for job 7506g000005E8HxAAK (15/75)
+[32m2020-03-07 11:48:18:[0m     Waiting for job 7506g000005E8HxAAK (19/75)
+[32m2020-03-07 11:48:29:[0m     Waiting for job 7506g000005E8HxAAK (19/75)
+[32m2020-03-07 11:48:40:[0m     Waiting for job 7506g000005E8HxAAK (22/75)
+[32m2020-03-07 11:48:50:[0m     Waiting for job 7506g000005E8HxAAK (23/75)
+[32m2020-03-07 11:49:00:[0m     Waiting for job 7506g000005E8HxAAK (26/75)
+[32m2020-03-07 11:49:11:[0m     Waiting for job 7506g000005E8HxAAK (26/75)
+[32m2020-03-07 11:49:21:[0m     Waiting for job 7506g000005E8HxAAK (26/75)
+[32m2020-03-07 11:49:32:[0m     Waiting for job 7506g000005E8HxAAK (28/75)
+[32m2020-03-07 11:49:50:[0m     Waiting for job 7506g000005E8HxAAK (29/75)
+[32m2020-03-07 11:50:01:[0m     Waiting for job 7506g000005E8HxAAK (29/75)
+[32m2020-03-07 11:50:11:[0m     Waiting for job 7506g000005E8HxAAK (29/75)
+[32m2020-03-07 11:50:22:[0m     Waiting for job 7506g000005E8HxAAK (29/75)
+[32m2020-03-07 11:50:32:[0m     Waiting for job 7506g000005E8HxAAK (29/75)
+[32m2020-03-07 11:50:43:[0m     Waiting for job 7506g000005E8HxAAK (29/75)
+[32m2020-03-07 11:50:53:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:51:04:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:51:14:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:51:25:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:51:35:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:51:46:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:51:56:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:52:07:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:52:17:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:52:28:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:52:38:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:52:49:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:52:59:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:53:10:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:53:20:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:53:31:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:53:41:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:53:52:[0m     Waiting for job 7506g000005E8HxAAK (30/75)
+[32m2020-03-07 11:54:02:[0m     Waiting for job 7506g000005E8HxAAK (32/75)
+[32m2020-03-07 11:54:13:[0m     Waiting for job 7506g000005E8HxAAK (32/75)
+[32m2020-03-07 11:54:23:[0m     Waiting for job 7506g000005E8HxAAK (32/75)
+[32m2020-03-07 11:54:34:[0m     Waiting for job 7506g000005E8HxAAK (32/75)
+[32m2020-03-07 11:54:44:[0m     Waiting for job 7506g000005E8HxAAK (32/75)
+[32m2020-03-07 11:54:55:[0m     Waiting for job 7506g000005E8HxAAK (32/75)
+[32m2020-03-07 11:55:05:[0m     Waiting for job 7506g000005E8HxAAK (32/75)
+[32m2020-03-07 11:55:16:[0m     Waiting for job 7506g000005E8HxAAK (35/75)
+[32m2020-03-07 11:55:26:[0m     Waiting for job 7506g000005E8HxAAK (36/75)
+[32m2020-03-07 11:55:37:[0m     Waiting for job 7506g000005E8HxAAK (38/75)
+[32m2020-03-07 11:55:47:[0m     Waiting for job 7506g000005E8HxAAK (39/75)
+[32m2020-03-07 11:55:58:[0m     Waiting for job 7506g000005E8HxAAK (41/75)
+[32m2020-03-07 11:56:08:[0m     Waiting for job 7506g000005E8HxAAK (43/75)
+[32m2020-03-07 11:56:19:[0m     Waiting for job 7506g000005E8HxAAK (44/75)
+[32m2020-03-07 11:56:29:[0m     Waiting for job 7506g000005E8HxAAK (44/75)
+[32m2020-03-07 11:56:40:[0m     Waiting for job 7506g000005E8HxAAK (45/75)
+[32m2020-03-07 11:56:50:[0m     Waiting for job 7506g000005E8HxAAK (46/75)
+[32m2020-03-07 11:57:01:[0m     Waiting for job 7506g000005E8HxAAK (47/75)
+[32m2020-03-07 11:57:11:[0m     Waiting for job 7506g000005E8HxAAK (49/75)
+[32m2020-03-07 11:57:22:[0m     Waiting for job 7506g000005E8HxAAK (49/75)
+[32m2020-03-07 11:57:32:[0m     Waiting for job 7506g000005E8HxAAK (50/75)
+[32m2020-03-07 11:57:43:[0m     Waiting for job 7506g000005E8HxAAK (54/75)
+[32m2020-03-07 11:57:53:[0m     Waiting for job 7506g000005E8HxAAK (56/75)
+[32m2020-03-07 11:58:04:[0m     Waiting for job 7506g000005E8HxAAK (57/75)
+[32m2020-03-07 11:58:14:[0m     Waiting for job 7506g000005E8HxAAK (58/75)
+[32m2020-03-07 11:58:25:[0m     Waiting for job 7506g000005E8HxAAK (58/75)
+[32m2020-03-07 11:58:35:[0m     Waiting for job 7506g000005E8HxAAK (59/75)
+[32m2020-03-07 11:58:46:[0m     Waiting for job 7506g000005E8HxAAK (59/75)
+[32m2020-03-07 11:58:56:[0m     Waiting for job 7506g000005E8HxAAK (59/75)
+[32m2020-03-07 11:59:07:[0m     Waiting for job 7506g000005E8HxAAK (59/75)
+[32m2020-03-07 11:59:17:[0m     Waiting for job 7506g000005E8HxAAK (59/75)
+[32m2020-03-07 11:59:28:[0m     Waiting for job 7506g000005E8HxAAK (60/75)
+[32m2020-03-07 11:59:38:[0m     Waiting for job 7506g000005E8HxAAK (60/75)
+[32m2020-03-07 11:59:49:[0m     Waiting for job 7506g000005E8HxAAK (60/75)
+[32m2020-03-07 11:59:59:[0m     Waiting for job 7506g000005E8HxAAK (60/75)
+[32m2020-03-07 12:00:10:[0m     Waiting for job 7506g000005E8HxAAK (60/75)
+[32m2020-03-07 12:00:21:[0m     Waiting for job 7506g000005E8HxAAK (60/75)
+[32m2020-03-07 12:00:31:[0m     Waiting for job 7506g000005E8HxAAK (60/75)
+[32m2020-03-07 12:00:42:[0m     Waiting for job 7506g000005E8HxAAK (60/75)
+[32m2020-03-07 12:00:52:[0m     Waiting for job 7506g000005E8HxAAK (60/75)
+[32m2020-03-07 12:01:03:[0m     Waiting for job 7506g000005E8HxAAK (60/75)
+[32m2020-03-07 12:01:14:[0m     Waiting for job 7506g000005E8HxAAK (60/75)
+[32m2020-03-07 12:01:24:[0m     Waiting for job 7506g000005E8HxAAK (60/75)
+[32m2020-03-07 12:01:35:[0m     Waiting for job 7506g000005E8HxAAK (61/75)
+[32m2020-03-07 12:01:45:[0m     Waiting for job 7506g000005E8HxAAK (62/75)
+[32m2020-03-07 12:01:56:[0m     Waiting for job 7506g000005E8HxAAK (62/75)
+[32m2020-03-07 12:02:06:[0m     Waiting for job 7506g000005E8HxAAK (64/75)
+[32m2020-03-07 12:02:17:[0m     Waiting for job 7506g000005E8HxAAK (66/75)
+[32m2020-03-07 12:02:27:[0m     Waiting for job 7506g000005E8HxAAK (66/75)
+[32m2020-03-07 12:02:38:[0m     Waiting for job 7506g000005E8HxAAK (67/75)
+[32m2020-03-07 12:02:49:[0m     Waiting for job 7506g000005E8HxAAK (71/75)
+[32m2020-03-07 12:02:59:[0m     Waiting for job 7506g000005E8HxAAK (73/75)
+[32m2020-03-07 12:03:10:[0m     Waiting for job 7506g000005E8HxAAK (74/75)
+[32m2020-03-07 12:03:21:[0m     Waiting for job 7506g000005E8HxAAK (74/75)
+[32m2020-03-07 12:03:31:[0m     Waiting for job 7506g000005E8HxAAK (75/75)
+[32m2020-03-07 12:03:31:[0m Job 7506g000005E8HxAAK finished with result: CompletedWithFailures
+[32m2020-03-07 12:03:31:[0m [31mBatch failure message: Failures detected: 3[0m
+[32m2020-03-07 12:03:32:[0m   Downloaded results for batch 7516g000004pTHVAA2
+| FAIL |
+BulkDataException: Error on row 6426: DUPLICATES_DETECTED:Duplicate Alert:--
+------------------------------------------------------------------------------
+Perftest - Delete                                                     
+
+[32m2020-03-07 12:03:32:[0m Org info updated, writing to keychain
+[32m2020-03-07 12:03:32:[0m Beginning task: DeleteData
+[32m2020-03-07 12:03:32:[0m        As user: pprescod.abacus-perf-playground@salesforce.com
+[32m2020-03-07 12:03:32:[0m         In org: 00D6g000003rbk5EAA
+[32m2020-03-07 12:03:32:[0m 
+[32m2020-03-07 12:03:32:[0m Deleting all Account objects 
+[32m2020-03-07 12:03:32:[0m   Querying for all Account objects
+[32m2020-03-07 12:04:51:[0m   Deleting 1000001 Account records
+[32m2020-03-07 12:04:52:[0m     Uploaded batch 7516g000004pTgGAAU
+[32m2020-03-07 12:04:52:[0m     Uploaded batch 7516g000004pTSEAA2
+[32m2020-03-07 12:04:53:[0m     Uploaded batch 7516g000004pTXoAAM
+[32m2020-03-07 12:04:53:[0m     Uploaded batch 7516g000004pTKMAA2
+[32m2020-03-07 12:04:53:[0m     Uploaded batch 7516g000004pTJwAAM
+[32m2020-03-07 12:04:54:[0m     Uploaded batch 7516g000004pTagAAE
+[32m2020-03-07 12:04:54:[0m     Uploaded batch 7516g000004pTb2AAE
+[32m2020-03-07 12:04:55:[0m     Uploaded batch 7516g000004pTiyAAE
+[32m2020-03-07 12:04:55:[0m     Uploaded batch 7516g000004pTRSAA2
+[32m2020-03-07 12:04:56:[0m     Uploaded batch 7516g000004pTj8AAE
+[32m2020-03-07 12:04:56:[0m     Uploaded batch 7516g000004pTjDAAU
+[32m2020-03-07 12:04:57:[0m     Uploaded batch 7516g000004pTYbAAM
+[32m2020-03-07 12:04:57:[0m     Uploaded batch 7516g000004pTiaAAE
+[32m2020-03-07 12:04:58:[0m     Uploaded batch 7516g000004pTLTAA2
+[32m2020-03-07 12:04:58:[0m     Uploaded batch 7516g000004pTNZAA2
+[32m2020-03-07 12:04:59:[0m     Uploaded batch 7516g000004pTjIAAU
+[32m2020-03-07 12:04:59:[0m     Uploaded batch 7516g000004pTTYAA2
+[32m2020-03-07 12:05:00:[0m     Uploaded batch 7516g000004pTjNAAU
+[32m2020-03-07 12:05:00:[0m     Uploaded batch 7516g000004pTjXAAU
+[32m2020-03-07 12:05:01:[0m     Uploaded batch 7516g000004pTYYAA2
+[32m2020-03-07 12:05:01:[0m     Uploaded batch 7516g000004pTjOAAU
+[32m2020-03-07 12:05:02:[0m     Uploaded batch 7516g000004pTPuAAM
+[32m2020-03-07 12:05:02:[0m     Uploaded batch 7516g000004pTjJAAU
+[32m2020-03-07 12:05:03:[0m     Uploaded batch 7516g000004pTjmAAE
+[32m2020-03-07 12:05:03:[0m     Uploaded batch 7516g000004pTjrAAE
+[32m2020-03-07 12:05:04:[0m     Uploaded batch 7516g000004pTjwAAE
+[32m2020-03-07 12:05:04:[0m     Uploaded batch 7516g000004pTQqAAM
+[32m2020-03-07 12:05:05:[0m     Uploaded batch 7516g000004pTQ9AAM
+[32m2020-03-07 12:05:05:[0m     Uploaded batch 7516g000004pTNpAAM
+[32m2020-03-07 12:05:06:[0m     Uploaded batch 7516g000004pTWQAA2
+[32m2020-03-07 12:05:06:[0m     Uploaded batch 7516g000004pTXhAAM
+[32m2020-03-07 12:05:06:[0m     Uploaded batch 7516g000004pTMNAA2
+[32m2020-03-07 12:05:07:[0m     Uploaded batch 7516g000004pTdzAAE
+[32m2020-03-07 12:05:07:[0m     Uploaded batch 7516g000004pTk6AAE
+[32m2020-03-07 12:05:08:[0m     Uploaded batch 7516g000004pTfXAAU
+[32m2020-03-07 12:05:08:[0m     Uploaded batch 7516g000004pTbbAAE
+[32m2020-03-07 12:05:09:[0m     Uploaded batch 7516g000004pTe0AAE
+[32m2020-03-07 12:05:09:[0m     Uploaded batch 7516g000004pTfIAAU
+[32m2020-03-07 12:05:10:[0m     Uploaded batch 7516g000004pTNaAAM
+[32m2020-03-07 12:05:10:[0m     Uploaded batch 7516g000004pTgAAAU
+[32m2020-03-07 12:05:11:[0m     Uploaded batch 7516g000004pTkGAAU
+[32m2020-03-07 12:05:11:[0m     Uploaded batch 7516g000004pTgpAAE
+[32m2020-03-07 12:05:11:[0m     Uploaded batch 7516g000004pTR5AAM
+[32m2020-03-07 12:05:12:[0m     Uploaded batch 7516g000004pTUpAAM
+[32m2020-03-07 12:05:13:[0m     Uploaded batch 7516g000004pTNxAAM
+[32m2020-03-07 12:05:13:[0m     Uploaded batch 7516g000004pTjnAAE
+[32m2020-03-07 12:05:14:[0m     Uploaded batch 7516g000004pTQAAA2
+[32m2020-03-07 12:05:14:[0m     Uploaded batch 7516g000004pTVSAA2
+[32m2020-03-07 12:05:15:[0m     Uploaded batch 7516g000004pTkQAAU
+[32m2020-03-07 12:05:16:[0m     Uploaded batch 7516g000004pTQcAAM
+[32m2020-03-07 12:05:16:[0m     Uploaded batch 7516g000004pTkVAAU
+[32m2020-03-07 12:05:17:[0m     Uploaded batch 7516g000004pTSUAA2
+[32m2020-03-07 12:05:17:[0m     Uploaded batch 7516g000004pTkaAAE
+[32m2020-03-07 12:05:18:[0m     Uploaded batch 7516g000004pThSAAU
+[32m2020-03-07 12:05:18:[0m     Uploaded batch 7516g000004pTR6AAM
+[32m2020-03-07 12:05:18:[0m     Uploaded batch 7516g000004pTSYAA2
+[32m2020-03-07 12:05:19:[0m     Uploaded batch 7516g000004pTkkAAE
+[32m2020-03-07 12:05:19:[0m     Uploaded batch 7516g000004pTSFAA2
+[32m2020-03-07 12:05:20:[0m     Uploaded batch 7516g000004pTSxAAM
+[32m2020-03-07 12:05:20:[0m     Uploaded batch 7516g000004pTkpAAE
+[32m2020-03-07 12:05:21:[0m     Uploaded batch 7516g000004pTb7AAE
+[32m2020-03-07 12:05:21:[0m     Uploaded batch 7516g000004pTSmAAM
+[32m2020-03-07 12:05:21:[0m     Uploaded batch 7516g000004pTLKAA2
+[32m2020-03-07 12:05:22:[0m     Uploaded batch 7516g000004pTcNAAU
+[32m2020-03-07 12:05:23:[0m     Uploaded batch 7516g000004pTfvAAE
+[32m2020-03-07 12:05:23:[0m     Uploaded batch 7516g000004pTMtAAM
+[32m2020-03-07 12:05:24:[0m     Uploaded batch 7516g000004pTXeAAM
+[32m2020-03-07 12:05:24:[0m     Uploaded batch 7516g000004pTl4AAE
+[32m2020-03-07 12:05:25:[0m     Uploaded batch 7516g000004pTSZAA2
+[32m2020-03-07 12:05:26:[0m     Uploaded batch 7516g000004pTfRAAU
+[32m2020-03-07 12:05:26:[0m     Uploaded batch 7516g000004pTSGAA2
+[32m2020-03-07 12:05:27:[0m     Uploaded batch 7516g000004pTiRAAU
+[32m2020-03-07 12:05:27:[0m     Uploaded batch 7516g000004pTMuAAM
+[32m2020-03-07 12:05:27:[0m     Uploaded batch 7516g000004pTMvAAM
+[32m2020-03-07 12:05:28:[0m     Uploaded batch 7516g000004pTVsAAM
+[32m2020-03-07 12:05:28:[0m     Uploaded batch 7516g000004pTZAAA2
+[32m2020-03-07 12:05:29:[0m     Uploaded batch 7516g000004pTkCAAU
+[32m2020-03-07 12:05:29:[0m     Uploaded batch 7516g000004pTYdAAM
+[32m2020-03-07 12:05:30:[0m     Uploaded batch 7516g000004pTiSAAU
+[32m2020-03-07 12:05:30:[0m     Uploaded batch 7516g000004pTNyAAM
+[32m2020-03-07 12:05:30:[0m     Uploaded batch 7516g000004pTYqAAM
+[32m2020-03-07 12:05:39:[0m     Uploaded batch 7516g000004pTOGAA2
+[32m2020-03-07 12:05:40:[0m     Uploaded batch 7516g000004pTadAAE
+[32m2020-03-07 12:05:41:[0m     Uploaded batch 7516g000004pTYrAAM
+[32m2020-03-07 12:05:41:[0m     Uploaded batch 7516g000004pTHBAA2
+[32m2020-03-07 12:05:42:[0m     Uploaded batch 7516g000004pTHCAA2
+[32m2020-03-07 12:05:42:[0m     Uploaded batch 7516g000004pTldAAE
+[32m2020-03-07 12:05:43:[0m     Uploaded batch 7516g000004pTliAAE
+[32m2020-03-07 12:05:43:[0m     Uploaded batch 7516g000004pTfwAAE
+[32m2020-03-07 12:05:44:[0m     Uploaded batch 7516g000004pTizAAE
+[32m2020-03-07 12:05:44:[0m     Uploaded batch 7516g000004pTm2AAE
+[32m2020-03-07 12:05:45:[0m     Uploaded batch 7516g000004pTklAAE
+[32m2020-03-07 12:05:45:[0m     Uploaded batch 7516g000004pTQsAAM
+[32m2020-03-07 12:05:45:[0m     Uploaded batch 7516g000004pTgqAAE
+[32m2020-03-07 12:05:46:[0m     Uploaded batch 7516g000004pTaeAAE
+[32m2020-03-07 12:05:46:[0m     Uploaded batch 7516g000004pTkmAAE
+[32m2020-03-07 12:05:47:[0m     Uploaded batch 7516g000004pTSzAAM
+[32m2020-03-07 12:05:47:[0m     Uploaded batch 7516g000004pTmWAAU
+[32m2020-03-07 12:05:47:[0m     Uploaded batch 7516g000004pTR7AAM
+[32m2020-03-07 12:05:48:[0m     Uploaded batch 7516g000004pTm8AAE
+[32m2020-03-07 12:05:48:[0m     Uploaded batch 7516g000004pTSuAAM
+[32m2020-03-07 12:05:50:[0m     Waiting for job 7506g000005E8NEAA0 (0/101)
+[32m2020-03-07 12:06:01:[0m     Waiting for job 7506g000005E8NEAA0 (0/101)
+[32m2020-03-07 12:06:20:[0m     Waiting for job 7506g000005E8NEAA0 (0/101)
+[32m2020-03-07 12:06:31:[0m     Waiting for job 7506g000005E8NEAA0 (0/101)
+[32m2020-03-07 12:06:41:[0m     Waiting for job 7506g000005E8NEAA0 (0/101)
+[32m2020-03-07 12:06:52:[0m     Waiting for job 7506g000005E8NEAA0 (18/101)
+[32m2020-03-07 12:07:03:[0m     Waiting for job 7506g000005E8NEAA0 (30/101)
+[32m2020-03-07 12:07:13:[0m     Waiting for job 7506g000005E8NEAA0 (31/101)
+[32m2020-03-07 12:07:24:[0m     Waiting for job 7506g000005E8NEAA0 (31/101)
+[32m2020-03-07 12:07:34:[0m     Waiting for job 7506g000005E8NEAA0 (31/101)
+[32m2020-03-07 12:07:45:[0m     Waiting for job 7506g000005E8NEAA0 (31/101)
+[32m2020-03-07 12:07:56:[0m     Waiting for job 7506g000005E8NEAA0 (32/101)
+[32m2020-03-07 12:08:06:[0m     Waiting for job 7506g000005E8NEAA0 (34/101)
+[32m2020-03-07 12:08:17:[0m     Waiting for job 7506g000005E8NEAA0 (35/101)
+[32m2020-03-07 12:08:27:[0m     Waiting for job 7506g000005E8NEAA0 (55/101)
+[32m2020-03-07 12:08:38:[0m     Waiting for job 7506g000005E8NEAA0 (60/101)
+[32m2020-03-07 12:08:48:[0m     Waiting for job 7506g000005E8NEAA0 (61/101)
+[32m2020-03-07 12:08:59:[0m     Waiting for job 7506g000005E8NEAA0 (61/101)
+[32m2020-03-07 12:09:09:[0m     Waiting for job 7506g000005E8NEAA0 (61/101)
+[32m2020-03-07 12:09:20:[0m     Waiting for job 7506g000005E8NEAA0 (61/101)
+[32m2020-03-07 12:09:31:[0m     Waiting for job 7506g000005E8NEAA0 (62/101)
+[32m2020-03-07 12:09:41:[0m     Waiting for job 7506g000005E8NEAA0 (64/101)
+[32m2020-03-07 12:09:52:[0m     Waiting for job 7506g000005E8NEAA0 (68/101)
+[32m2020-03-07 12:10:02:[0m     Waiting for job 7506g000005E8NEAA0 (89/101)
+[32m2020-03-07 12:10:13:[0m     Waiting for job 7506g000005E8NEAA0 (91/101)
+[32m2020-03-07 12:10:23:[0m     Waiting for job 7506g000005E8NEAA0 (91/101)
+[32m2020-03-07 12:10:34:[0m     Waiting for job 7506g000005E8NEAA0 (92/101)
+[32m2020-03-07 12:10:45:[0m     Waiting for job 7506g000005E8NEAA0 (94/101)
+[32m2020-03-07 12:10:55:[0m     Waiting for job 7506g000005E8NEAA0 (100/101)
+[32m2020-03-07 12:11:06:[0m     Waiting for job 7506g000005E8NEAA0 (101/101)
+[32m2020-03-07 12:11:06:[0m Job 7506g000005E8NEAA0 finished with result: Completed
+[32m2020-03-07 12:11:06:[0m Deleting all Contact objects 
+[32m2020-03-07 12:11:06:[0m   Querying for all Contact objects
+[32m2020-03-07 12:11:19:[0m   Deleting 1 Contact records
+[32m2020-03-07 12:11:20:[0m     Uploaded batch 7516g000004pU0AAAU
+[32m2020-03-07 12:11:21:[0m     Waiting for job 7506g000005E8iQAAS (0/1)
+[32m2020-03-07 12:11:31:[0m     Waiting for job 7506g000005E8iQAAS (1/1)
+[32m2020-03-07 12:11:31:[0m Job 7506g000005E8iQAAS finished with result: CompletedWithFailures
+[32m2020-03-07 12:11:31:[0m [31mBatch failure message: Failures detected: 1[0m
+| FAIL |
+BulkDataException: ('Job Error', ['Failures detected: 1'])
+------------------------------------------------------------------------------
+Perftest - Generate 2                                                 
+
+[32m2020-03-07 12:11:31:[0m Beginning task: GenerateDummyData
+[32m2020-03-07 12:11:31:[0m 
+| FAIL |
+BulkDataException: Table already exists: Account
+------------------------------------------------------------------------------
+Perftest - Load 1000000 2                                             
+
+[32m2020-03-07 12:11:32:[0m Org info updated, writing to keychain
+[32m2020-03-07 12:11:32:[0m Beginning task: LoadData
+[32m2020-03-07 12:11:32:[0m        As user: pprescod.abacus-perf-playground@salesforce.com
+[32m2020-03-07 12:11:32:[0m         In org: 00D6g000003rbk5EAA
+[32m2020-03-07 12:11:32:[0m 
+[32m2020-03-07 12:11:32:[0m Running Job: Insert Accounts
+[32m2020-03-07 12:11:32:[0m   Created bulk job 7506g000005E8uBAAS
+[32m2020-03-07 12:11:32:[0m [32mSELECT "Account".id AS "Account_id", "Account"."Name" AS "Account_Name", "Account"."Description" AS "Account_Description", "Account"."BillingStreet" AS "Account_BillingStreet", "Account"."BillingCity" AS "Account_BillingCity", "Account"."BillingState" AS "Account_BillingState", "Account"."BillingPostalCode" AS "Account_BillingPostalCode", "Account"."BillingCountry" AS "Account_BillingCountry", "Account"."ParentId" AS "Account_ParentId", "Account"."ShippingStreet" AS "Account_ShippingStreet", "Account"."ShippingCity" AS "Account_ShippingCity", "Account"."ShippingState" AS "Account_ShippingState", "Account"."ShippingPostalCode" AS "Account_ShippingPostalCode", "Account"."ShippingCountry" AS "Account_ShippingCountry", "Account"."Phone" AS "Account_Phone", "Account"."Fax" AS "Account_Fax", "Account"."Website" AS "Account_Website", "Account"."NumberOfEmployees" AS "Account_NumberOfEmployees", "Account"."AccountNumber" AS "Account_AccountNumber", "Account"."Site" AS "Account_Site", "Account"."Type" AS "Account_Type" 
+FROM "Account"[0m
+[32m2020-03-07 12:11:33:[0m     Processing batch 1
+[32m2020-03-07 12:11:33:[0m     Uploaded batch 7516g000004pTcQAAU
+[32m2020-03-07 12:11:34:[0m     Processing batch 2
+[32m2020-03-07 12:11:34:[0m     Uploaded batch 7516g000004pTyQAAU
+[32m2020-03-07 12:11:34:[0m     Processing batch 3
+[32m2020-03-07 12:11:35:[0m     Uploaded batch 7516g000004pU3XAAU
+[32m2020-03-07 12:11:35:[0m     Processing batch 4
+[32m2020-03-07 12:11:36:[0m     Uploaded batch 7516g000004pU2RAAU
+[32m2020-03-07 12:11:36:[0m     Processing batch 5
+[32m2020-03-07 12:11:36:[0m     Uploaded batch 7516g000004pTq6AAE
+[32m2020-03-07 12:11:37:[0m     Processing batch 6
+[32m2020-03-07 12:11:37:[0m     Uploaded batch 7516g000004pTpSAAU
+[32m2020-03-07 12:11:38:[0m     Processing batch 7
+[32m2020-03-07 12:11:39:[0m     Uploaded batch 7516g000004pTspAAE
+[32m2020-03-07 12:11:39:[0m     Processing batch 8
+[32m2020-03-07 12:11:39:[0m     Uploaded batch 7516g000004pTvLAAU
+[32m2020-03-07 12:11:40:[0m     Processing batch 9
+[32m2020-03-07 12:11:40:[0m     Uploaded batch 7516g000004pTThAAM
+[32m2020-03-07 12:11:41:[0m     Processing batch 10
+[32m2020-03-07 12:11:41:[0m     Uploaded batch 7516g000004pU05AAE
+[32m2020-03-07 12:11:41:[0m     Processing batch 11
+[32m2020-03-07 12:11:47:[0m     Uploaded batch 7516g000004pU4GAAU
+[32m2020-03-07 12:11:48:[0m     Processing batch 12
+[32m2020-03-07 12:11:48:[0m     Uploaded batch 7516g000004pU4LAAU
+[32m2020-03-07 12:11:49:[0m     Processing batch 13
+[32m2020-03-07 12:11:50:[0m     Uploaded batch 7516g000004pU4VAAU
+[32m2020-03-07 12:11:50:[0m     Processing batch 14
+[32m2020-03-07 12:11:50:[0m     Uploaded batch 7516g000004pTvgAAE
+[32m2020-03-07 12:11:50:[0m     Processing batch 15
+[32m2020-03-07 12:11:51:[0m     Uploaded batch 7516g000004pTo6AAE
+[32m2020-03-07 12:11:51:[0m     Processing batch 16
+[32m2020-03-07 12:11:51:[0m     Uploaded batch 7516g000004pU3nAAE
+[32m2020-03-07 12:11:52:[0m     Processing batch 17
+[32m2020-03-07 12:11:52:[0m     Uploaded batch 7516g000004pU4kAAE
+[32m2020-03-07 12:11:53:[0m     Processing batch 18
+[32m2020-03-07 12:11:53:[0m     Uploaded batch 7516g000004pTzeAAE
+[32m2020-03-07 12:11:53:[0m     Processing batch 19
+[32m2020-03-07 12:11:54:[0m     Uploaded batch 7516g000004pTqWAAU
+[32m2020-03-07 12:11:54:[0m     Processing batch 20
+[32m2020-03-07 12:11:55:[0m     Uploaded batch 7516g000004pU0MAAU
+[32m2020-03-07 12:11:55:[0m     Processing batch 21
+[32m2020-03-07 12:11:56:[0m     Uploaded batch 7516g000004pThyAAE
+[32m2020-03-07 12:11:56:[0m     Processing batch 22
+[32m2020-03-07 12:11:57:[0m     Uploaded batch 7516g000004pTe5AAE
+[32m2020-03-07 12:11:57:[0m     Processing batch 23
+[32m2020-03-07 12:11:58:[0m     Uploaded batch 7516g000004pTqBAAU
+[32m2020-03-07 12:11:58:[0m     Processing batch 24
+[32m2020-03-07 12:11:58:[0m     Uploaded batch 7516g000004pTv7AAE
+[32m2020-03-07 12:11:58:[0m     Processing batch 25
+[32m2020-03-07 12:11:59:[0m     Uploaded batch 7516g000004pU5JAAU
+[32m2020-03-07 12:11:59:[0m     Processing batch 26
+[32m2020-03-07 12:12:00:[0m     Uploaded batch 7516g000004pU1mAAE
+[32m2020-03-07 12:12:00:[0m     Processing batch 27
+[32m2020-03-07 12:12:01:[0m     Uploaded batch 7516g000004pU5YAAU
+[32m2020-03-07 12:12:01:[0m     Processing batch 28
+[32m2020-03-07 12:12:01:[0m     Uploaded batch 7516g000004pTzAAAU
+[32m2020-03-07 12:12:02:[0m     Processing batch 29
+[32m2020-03-07 12:12:02:[0m     Uploaded batch 7516g000004pTvBAAU
+[32m2020-03-07 12:12:03:[0m     Processing batch 30
+[32m2020-03-07 12:12:03:[0m     Uploaded batch 7516g000004pU62AAE
+[32m2020-03-07 12:12:03:[0m     Processing batch 31
+[32m2020-03-07 12:12:04:[0m     Uploaded batch 7516g000004pU5oAAE
+[32m2020-03-07 12:12:04:[0m     Processing batch 32
+[32m2020-03-07 12:12:05:[0m     Uploaded batch 7516g000004pTmTAAU
+[32m2020-03-07 12:12:05:[0m     Processing batch 33
+[32m2020-03-07 12:12:05:[0m     Uploaded batch 7516g000004pU0gAAE
+[32m2020-03-07 12:12:06:[0m     Processing batch 34
+[32m2020-03-07 12:12:06:[0m     Uploaded batch 7516g000004pU3sAAE
+[32m2020-03-07 12:12:06:[0m     Processing batch 35
+[32m2020-03-07 12:12:07:[0m     Uploaded batch 7516g000004pTZzAAM
+[32m2020-03-07 12:12:07:[0m     Processing batch 36
+[32m2020-03-07 12:12:07:[0m     Uploaded batch 7516g000004pU0qAAE
+[32m2020-03-07 12:12:08:[0m     Processing batch 37
+[32m2020-03-07 12:12:08:[0m     Uploaded batch 7516g000004pU2uAAE
+[32m2020-03-07 12:12:08:[0m     Processing batch 38
+[32m2020-03-07 12:12:09:[0m     Uploaded batch 7516g000004pTjaAAE
+[32m2020-03-07 12:12:10:[0m     Processing batch 39
+[32m2020-03-07 12:12:10:[0m     Uploaded batch 7516g000004pU3iAAE
+[32m2020-03-07 12:12:12:[0m     Processing batch 40
+[32m2020-03-07 12:12:13:[0m     Uploaded batch 7516g000004pTx9AAE
+[32m2020-03-07 12:12:13:[0m     Processing batch 41
+[32m2020-03-07 12:12:14:[0m     Uploaded batch 7516g000004pU6bAAE
+[32m2020-03-07 12:12:14:[0m     Processing batch 42
+[32m2020-03-07 12:12:14:[0m     Uploaded batch 7516g000004pU6gAAE
+[32m2020-03-07 12:12:15:[0m     Processing batch 43
+[32m2020-03-07 12:12:15:[0m     Uploaded batch 7516g000004pTwdAAE
+[32m2020-03-07 12:12:15:[0m     Processing batch 44
+[32m2020-03-07 12:12:16:[0m     Uploaded batch 7516g000004pU6qAAE
+[32m2020-03-07 12:12:16:[0m     Processing batch 45
+[32m2020-03-07 12:12:16:[0m     Uploaded batch 7516g000004pU6vAAE
+[32m2020-03-07 12:12:17:[0m     Processing batch 46
+[32m2020-03-07 12:12:17:[0m     Uploaded batch 7516g000004pU70AAE
+[32m2020-03-07 12:12:18:[0m     Processing batch 47
+[32m2020-03-07 12:12:18:[0m     Uploaded batch 7516g000004pU7AAAU
+[32m2020-03-07 12:12:19:[0m     Processing batch 48
+[32m2020-03-07 12:12:19:[0m     Uploaded batch 7516g000004pToEAAU
+[32m2020-03-07 12:12:19:[0m     Processing batch 49
+[32m2020-03-07 12:12:20:[0m     Uploaded batch 7516g000004pTkyAAE
+[32m2020-03-07 12:12:20:[0m     Processing batch 50
+[32m2020-03-07 12:12:21:[0m     Uploaded batch 7516g000004pU39AAE
+[32m2020-03-07 12:12:21:[0m     Processing batch 51
+[32m2020-03-07 12:12:21:[0m     Uploaded batch 7516g000004pU71AAE
+[32m2020-03-07 12:12:22:[0m     Processing batch 52
+[32m2020-03-07 12:12:22:[0m     Uploaded batch 7516g000004pTeKAAU
+[32m2020-03-07 12:12:22:[0m     Processing batch 53
+[32m2020-03-07 12:12:23:[0m     Uploaded batch 7516g000004pU4vAAE
+[32m2020-03-07 12:12:23:[0m     Processing batch 54
+[32m2020-03-07 12:12:24:[0m     Uploaded batch 7516g000004pU7PAAU
+[32m2020-03-07 12:12:24:[0m     Processing batch 55
+[32m2020-03-07 12:12:24:[0m     Uploaded batch 7516g000004pU55AAE
+[32m2020-03-07 12:12:25:[0m     Processing batch 56
+[32m2020-03-07 12:12:25:[0m     Uploaded batch 7516g000004pU7UAAU
+[32m2020-03-07 12:12:26:[0m     Processing batch 57
+[32m2020-03-07 12:12:26:[0m     Uploaded batch 7516g000004pTyxAAE
+[32m2020-03-07 12:12:27:[0m     Processing batch 58
+[32m2020-03-07 12:12:27:[0m     Uploaded batch 7516g000004pU0uAAE
+[32m2020-03-07 12:12:28:[0m     Processing batch 59
+[32m2020-03-07 12:12:28:[0m     Uploaded batch 7516g000004pU2vAAE
+[32m2020-03-07 12:12:29:[0m     Processing batch 60
+[32m2020-03-07 12:12:29:[0m     Uploaded batch 7516g000004pU6IAAU
+[32m2020-03-07 12:12:30:[0m     Processing batch 61
+[32m2020-03-07 12:12:30:[0m     Uploaded batch 7516g000004pU68AAE
+[32m2020-03-07 12:12:31:[0m     Processing batch 62
+[32m2020-03-07 12:12:31:[0m     Uploaded batch 7516g000004pTg1AAE
+[32m2020-03-07 12:12:31:[0m     Processing batch 63
+[32m2020-03-07 12:12:32:[0m     Uploaded batch 7516g000004pU0zAAE
+[32m2020-03-07 12:12:33:[0m     Processing batch 64
+[32m2020-03-07 12:12:33:[0m     Uploaded batch 7516g000004pU8IAAU
+[32m2020-03-07 12:12:34:[0m     Processing batch 65
+[32m2020-03-07 12:12:35:[0m     Uploaded batch 7516g000004pTfKAAU
+[32m2020-03-07 12:12:35:[0m     Processing batch 66
+[32m2020-03-07 12:12:35:[0m     Uploaded batch 7516g000004pU1sAAE
+[32m2020-03-07 12:12:36:[0m     Processing batch 67
+[32m2020-03-07 12:12:36:[0m     Uploaded batch 7516g000004pU8SAAU
+[32m2020-03-07 12:12:36:[0m     Processing batch 68
+[32m2020-03-07 12:12:37:[0m     Uploaded batch 7516g000004pTUCAA2
+[32m2020-03-07 12:12:37:[0m     Processing batch 69
+[32m2020-03-07 12:12:38:[0m     Uploaded batch 7516g000004pTweAAE
+[32m2020-03-07 12:12:38:[0m     Processing batch 70
+[32m2020-03-07 12:12:38:[0m     Uploaded batch 7516g000004pTWNAA2
+[32m2020-03-07 12:12:39:[0m     Processing batch 71
+[32m2020-03-07 12:12:39:[0m     Uploaded batch 7516g000004pTyBAAU
+[32m2020-03-07 12:12:40:[0m     Processing batch 72
+[32m2020-03-07 12:12:40:[0m     Uploaded batch 7516g000004pU6wAAE
+[32m2020-03-07 12:12:40:[0m     Processing batch 73
+[32m2020-03-07 12:12:41:[0m     Uploaded batch 7516g000004pU1hAAE
+[32m2020-03-07 12:12:41:[0m     Processing batch 74
+[32m2020-03-07 12:12:42:[0m     Uploaded batch 7516g000004pU8mAAE
+[32m2020-03-07 12:12:42:[0m     Processing batch 75
+[32m2020-03-07 12:12:42:[0m     Uploaded batch 7516g000004pU8wAAE
+[32m2020-03-07 12:12:43:[0m     Processing batch 76
+[32m2020-03-07 12:12:43:[0m     Uploaded batch 7516g000004pTxIAAU
+[32m2020-03-07 12:12:43:[0m     Processing batch 77
+[32m2020-03-07 12:12:44:[0m     Uploaded batch 7516g000004pTTNAA2
+[32m2020-03-07 12:12:44:[0m     Processing batch 78
+[32m2020-03-07 12:12:44:[0m     Uploaded batch 7516g000004pTzNAAU
+[32m2020-03-07 12:12:45:[0m     Processing batch 79
+[32m2020-03-07 12:12:45:[0m     Uploaded batch 7516g000004pTeLAAU
+[32m2020-03-07 12:12:45:[0m     Processing batch 80
+[32m2020-03-07 12:12:46:[0m     Uploaded batch 7516g000004pU92AAE
+[32m2020-03-07 12:12:46:[0m     Processing batch 81
+[32m2020-03-07 12:12:46:[0m     Uploaded batch 7516g000004pTo7AAE
+[32m2020-03-07 12:12:46:[0m     Processing batch 82
+[32m2020-03-07 12:12:47:[0m     Uploaded batch 7516g000004pU9LAAU
+[32m2020-03-07 12:12:47:[0m     Processing batch 83
+[32m2020-03-07 12:12:47:[0m     Uploaded batch 7516g000004pU9QAAU
+[32m2020-03-07 12:12:48:[0m     Processing batch 84
+[32m2020-03-07 12:12:48:[0m     Uploaded batch 7516g000004pU9VAAU
+[32m2020-03-07 12:12:49:[0m     Processing batch 85
+[32m2020-03-07 12:12:49:[0m     Uploaded batch 7516g000004pTi4AAE
+[32m2020-03-07 12:12:49:[0m     Processing batch 86
+[32m2020-03-07 12:12:50:[0m     Uploaded batch 7516g000004pU9MAAU
+[32m2020-03-07 12:12:50:[0m     Processing batch 87
+[32m2020-03-07 12:12:51:[0m     Uploaded batch 7516g000004pTuTAAU
+[32m2020-03-07 12:12:51:[0m     Processing batch 88
+[32m2020-03-07 12:12:51:[0m     Uploaded batch 7516g000004pU0QAAU
+[32m2020-03-07 12:12:52:[0m     Processing batch 89
+[32m2020-03-07 12:12:52:[0m     Uploaded batch 7516g000004pTqDAAU
+[32m2020-03-07 12:12:52:[0m     Processing batch 90
+[32m2020-03-07 12:12:53:[0m     Uploaded batch 7516g000004pU5AAAU
+[32m2020-03-07 12:12:53:[0m     Processing batch 91
+[32m2020-03-07 12:12:53:[0m     Uploaded batch 7516g000004pU5yAAE
+[32m2020-03-07 12:12:54:[0m     Processing batch 92
+[32m2020-03-07 12:12:54:[0m     Uploaded batch 7516g000004pTwVAAU
+[32m2020-03-07 12:12:54:[0m     Processing batch 93
+[32m2020-03-07 12:12:55:[0m     Uploaded batch 7516g000004pTjMAAU
+[32m2020-03-07 12:12:55:[0m     Processing batch 94
+[32m2020-03-07 12:12:55:[0m     Uploaded batch 7516g000004pTqgAAE
+[32m2020-03-07 12:12:56:[0m     Processing batch 95
+[32m2020-03-07 12:12:56:[0m     Uploaded batch 7516g000004pTxJAAU
+[32m2020-03-07 12:12:56:[0m     Processing batch 96
+[32m2020-03-07 12:12:57:[0m     Uploaded batch 7516g000004pUA4AAM
+[32m2020-03-07 12:12:57:[0m     Processing batch 97
+[32m2020-03-07 12:12:58:[0m     Uploaded batch 7516g000004pTjEAAU
+[32m2020-03-07 12:12:58:[0m     Processing batch 98
+[32m2020-03-07 12:12:58:[0m     Uploaded batch 7516g000004pTx1AAE
+[32m2020-03-07 12:12:58:[0m     Processing batch 99
+[32m2020-03-07 12:12:59:[0m     Uploaded batch 7516g000004pTqqAAE
+[32m2020-03-07 12:12:59:[0m     Processing batch 100
+[32m2020-03-07 12:12:59:[0m     Uploaded batch 7516g000004pUAEAA2
+[32m2020-03-07 12:12:59:[0m   Prepared 1000000 rows for insert to Account
+[32m2020-03-07 12:13:00:[0m     Waiting for job 7506g000005E8uBAAS (11/100)
+[32m2020-03-07 12:13:11:[0m     Waiting for job 7506g000005E8uBAAS (25/100)
+[32m2020-03-07 12:13:21:[0m     Waiting for job 7506g000005E8uBAAS (30/100)
+[32m2020-03-07 12:13:32:[0m     Waiting for job 7506g000005E8uBAAS (30/100)
+[32m2020-03-07 12:13:42:[0m     Waiting for job 7506g000005E8uBAAS (30/100)
+[32m2020-03-07 12:13:53:[0m     Waiting for job 7506g000005E8uBAAS (32/100)
+[32m2020-03-07 12:14:04:[0m     Waiting for job 7506g000005E8uBAAS (39/100)
+[32m2020-03-07 12:14:14:[0m     Waiting for job 7506g000005E8uBAAS (50/100)
+[32m2020-03-07 12:14:25:[0m     Waiting for job 7506g000005E8uBAAS (58/100)
+[32m2020-03-07 12:14:35:[0m     Waiting for job 7506g000005E8uBAAS (60/100)
+[32m2020-03-07 12:14:46:[0m     Waiting for job 7506g000005E8uBAAS (60/100)
+[32m2020-03-07 12:14:56:[0m     Waiting for job 7506g000005E8uBAAS (60/100)
+[32m2020-03-07 12:15:07:[0m     Waiting for job 7506g000005E8uBAAS (67/100)
+[32m2020-03-07 12:15:18:[0m     Waiting for job 7506g000005E8uBAAS (70/100)
+[32m2020-03-07 12:15:28:[0m     Waiting for job 7506g000005E8uBAAS (85/100)
+[32m2020-03-07 12:15:39:[0m     Waiting for job 7506g000005E8uBAAS (89/100)
+[32m2020-03-07 12:15:49:[0m     Waiting for job 7506g000005E8uBAAS (90/100)
+[32m2020-03-07 12:16:00:[0m     Waiting for job 7506g000005E8uBAAS (90/100)
+[32m2020-03-07 12:16:11:[0m     Waiting for job 7506g000005E8uBAAS (93/100)
+[32m2020-03-07 12:16:22:[0m     Waiting for job 7506g000005E8uBAAS (98/100)
+[32m2020-03-07 12:16:33:[0m     Waiting for job 7506g000005E8uBAAS (100/100)
+[32m2020-03-07 12:16:33:[0m Job 7506g000005E8uBAAS finished with result: Completed
+[32m2020-03-07 12:16:37:[0m   Downloaded results for batch 7516g000004pTcQAAU
+[32m2020-03-07 12:16:39:[0m   Updated Account_sf_ids for batch 7516g000004pTcQAAU
+[32m2020-03-07 12:16:39:[0m   Downloaded results for batch 7516g000004pTyQAAU
+[32m2020-03-07 12:16:40:[0m   Updated Account_sf_ids for batch 7516g000004pTyQAAU
+[32m2020-03-07 12:16:40:[0m   Downloaded results for batch 7516g000004pU3XAAU
+[32m2020-03-07 12:16:41:[0m   Updated Account_sf_ids for batch 7516g000004pU3XAAU
+[32m2020-03-07 12:16:41:[0m   Downloaded results for batch 7516g000004pU2RAAU
+[32m2020-03-07 12:16:43:[0m   Updated Account_sf_ids for batch 7516g000004pU2RAAU
+[32m2020-03-07 12:16:43:[0m   Downloaded results for batch 7516g000004pTq6AAE
+[32m2020-03-07 12:16:44:[0m   Updated Account_sf_ids for batch 7516g000004pTq6AAE
+[32m2020-03-07 12:16:44:[0m   Downloaded results for batch 7516g000004pTpSAAU
+[32m2020-03-07 12:16:46:[0m   Updated Account_sf_ids for batch 7516g000004pTpSAAU
+[32m2020-03-07 12:16:46:[0m   Downloaded results for batch 7516g000004pTspAAE
+[32m2020-03-07 12:16:47:[0m   Updated Account_sf_ids for batch 7516g000004pTspAAE
+[32m2020-03-07 12:16:47:[0m   Downloaded results for batch 7516g000004pTvLAAU
+[32m2020-03-07 12:16:49:[0m   Updated Account_sf_ids for batch 7516g000004pTvLAAU
+[32m2020-03-07 12:16:49:[0m   Downloaded results for batch 7516g000004pTThAAM
+[32m2020-03-07 12:16:51:[0m   Updated Account_sf_ids for batch 7516g000004pTThAAM
+[32m2020-03-07 12:16:51:[0m   Downloaded results for batch 7516g000004pU05AAE
+[32m2020-03-07 12:16:52:[0m   Updated Account_sf_ids for batch 7516g000004pU05AAE
+[32m2020-03-07 12:16:52:[0m   Downloaded results for batch 7516g000004pU4GAAU
+[32m2020-03-07 12:16:54:[0m   Updated Account_sf_ids for batch 7516g000004pU4GAAU
+[32m2020-03-07 12:16:54:[0m   Downloaded results for batch 7516g000004pU4LAAU
+[32m2020-03-07 12:16:55:[0m   Updated Account_sf_ids for batch 7516g000004pU4LAAU
+[32m2020-03-07 12:16:56:[0m   Downloaded results for batch 7516g000004pU4VAAU
+[32m2020-03-07 12:16:57:[0m   Updated Account_sf_ids for batch 7516g000004pU4VAAU
+[32m2020-03-07 12:16:57:[0m   Downloaded results for batch 7516g000004pTvgAAE
+[32m2020-03-07 12:16:58:[0m   Updated Account_sf_ids for batch 7516g000004pTvgAAE
+[32m2020-03-07 12:16:58:[0m   Downloaded results for batch 7516g000004pTo6AAE
+[32m2020-03-07 12:16:59:[0m   Updated Account_sf_ids for batch 7516g000004pTo6AAE
+[32m2020-03-07 12:16:59:[0m   Downloaded results for batch 7516g000004pU3nAAE
+[32m2020-03-07 12:17:00:[0m   Updated Account_sf_ids for batch 7516g000004pU3nAAE
+[32m2020-03-07 12:17:00:[0m   Downloaded results for batch 7516g000004pU4kAAE
+[32m2020-03-07 12:17:02:[0m   Updated Account_sf_ids for batch 7516g000004pU4kAAE
+[32m2020-03-07 12:17:02:[0m   Downloaded results for batch 7516g000004pTzeAAE
+[32m2020-03-07 12:17:03:[0m   Updated Account_sf_ids for batch 7516g000004pTzeAAE
+[32m2020-03-07 12:17:03:[0m   Downloaded results for batch 7516g000004pTqWAAU
+[32m2020-03-07 12:17:04:[0m   Updated Account_sf_ids for batch 7516g000004pTqWAAU
+[32m2020-03-07 12:17:10:[0m   Downloaded results for batch 7516g000004pU0MAAU
+[32m2020-03-07 12:17:11:[0m   Updated Account_sf_ids for batch 7516g000004pU0MAAU
+[32m2020-03-07 12:17:11:[0m   Downloaded results for batch 7516g000004pThyAAE
+[32m2020-03-07 12:17:12:[0m   Updated Account_sf_ids for batch 7516g000004pThyAAE
+[32m2020-03-07 12:17:12:[0m   Downloaded results for batch 7516g000004pTe5AAE
+[32m2020-03-07 12:17:13:[0m   Updated Account_sf_ids for batch 7516g000004pTe5AAE
+[32m2020-03-07 12:17:13:[0m   Downloaded results for batch 7516g000004pTqBAAU
+[32m2020-03-07 12:17:15:[0m   Updated Account_sf_ids for batch 7516g000004pTqBAAU
+[32m2020-03-07 12:17:15:[0m   Downloaded results for batch 7516g000004pTv7AAE
+[32m2020-03-07 12:17:16:[0m   Updated Account_sf_ids for batch 7516g000004pTv7AAE
+[32m2020-03-07 12:17:16:[0m   Downloaded results for batch 7516g000004pU5JAAU
+[32m2020-03-07 12:17:17:[0m   Updated Account_sf_ids for batch 7516g000004pU5JAAU
+[32m2020-03-07 12:17:18:[0m   Downloaded results for batch 7516g000004pU1mAAE
+[32m2020-03-07 12:17:19:[0m   Updated Account_sf_ids for batch 7516g000004pU1mAAE
+[32m2020-03-07 12:17:19:[0m   Downloaded results for batch 7516g000004pU5YAAU
+[32m2020-03-07 12:17:20:[0m   Updated Account_sf_ids for batch 7516g000004pU5YAAU
+[32m2020-03-07 12:17:20:[0m   Downloaded results for batch 7516g000004pTzAAAU
+[32m2020-03-07 12:17:22:[0m   Updated Account_sf_ids for batch 7516g000004pTzAAAU
+[32m2020-03-07 12:17:22:[0m   Downloaded results for batch 7516g000004pTvBAAU
+[32m2020-03-07 12:17:24:[0m   Updated Account_sf_ids for batch 7516g000004pTvBAAU
+[32m2020-03-07 12:17:24:[0m   Downloaded results for batch 7516g000004pU62AAE
+[32m2020-03-07 12:17:26:[0m   Updated Account_sf_ids for batch 7516g000004pU62AAE
+[32m2020-03-07 12:17:26:[0m   Downloaded results for batch 7516g000004pU5oAAE
+[32m2020-03-07 12:17:27:[0m   Updated Account_sf_ids for batch 7516g000004pU5oAAE
+[32m2020-03-07 12:17:27:[0m   Downloaded results for batch 7516g000004pTmTAAU
+[32m2020-03-07 12:17:28:[0m   Updated Account_sf_ids for batch 7516g000004pTmTAAU
+[32m2020-03-07 12:17:28:[0m   Downloaded results for batch 7516g000004pU0gAAE
+[32m2020-03-07 12:17:30:[0m   Updated Account_sf_ids for batch 7516g000004pU0gAAE
+[32m2020-03-07 12:17:30:[0m   Downloaded results for batch 7516g000004pU3sAAE
+[32m2020-03-07 12:17:31:[0m   Updated Account_sf_ids for batch 7516g000004pU3sAAE
+[32m2020-03-07 12:17:31:[0m   Downloaded results for batch 7516g000004pTZzAAM
+[32m2020-03-07 12:17:33:[0m   Updated Account_sf_ids for batch 7516g000004pTZzAAM
+[32m2020-03-07 12:17:33:[0m   Downloaded results for batch 7516g000004pU0qAAE
+[32m2020-03-07 12:17:35:[0m   Updated Account_sf_ids for batch 7516g000004pU0qAAE
+[32m2020-03-07 12:17:35:[0m   Downloaded results for batch 7516g000004pU2uAAE
+[32m2020-03-07 12:17:37:[0m   Updated Account_sf_ids for batch 7516g000004pU2uAAE
+[32m2020-03-07 12:17:37:[0m   Downloaded results for batch 7516g000004pTjaAAE
+[32m2020-03-07 12:17:38:[0m   Updated Account_sf_ids for batch 7516g000004pTjaAAE
+[32m2020-03-07 12:17:39:[0m   Downloaded results for batch 7516g000004pU3iAAE
+[32m2020-03-07 12:17:40:[0m   Updated Account_sf_ids for batch 7516g000004pU3iAAE
+[32m2020-03-07 12:17:40:[0m   Downloaded results for batch 7516g000004pTx9AAE
+[32m2020-03-07 12:17:42:[0m   Updated Account_sf_ids for batch 7516g000004pTx9AAE
+[32m2020-03-07 12:17:43:[0m   Downloaded results for batch 7516g000004pU6bAAE
+[32m2020-03-07 12:17:44:[0m   Updated Account_sf_ids for batch 7516g000004pU6bAAE
+[32m2020-03-07 12:17:45:[0m   Downloaded results for batch 7516g000004pU6gAAE
+[32m2020-03-07 12:17:46:[0m   Updated Account_sf_ids for batch 7516g000004pU6gAAE
+[32m2020-03-07 12:17:47:[0m   Downloaded results for batch 7516g000004pTwdAAE
+[32m2020-03-07 12:17:48:[0m   Updated Account_sf_ids for batch 7516g000004pTwdAAE
+[32m2020-03-07 12:17:48:[0m   Downloaded results for batch 7516g000004pU6qAAE
+[32m2020-03-07 12:17:50:[0m   Updated Account_sf_ids for batch 7516g000004pU6qAAE
+[32m2020-03-07 12:17:50:[0m   Downloaded results for batch 7516g000004pU6vAAE
+[32m2020-03-07 12:17:52:[0m   Updated Account_sf_ids for batch 7516g000004pU6vAAE
+[32m2020-03-07 12:17:52:[0m   Downloaded results for batch 7516g000004pU70AAE
+[32m2020-03-07 12:17:54:[0m   Updated Account_sf_ids for batch 7516g000004pU70AAE
+[32m2020-03-07 12:17:54:[0m   Downloaded results for batch 7516g000004pU7AAAU
+[32m2020-03-07 12:17:56:[0m   Updated Account_sf_ids for batch 7516g000004pU7AAAU
+[32m2020-03-07 12:17:56:[0m   Downloaded results for batch 7516g000004pToEAAU
+[32m2020-03-07 12:17:58:[0m   Updated Account_sf_ids for batch 7516g000004pToEAAU
+[32m2020-03-07 12:17:58:[0m   Downloaded results for batch 7516g000004pTkyAAE
+[32m2020-03-07 12:17:59:[0m   Updated Account_sf_ids for batch 7516g000004pTkyAAE
+[32m2020-03-07 12:17:59:[0m   Downloaded results for batch 7516g000004pU39AAE
+[32m2020-03-07 12:18:01:[0m   Updated Account_sf_ids for batch 7516g000004pU39AAE
+[32m2020-03-07 12:18:01:[0m   Downloaded results for batch 7516g000004pU71AAE
+[32m2020-03-07 12:18:02:[0m   Updated Account_sf_ids for batch 7516g000004pU71AAE
+[32m2020-03-07 12:18:02:[0m   Downloaded results for batch 7516g000004pTeKAAU
+[32m2020-03-07 12:18:03:[0m   Updated Account_sf_ids for batch 7516g000004pTeKAAU
+[32m2020-03-07 12:18:03:[0m   Downloaded results for batch 7516g000004pU4vAAE
+[32m2020-03-07 12:18:05:[0m   Updated Account_sf_ids for batch 7516g000004pU4vAAE
+[32m2020-03-07 12:18:05:[0m   Downloaded results for batch 7516g000004pU7PAAU
+[32m2020-03-07 12:18:06:[0m   Updated Account_sf_ids for batch 7516g000004pU7PAAU
+[32m2020-03-07 12:18:06:[0m   Downloaded results for batch 7516g000004pU55AAE
+[32m2020-03-07 12:18:08:[0m   Updated Account_sf_ids for batch 7516g000004pU55AAE
+[32m2020-03-07 12:18:08:[0m   Downloaded results for batch 7516g000004pU7UAAU
+[32m2020-03-07 12:18:09:[0m   Updated Account_sf_ids for batch 7516g000004pU7UAAU
+[32m2020-03-07 12:18:09:[0m   Downloaded results for batch 7516g000004pTyxAAE
+[32m2020-03-07 12:18:10:[0m   Updated Account_sf_ids for batch 7516g000004pTyxAAE
+[32m2020-03-07 12:18:10:[0m   Downloaded results for batch 7516g000004pU0uAAE
+[32m2020-03-07 12:18:11:[0m   Updated Account_sf_ids for batch 7516g000004pU0uAAE
+[32m2020-03-07 12:18:11:[0m   Downloaded results for batch 7516g000004pU2vAAE
+[32m2020-03-07 12:18:12:[0m   Updated Account_sf_ids for batch 7516g000004pU2vAAE
+[32m2020-03-07 12:18:13:[0m   Downloaded results for batch 7516g000004pU6IAAU
+[32m2020-03-07 12:18:14:[0m   Updated Account_sf_ids for batch 7516g000004pU6IAAU
+[32m2020-03-07 12:18:14:[0m   Downloaded results for batch 7516g000004pU68AAE
+[32m2020-03-07 12:18:15:[0m   Updated Account_sf_ids for batch 7516g000004pU68AAE
+[32m2020-03-07 12:18:15:[0m   Downloaded results for batch 7516g000004pTg1AAE
+[32m2020-03-07 12:18:17:[0m   Updated Account_sf_ids for batch 7516g000004pTg1AAE
+[32m2020-03-07 12:18:17:[0m   Downloaded results for batch 7516g000004pU0zAAE
+[32m2020-03-07 12:18:18:[0m   Updated Account_sf_ids for batch 7516g000004pU0zAAE
+[32m2020-03-07 12:18:18:[0m   Downloaded results for batch 7516g000004pU8IAAU
+[32m2020-03-07 12:18:19:[0m   Updated Account_sf_ids for batch 7516g000004pU8IAAU
+[32m2020-03-07 12:18:19:[0m   Downloaded results for batch 7516g000004pTfKAAU
+[32m2020-03-07 12:18:20:[0m   Updated Account_sf_ids for batch 7516g000004pTfKAAU
+[32m2020-03-07 12:18:20:[0m   Downloaded results for batch 7516g000004pU1sAAE
+[32m2020-03-07 12:18:21:[0m   Updated Account_sf_ids for batch 7516g000004pU1sAAE
+[32m2020-03-07 12:18:21:[0m   Downloaded results for batch 7516g000004pU8SAAU
+[32m2020-03-07 12:18:23:[0m   Updated Account_sf_ids for batch 7516g000004pU8SAAU
+[32m2020-03-07 12:18:23:[0m   Downloaded results for batch 7516g000004pTUCAA2
+[32m2020-03-07 12:18:24:[0m   Updated Account_sf_ids for batch 7516g000004pTUCAA2
+[32m2020-03-07 12:18:24:[0m   Downloaded results for batch 7516g000004pTweAAE
+[32m2020-03-07 12:18:26:[0m   Updated Account_sf_ids for batch 7516g000004pTweAAE
+[32m2020-03-07 12:18:26:[0m   Downloaded results for batch 7516g000004pTWNAA2
+[32m2020-03-07 12:18:28:[0m   Updated Account_sf_ids for batch 7516g000004pTWNAA2
+[32m2020-03-07 12:18:28:[0m   Downloaded results for batch 7516g000004pTyBAAU
+[32m2020-03-07 12:18:29:[0m   Updated Account_sf_ids for batch 7516g000004pTyBAAU
+[32m2020-03-07 12:18:29:[0m   Downloaded results for batch 7516g000004pU6wAAE
+[32m2020-03-07 12:18:31:[0m   Updated Account_sf_ids for batch 7516g000004pU6wAAE
+[32m2020-03-07 12:18:31:[0m   Downloaded results for batch 7516g000004pU1hAAE
+[32m2020-03-07 12:18:32:[0m   Updated Account_sf_ids for batch 7516g000004pU1hAAE
+[32m2020-03-07 12:18:32:[0m   Downloaded results for batch 7516g000004pU8mAAE
+[32m2020-03-07 12:18:34:[0m   Updated Account_sf_ids for batch 7516g000004pU8mAAE
+[32m2020-03-07 12:18:35:[0m   Downloaded results for batch 7516g000004pU8wAAE
+[32m2020-03-07 12:18:36:[0m   Updated Account_sf_ids for batch 7516g000004pU8wAAE
+[32m2020-03-07 12:18:36:[0m   Downloaded results for batch 7516g000004pTxIAAU
+[32m2020-03-07 12:18:38:[0m   Updated Account_sf_ids for batch 7516g000004pTxIAAU
+[32m2020-03-07 12:18:38:[0m   Downloaded results for batch 7516g000004pTTNAA2
+[32m2020-03-07 12:18:39:[0m   Updated Account_sf_ids for batch 7516g000004pTTNAA2
+[32m2020-03-07 12:18:39:[0m   Downloaded results for batch 7516g000004pTzNAAU
+[32m2020-03-07 12:18:41:[0m   Updated Account_sf_ids for batch 7516g000004pTzNAAU
+[32m2020-03-07 12:18:46:[0m   Downloaded results for batch 7516g000004pTeLAAU
+[32m2020-03-07 12:18:47:[0m   Updated Account_sf_ids for batch 7516g000004pTeLAAU
+[32m2020-03-07 12:18:47:[0m   Downloaded results for batch 7516g000004pU92AAE
+[32m2020-03-07 12:18:49:[0m   Updated Account_sf_ids for batch 7516g000004pU92AAE
+[32m2020-03-07 12:18:49:[0m   Downloaded results for batch 7516g000004pTo7AAE
+[32m2020-03-07 12:18:50:[0m   Updated Account_sf_ids for batch 7516g000004pTo7AAE
+[32m2020-03-07 12:18:50:[0m   Downloaded results for batch 7516g000004pU9LAAU
+[32m2020-03-07 12:18:51:[0m   Updated Account_sf_ids for batch 7516g000004pU9LAAU
+[32m2020-03-07 12:18:51:[0m   Downloaded results for batch 7516g000004pU9QAAU
+[32m2020-03-07 12:18:53:[0m   Updated Account_sf_ids for batch 7516g000004pU9QAAU
+[32m2020-03-07 12:18:53:[0m   Downloaded results for batch 7516g000004pU9VAAU
+[32m2020-03-07 12:18:54:[0m   Updated Account_sf_ids for batch 7516g000004pU9VAAU
+[32m2020-03-07 12:18:54:[0m   Downloaded results for batch 7516g000004pTi4AAE
+[32m2020-03-07 12:18:55:[0m   Updated Account_sf_ids for batch 7516g000004pTi4AAE
+[32m2020-03-07 12:18:55:[0m   Downloaded results for batch 7516g000004pU9MAAU
+[32m2020-03-07 12:18:56:[0m   Updated Account_sf_ids for batch 7516g000004pU9MAAU
+[32m2020-03-07 12:18:56:[0m   Downloaded results for batch 7516g000004pTuTAAU
+[32m2020-03-07 12:18:58:[0m   Updated Account_sf_ids for batch 7516g000004pTuTAAU
+[32m2020-03-07 12:18:58:[0m   Downloaded results for batch 7516g000004pU0QAAU
+[32m2020-03-07 12:18:59:[0m   Updated Account_sf_ids for batch 7516g000004pU0QAAU
+[32m2020-03-07 12:18:59:[0m   Downloaded results for batch 7516g000004pTqDAAU
+[32m2020-03-07 12:19:00:[0m   Updated Account_sf_ids for batch 7516g000004pTqDAAU
+[32m2020-03-07 12:19:00:[0m   Downloaded results for batch 7516g000004pU5AAAU
+[32m2020-03-07 12:19:01:[0m   Updated Account_sf_ids for batch 7516g000004pU5AAAU
+[32m2020-03-07 12:19:02:[0m   Downloaded results for batch 7516g000004pU5yAAE
+[32m2020-03-07 12:19:03:[0m   Updated Account_sf_ids for batch 7516g000004pU5yAAE
+[32m2020-03-07 12:19:03:[0m   Downloaded results for batch 7516g000004pTwVAAU
+[32m2020-03-07 12:19:04:[0m   Updated Account_sf_ids for batch 7516g000004pTwVAAU
+[32m2020-03-07 12:19:04:[0m   Downloaded results for batch 7516g000004pTjMAAU
+[32m2020-03-07 12:19:05:[0m   Updated Account_sf_ids for batch 7516g000004pTjMAAU
+[32m2020-03-07 12:19:05:[0m   Downloaded results for batch 7516g000004pTqgAAE
+[32m2020-03-07 12:19:07:[0m   Updated Account_sf_ids for batch 7516g000004pTqgAAE
+[32m2020-03-07 12:19:07:[0m   Downloaded results for batch 7516g000004pTxJAAU
+[32m2020-03-07 12:19:08:[0m   Updated Account_sf_ids for batch 7516g000004pTxJAAU
+[32m2020-03-07 12:19:10:[0m   Downloaded results for batch 7516g000004pUA4AAM
+[32m2020-03-07 12:19:11:[0m   Updated Account_sf_ids for batch 7516g000004pUA4AAM
+[32m2020-03-07 12:19:11:[0m   Downloaded results for batch 7516g000004pTjEAAU
+[32m2020-03-07 12:19:12:[0m   Updated Account_sf_ids for batch 7516g000004pTjEAAU
+[32m2020-03-07 12:19:12:[0m   Downloaded results for batch 7516g000004pTx1AAE
+[32m2020-03-07 12:19:13:[0m   Updated Account_sf_ids for batch 7516g000004pTx1AAE
+[32m2020-03-07 12:19:13:[0m   Downloaded results for batch 7516g000004pTqqAAE
+[32m2020-03-07 12:19:14:[0m   Updated Account_sf_ids for batch 7516g000004pTqqAAE
+[32m2020-03-07 12:19:14:[0m   Downloaded results for batch 7516g000004pUAEAA2
+[32m2020-03-07 12:19:15:[0m   Updated Account_sf_ids for batch 7516g000004pUAEAA2
+[32m2020-03-07 12:19:15:[0m Running Job: Insert Contacts
+[32m2020-03-07 12:19:17:[0m   Created bulk job 7506g000005E8yKAAS
+[32m2020-03-07 12:19:17:[0m [32mSELECT "Contact".id AS "Contact_id", "Contact"."Salutation" AS "Contact_Salutation", "Contact"."FirstName" AS "Contact_FirstName", "Contact"."LastName" AS "Contact_LastName", "Contact"."Email" AS "Contact_Email", "Contact"."Phone" AS "Contact_Phone", "Contact"."MobilePhone" AS "Contact_MobilePhone", "Contact"."OtherPhone" AS "Contact_OtherPhone", "Contact"."HomePhone" AS "Contact_HomePhone", "Contact"."Title" AS "Contact_Title", "Contact"."Birthdate" AS "Contact_Birthdate", "Contact"."MailingStreet" AS "Contact_MailingStreet", "Contact"."MailingCity" AS "Contact_MailingCity", "Contact"."MailingState" AS "Contact_MailingState", "Contact"."MailingPostalCode" AS "Contact_MailingPostalCode", "Contact"."MailingCountry" AS "Contact_MailingCountry", "Account_sf_ids_1".sf_id AS "Account_sf_ids_1_sf_id" 
+FROM "Contact" LEFT OUTER JOIN "Account_sf_ids" AS "Account_sf_ids_1" ON "Account_sf_ids_1".id = "Contact"."AccountId" ORDER BY "Contact"."AccountId"[0m
+[32m2020-03-07 12:19:19:[0m     Processing batch 1
+[32m2020-03-07 12:19:20:[0m     Uploaded batch 7516g000004pUHpAAM
+[32m2020-03-07 12:19:20:[0m     Processing batch 2
+[32m2020-03-07 12:19:21:[0m     Uploaded batch 7516g000004pUSsAAM
+[32m2020-03-07 12:19:21:[0m     Processing batch 3
+[32m2020-03-07 12:19:22:[0m     Uploaded batch 7516g000004pUJOAA2
+[32m2020-03-07 12:19:22:[0m     Processing batch 4
+[32m2020-03-07 12:19:23:[0m     Uploaded batch 7516g000004pUClAAM
+[32m2020-03-07 12:19:23:[0m     Processing batch 5
+[32m2020-03-07 12:19:24:[0m     Uploaded batch 7516g000004pU2hAAE
+[32m2020-03-07 12:19:24:[0m     Processing batch 6
+[32m2020-03-07 12:19:25:[0m     Uploaded batch 7516g000004pTZvAAM
+[32m2020-03-07 12:19:25:[0m     Processing batch 7
+[32m2020-03-07 12:19:25:[0m     Uploaded batch 7516g000004pUTBAA2
+[32m2020-03-07 12:19:26:[0m     Processing batch 8
+[32m2020-03-07 12:19:26:[0m     Uploaded batch 7516g000004pUK7AAM
+[32m2020-03-07 12:19:26:[0m     Processing batch 9
+[32m2020-03-07 12:19:27:[0m     Uploaded batch 7516g000004pUO3AAM
+[32m2020-03-07 12:19:27:[0m     Processing batch 10
+[32m2020-03-07 12:19:27:[0m     Uploaded batch 7516g000004pU2aAAE
+[32m2020-03-07 12:19:28:[0m     Processing batch 11
+[32m2020-03-07 12:19:28:[0m     Uploaded batch 7516g000004pU87AAE
+[32m2020-03-07 12:19:28:[0m     Processing batch 12
+[32m2020-03-07 12:19:29:[0m     Uploaded batch 7516g000004pUTQAA2
+[32m2020-03-07 12:19:29:[0m     Processing batch 13
+[32m2020-03-07 12:19:29:[0m     Uploaded batch 7516g000004pUGNAA2
+[32m2020-03-07 12:19:30:[0m     Processing batch 14
+[32m2020-03-07 12:19:30:[0m     Uploaded batch 7516g000004pUJPAA2
+[32m2020-03-07 12:19:30:[0m     Processing batch 15
+[32m2020-03-07 12:19:31:[0m     Uploaded batch 7516g000004pTojAAE
+[32m2020-03-07 12:19:31:[0m     Processing batch 16
+[32m2020-03-07 12:19:32:[0m     Uploaded batch 7516g000004pUQTAA2
+[32m2020-03-07 12:19:32:[0m     Processing batch 17
+[32m2020-03-07 12:19:32:[0m     Uploaded batch 7516g000004pU5CAAU
+[32m2020-03-07 12:19:32:[0m     Processing batch 18
+[32m2020-03-07 12:19:33:[0m     Uploaded batch 7516g000004pUU4AAM
+[32m2020-03-07 12:19:33:[0m     Processing batch 19
+[32m2020-03-07 12:19:34:[0m     Uploaded batch 7516g000004pUR7AAM
+[32m2020-03-07 12:19:34:[0m     Processing batch 20
+[32m2020-03-07 12:19:34:[0m     Uploaded batch 7516g000004pUOHAA2
+[32m2020-03-07 12:19:34:[0m     Processing batch 21
+[32m2020-03-07 12:19:35:[0m     Uploaded batch 7516g000004pUPZAA2
+[32m2020-03-07 12:19:35:[0m     Processing batch 22
+[32m2020-03-07 12:19:36:[0m     Uploaded batch 7516g000004pUUTAA2
+[32m2020-03-07 12:19:36:[0m     Processing batch 23
+[32m2020-03-07 12:19:37:[0m     Uploaded batch 7516g000004pUMLAA2
+[32m2020-03-07 12:19:37:[0m     Processing batch 24
+[32m2020-03-07 12:19:37:[0m     Uploaded batch 7516g000004pU2xAAE
+[32m2020-03-07 12:19:37:[0m     Processing batch 25
+[32m2020-03-07 12:19:38:[0m     Uploaded batch 7516g000004pUHDAA2
+[32m2020-03-07 12:19:38:[0m     Processing batch 26
+[32m2020-03-07 12:19:39:[0m     Uploaded batch 7516g000004pUDWAA2
+[32m2020-03-07 12:19:39:[0m     Processing batch 27
+[32m2020-03-07 12:19:39:[0m     Uploaded batch 7516g000004pUUKAA2
+[32m2020-03-07 12:19:40:[0m     Processing batch 28
+[32m2020-03-07 12:19:40:[0m     Uploaded batch 7516g000004pUNoAAM
+[32m2020-03-07 12:19:40:[0m     Processing batch 29
+[32m2020-03-07 12:19:41:[0m     Uploaded batch 7516g000004pUUiAAM
+[32m2020-03-07 12:19:41:[0m     Processing batch 30
+[32m2020-03-07 12:19:42:[0m     Uploaded batch 7516g000004pUUnAAM
+[32m2020-03-07 12:19:42:[0m     Processing batch 31
+[32m2020-03-07 12:19:42:[0m     Uploaded batch 7516g000004pTwpAAE
+[32m2020-03-07 12:19:42:[0m     Processing batch 32
+[32m2020-03-07 12:19:43:[0m     Uploaded batch 7516g000004pUUxAAM
+[32m2020-03-07 12:19:43:[0m     Processing batch 33
+[32m2020-03-07 12:19:44:[0m     Uploaded batch 7516g000004pURLAA2
+[32m2020-03-07 12:19:44:[0m     Processing batch 34
+[32m2020-03-07 12:19:44:[0m     Uploaded batch 7516g000004pU1ZAAU
+[32m2020-03-07 12:19:45:[0m     Processing batch 35
+[32m2020-03-07 12:19:45:[0m     Uploaded batch 7516g000004pU5DAAU
+[32m2020-03-07 12:19:45:[0m     Processing batch 36
+[32m2020-03-07 12:19:46:[0m     Uploaded batch 7516g000004pUT7AAM
+[32m2020-03-07 12:19:46:[0m     Processing batch 37
+[32m2020-03-07 12:19:47:[0m     Uploaded batch 7516g000004pUVHAA2
+[32m2020-03-07 12:19:47:[0m     Processing batch 38
+[32m2020-03-07 12:19:47:[0m     Uploaded batch 7516g000004pUJHAA2
+[32m2020-03-07 12:19:48:[0m     Processing batch 39
+[32m2020-03-07 12:19:48:[0m     Uploaded batch 7516g000004pUQUAA2
+[32m2020-03-07 12:19:49:[0m     Processing batch 40
+[32m2020-03-07 12:19:49:[0m     Uploaded batch 7516g000004pTu4AAE
+[32m2020-03-07 12:19:49:[0m     Processing batch 41
+[32m2020-03-07 12:19:57:[0m     Uploaded batch 7516g000004pUVqAAM
+[32m2020-03-07 12:19:58:[0m     Processing batch 42
+[32m2020-03-07 12:19:59:[0m     Uploaded batch 7516g000004pUH4AAM
+[32m2020-03-07 12:19:59:[0m     Processing batch 43
+[32m2020-03-07 12:19:59:[0m     Uploaded batch 7516g000004pUNqAAM
+[32m2020-03-07 12:20:00:[0m     Processing batch 44
+[32m2020-03-07 12:20:00:[0m     Uploaded batch 7516g000004pUW5AAM
+[32m2020-03-07 12:20:00:[0m     Processing batch 45
+[32m2020-03-07 12:20:01:[0m     Uploaded batch 7516g000004pUKpAAM
+[32m2020-03-07 12:20:01:[0m     Processing batch 46
+[32m2020-03-07 12:20:02:[0m     Uploaded batch 7516g000004pUWFAA2
+[32m2020-03-07 12:20:02:[0m     Processing batch 47
+[32m2020-03-07 12:20:03:[0m     Uploaded batch 7516g000004pUWKAA2
+[32m2020-03-07 12:20:03:[0m     Processing batch 48
+[32m2020-03-07 12:20:06:[0m     Uploaded batch 7516g000004pUWPAA2
+[32m2020-03-07 12:20:06:[0m     Processing batch 49
+[32m2020-03-07 12:20:06:[0m     Uploaded batch 7516g000004pUWUAA2
+[32m2020-03-07 12:20:06:[0m     Processing batch 50
+[32m2020-03-07 12:20:07:[0m     Uploaded batch 7516g000004pUPPAA2
+[32m2020-03-07 12:20:07:[0m     Processing batch 51
+[32m2020-03-07 12:20:08:[0m     Uploaded batch 7516g000004pUWjAAM
+[32m2020-03-07 12:20:08:[0m     Processing batch 52
+[32m2020-03-07 12:20:09:[0m     Uploaded batch 7516g000004pU2iAAE
+[32m2020-03-07 12:20:09:[0m     Processing batch 53
+[32m2020-03-07 12:20:10:[0m     Uploaded batch 7516g000004pUWtAAM
+[32m2020-03-07 12:20:10:[0m     Processing batch 54
+[32m2020-03-07 12:20:10:[0m     Uploaded batch 7516g000004pUVwAAM
+[32m2020-03-07 12:20:11:[0m     Processing batch 55
+[32m2020-03-07 12:20:11:[0m     Uploaded batch 7516g000004pUX8AAM
+[32m2020-03-07 12:20:12:[0m     Processing batch 56
+[32m2020-03-07 12:20:12:[0m     Uploaded batch 7516g000004pULiAAM
+[32m2020-03-07 12:20:12:[0m     Processing batch 57
+[32m2020-03-07 12:20:13:[0m     Uploaded batch 7516g000004pUXIAA2
+[32m2020-03-07 12:20:13:[0m     Processing batch 58
+[32m2020-03-07 12:20:14:[0m     Uploaded batch 7516g000004pUXNAA2
+[32m2020-03-07 12:20:14:[0m     Processing batch 59
+[32m2020-03-07 12:20:14:[0m     Uploaded batch 7516g000004pUPQAA2
+[32m2020-03-07 12:20:15:[0m     Processing batch 60
+[32m2020-03-07 12:20:15:[0m     Uploaded batch 7516g000004pUEwAAM
+[32m2020-03-07 12:20:16:[0m     Processing batch 61
+[32m2020-03-07 12:20:16:[0m     Uploaded batch 7516g000004pUXXAA2
+[32m2020-03-07 12:20:16:[0m     Processing batch 62
+[32m2020-03-07 12:20:17:[0m     Uploaded batch 7516g000004pUXcAAM
+[32m2020-03-07 12:20:17:[0m     Processing batch 63
+[32m2020-03-07 12:20:18:[0m     Uploaded batch 7516g000004pTrZAAU
+[32m2020-03-07 12:20:18:[0m     Processing batch 64
+[32m2020-03-07 12:20:18:[0m     Uploaded batch 7516g000004pUPuAAM
+[32m2020-03-07 12:20:19:[0m     Processing batch 65
+[32m2020-03-07 12:20:19:[0m     Uploaded batch 7516g000004pUXmAAM
+[32m2020-03-07 12:20:19:[0m     Processing batch 66
+[32m2020-03-07 12:20:20:[0m     Uploaded batch 7516g000004pUTbAAM
+[32m2020-03-07 12:20:20:[0m     Processing batch 67
+[32m2020-03-07 12:20:21:[0m     Uploaded batch 7516g000004pUXYAA2
+[32m2020-03-07 12:20:21:[0m     Processing batch 68
+[32m2020-03-07 12:20:21:[0m     Uploaded batch 7516g000004pUSYAA2
+[32m2020-03-07 12:20:21:[0m     Processing batch 69
+[32m2020-03-07 12:20:26:[0m     Uploaded batch 7516g000004pUY6AAM
+[32m2020-03-07 12:20:26:[0m     Processing batch 70
+[32m2020-03-07 12:20:27:[0m     Uploaded batch 7516g000004pUQhAAM
+[32m2020-03-07 12:20:27:[0m     Processing batch 71
+[32m2020-03-07 12:20:28:[0m     Uploaded batch 7516g000004pURzAAM
+[32m2020-03-07 12:20:28:[0m     Processing batch 72
+[32m2020-03-07 12:20:29:[0m     Uploaded batch 7516g000004pUQYAA2
+[32m2020-03-07 12:20:29:[0m     Processing batch 73
+[32m2020-03-07 12:20:30:[0m     Uploaded batch 7516g000004pUVPAA2
+[32m2020-03-07 12:20:30:[0m     Processing batch 74
+[32m2020-03-07 12:20:30:[0m     Uploaded batch 7516g000004pUIdAAM
+[32m2020-03-07 12:20:31:[0m     Processing batch 75
+[32m2020-03-07 12:20:31:[0m     Uploaded batch 7516g000004pUACAA2
+[32m2020-03-07 12:20:31:[0m   Prepared 750000 rows for insert to Contact
+[32m2020-03-07 12:20:32:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:20:42:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:20:54:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:21:04:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:21:15:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:21:26:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:21:36:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:21:47:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:21:57:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:22:08:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:22:18:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:22:29:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:22:39:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:22:50:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:23:01:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:23:11:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:23:22:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:23:33:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:23:43:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:23:54:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:24:05:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:24:15:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:24:26:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:24:36:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:24:54:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:25:05:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:25:15:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:25:26:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:25:36:[0m     Waiting for job 7506g000005E8yKAAS (0/75)
+[32m2020-03-07 12:25:47:[0m     Waiting for job 7506g000005E8yKAAS (1/75)
+[32m2020-03-07 12:25:58:[0m     Waiting for job 7506g000005E8yKAAS (1/75)
+[32m2020-03-07 12:26:08:[0m     Waiting for job 7506g000005E8yKAAS (1/75)
+[32m2020-03-07 12:26:19:[0m     Waiting for job 7506g000005E8yKAAS (8/75)
+[32m2020-03-07 12:26:30:[0m     Waiting for job 7506g000005E8yKAAS (12/75)
+[32m2020-03-07 12:26:40:[0m     Waiting for job 7506g000005E8yKAAS (16/75)
+[32m2020-03-07 12:26:51:[0m     Waiting for job 7506g000005E8yKAAS (17/75)
+[32m2020-03-07 12:27:01:[0m     Waiting for job 7506g000005E8yKAAS (21/75)
+[32m2020-03-07 12:27:12:[0m     Waiting for job 7506g000005E8yKAAS (22/75)
+[32m2020-03-07 12:27:23:[0m     Waiting for job 7506g000005E8yKAAS (24/75)
+[32m2020-03-07 12:27:33:[0m     Waiting for job 7506g000005E8yKAAS (24/75)
+[32m2020-03-07 12:27:44:[0m     Waiting for job 7506g000005E8yKAAS (26/75)
+[32m2020-03-07 12:27:54:[0m     Waiting for job 7506g000005E8yKAAS (28/75)
+[32m2020-03-07 12:28:05:[0m     Waiting for job 7506g000005E8yKAAS (28/75)
+[32m2020-03-07 12:28:15:[0m     Waiting for job 7506g000005E8yKAAS (28/75)
+[32m2020-03-07 12:28:26:[0m     Waiting for job 7506g000005E8yKAAS (29/75)
+[32m2020-03-07 12:28:36:[0m     Waiting for job 7506g000005E8yKAAS (30/75)
+[32m2020-03-07 12:28:47:[0m     Waiting for job 7506g000005E8yKAAS (30/75)
+[32m2020-03-07 12:28:58:[0m     Waiting for job 7506g000005E8yKAAS (30/75)
+[32m2020-03-07 12:29:09:[0m     Waiting for job 7506g000005E8yKAAS (30/75)
+[32m2020-03-07 12:29:19:[0m     Waiting for job 7506g000005E8yKAAS (30/75)
+[32m2020-03-07 12:29:30:[0m     Waiting for job 7506g000005E8yKAAS (30/75)
