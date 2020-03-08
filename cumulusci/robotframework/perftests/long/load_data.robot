@@ -23,7 +23,6 @@ Load Data
 Delete Data
     Run Task Class   cumulusci.tasks.bulkdata.DeleteData
     ...     objects=Account,Contact
-    ...     ignore_row_errors=True
 
 *** Test Cases ***
 
