@@ -14,52 +14,42 @@ Generate Data
     ...     mapping=cumulusci/tasks/bulkdata/tests/mapping_vanilla_sf.yml
     ...     database_url=sqlite:////tmp/data.db
 
+Load Data
+    Run Task Class   cumulusci.tasks.bulkdata.LoadData
+    ...     mapping=cumulusci/tasks/bulkdata/tests/mapping_vanilla_sf.yml
+    ...     database_url=sqlite:////tmp/data.db
+    ...     ignore_row_errors=True
+
+Delete Data
+    Run Task Class   cumulusci.tasks.bulkdata.DeleteData
+    ...     objects=Account,Contact
+    ...     ignore_row_errors=True
+
 *** Test Cases ***
 
 Perftest - Generate
     Generate Data   1000000
 
 Perftest - Load 1000000
-    Run Task Class   cumulusci.tasks.bulkdata.LoadData
-    ...     mapping=cumulusci/tasks/bulkdata/tests/mapping_vanilla_sf.yml
-    ...     database_url=sqlite:////tmp/data.db
+    Load Data
 
 Perftest - Delete
-    Run Task Class   cumulusci.tasks.bulkdata.DeleteData
-    ...     objects=Account,Contact
-
-Perftest - Generate 2
-    Generate Data   1000000
+    Delete Data
 
 Perftest - Load 1000000 2
-    Run Task Class   cumulusci.tasks.bulkdata.LoadData
-    ...     mapping=cumulusci/tasks/bulkdata/tests/mapping_vanilla_sf.yml
-    ...     database_url=sqlite:////tmp/data.db
+    Load Data
 
 Perftest - Delete 2
-    Run Task Class   cumulusci.tasks.bulkdata.DeleteData
-    ...     objects=Account,Contact
-
-Perftest - Generate 3
-    Generate Data   1000000
+    Delete Data
 
 Perftest - Load 1000000 3
-    Run Task Class   cumulusci.tasks.bulkdata.LoadData
-    ...     mapping=cumulusci/tasks/bulkdata/tests/mapping_vanilla_sf.yml
-    ...     database_url=sqlite:////tmp/data.db
+    Load Data
 
 Perftest - Delete 3
-    Run Task Class   cumulusci.tasks.bulkdata.DeleteData
-    ...     objects=Account,Contact
-
-Perftest - Generate 4
-    Generate Data   1000000
+    Delete Data
 
 Perftest - Load 1000000 4
-    Run Task Class   cumulusci.tasks.bulkdata.LoadData
-    ...     mapping=cumulusci/tasks/bulkdata/tests/mapping_vanilla_sf.yml
-    ...     database_url=sqlite:////tmp/data.db
+    Load Data
 
 Perftest - Delete 4
-    Run Task Class   cumulusci.tasks.bulkdata.DeleteData
-    ...     objects=Account,Contact
+    Delete Data
