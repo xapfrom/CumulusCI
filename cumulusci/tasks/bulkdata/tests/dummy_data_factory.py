@@ -37,5 +37,5 @@ class ContactFactory(factory.alchemy.SQLAlchemyModelFactory):
     AccountId = factory.LazyAttribute(lambda o: o.account.id)
     FirstName = factory.Faker("first_name")
     LastName = factory.Sequence(lambda i: f"Contact {i} {time.time()}")
-    Email = factory.Faker("email", domain="example.com")
+    Email = factory.Sequence(lambda i: f"Contact{i}.{time.time()}@example.com")
     MailingStreet = "Baker St."
