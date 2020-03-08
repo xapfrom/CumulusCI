@@ -1,4 +1,5 @@
 import factory
+import time
 from cumulusci.tasks.bulkdata.factory_utils import ModuleDataFactory, Models
 
 
@@ -22,7 +23,7 @@ class AccountFactory(factory.alchemy.SQLAlchemyModelFactory):
         model = Models.Account
 
     id = factory.Sequence(lambda i: i)
-    Name = factory.Sequence(lambda i: "Account %d" % i)
+    Name = factory.Sequence(lambda i: f"Account {i} {time.time()}" % (i,))
     BillingStreet = "Baker St."
 
 
@@ -36,5 +37,6 @@ class ContactFactory(factory.alchemy.SQLAlchemyModelFactory):
     AccountId = factory.LazyAttribute(lambda o: o.account.id)
     FirstName = factory.Faker("first_name")
     LastName = factory.Faker("last_name")
+    LastName = factory.Sequence(lambda i: f"Contact {i} {time.time()}" % (i,))
     Email = factory.Faker("email", domain="example.com")
     MailingStreet = "Baker St."
