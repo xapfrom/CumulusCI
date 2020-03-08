@@ -23,7 +23,7 @@ class AccountFactory(factory.alchemy.SQLAlchemyModelFactory):
         model = Models.Account
 
     id = factory.Sequence(lambda i: i)
-    Name = factory.Sequence(lambda i: f"Account {i} {time.time()}" % (i,))
+    Name = factory.Sequence(lambda i: f"Account {i} {time.time()}")
     BillingStreet = "Baker St."
 
 
@@ -36,7 +36,6 @@ class ContactFactory(factory.alchemy.SQLAlchemyModelFactory):
     account = factory.SubFactory(AccountFactory)  # create account automatically
     AccountId = factory.LazyAttribute(lambda o: o.account.id)
     FirstName = factory.Faker("first_name")
-    LastName = factory.Faker("last_name")
-    LastName = factory.Sequence(lambda i: f"Contact {i} {time.time()}" % (i,))
+    LastName = factory.Sequence(lambda i: f"Contact {i} {time.time()}")
     Email = factory.Faker("email", domain="example.com")
     MailingStreet = "Baker St."
