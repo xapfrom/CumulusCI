@@ -1043,6 +1043,30 @@ def org_list(runtime, plain):
     persistent_table.echo(plain)
 
 
+@org.command(name="cleanup", help="Removes all expired orgs from the current project")
+@pass_runtime(require_project=False, require_keychain=True)
+def org_cleanup(runtime):
+    org_configs = {
+        org: runtime.keychain.get_org(org) for org in runtime.keychain.list_orgs()
+    }
+    expired_org_count = 0
+    for org, org_config in org_configs.items():
+        if isinstance(org_config, ScratchOrgConfig):
+            if org_config.expired:
+                expired_org_count += 1
+                click.echo(f"Attempting to remove {org} from the keychain")
+                try:
+                    runtime.keychain.remove_org(org)
+                except Exception as e:
+                    click.echo(e)
+    if expired_org_count == 0:
+        click.echo("No expired scratch orgs to delete.")
+    else:
+        click.echo(
+            f"Successfully removed {expired_org_count} expired scratch orgs from the keychain"
+        )
+
+
 @org.command(name="remove", help="Removes an org from the keychain")
 @click.argument("org_name")
 @click.option(
