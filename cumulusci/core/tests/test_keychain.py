@@ -3,6 +3,7 @@ import os
 import tempfile
 import unittest
 from unittest import mock
+from datetime import datetime
 
 import pytest
 
@@ -289,6 +290,15 @@ class TestEnvironmentProjectKeychain(ProjectKeychainTestMixin):
         keychain = self.keychain_class(self.project_config, self.key)
         self.assertEqual(keychain.list_orgs(), ["test"])
         self.assertEqual(keychain.orgs["test"].__class__, ScratchOrgConfig)
+        assert keychain.orgs["test"].config == self.scratch_org_config.config
+
+    def test_load_scratch_org_bad_json(self):
+        self._clean_env(self.env)
+        self.env.set(
+            f"{self.keychain_class.org_var_prefix}test", "xyzzy",
+        )
+        with self.assertRaises(EnvironmentError):
+            self.keychain_class(self.project_config, self.key)
 
     def test_load_scratch_orgs_create_one(self):
         self._clean_env(self.env)
@@ -385,7 +395,8 @@ class TestEncryptedFileProjectKeychain(ProjectKeychainTestMixin):
         self.project_name = "TestProject"
         self.org_config = OrgConfig({"foo": "bar"}, "test")
         self.scratch_org_config = ScratchOrgConfig(
-            {"foo": "bar", "scratch": True}, "test_scratch"
+            {"foo": "bar", "date_created": datetime(2000, 1, 1), "scratch": True},
+            "test_scratch",
         )
         self.services = {
             "connected_app": ServiceConfig({"test": "value"}),

@@ -1,5 +1,6 @@
 import json
 import os
+from datetime import datetime
 
 from cumulusci.core.config import ConnectedAppOAuthConfig
 from cumulusci.core.config import OrgConfig
@@ -38,16 +39,31 @@ class EnvironmentProjectKeychain(BaseProjectKeychain):
             self.app = ConnectedAppOAuthConfig(json.loads(app))
 
     def _load_orgs(self):
+        # TODO: This should be cached for performance
+        #       but I believe that this method is also used
+        #       to do re-loads after changes sometimes?
+        #
+        # It's called frequently so its worth investigation.
         for key, value in self._get_env():
-            if key.startswith(self.org_var_prefix):
+            self._load_org_from_json(key, value)
+
+    def _load_org_from_json(self, name, value):
+        if name.startswith(self.org_var_prefix):
+            try:
                 org_config = json.loads(value)
-                org_name = key[len(self.org_var_prefix) :].lower()
-                if org_config.get("scratch"):
-                    self.orgs[org_name] = scratch_org_factory(
-                        json.loads(value), org_name
-                    )
-                else:
-                    self.orgs[org_name] = OrgConfig(json.loads(value), org_name)
+            except json.decoder.JSONDecodeError:
+                raise EnvironmentError(
+                    f"Cannot load environment variable ${name} as JSON. Skipping."
+                )
+            if org_config.get("date_created"):
+                org_config["date_created"] = datetime.fromisoformat(
+                    org_config["date_created"]
+                )
+            org_name = name[len(self.org_var_prefix) :].lower()
+            if org_config.get("scratch"):
+                self.orgs[org_name] = scratch_org_factory(org_config, org_name)
+            else:
+                self.orgs[org_name] = OrgConfig(org_config, org_name)
 
     def _load_services(self):
         for key, value in self._get_env():
