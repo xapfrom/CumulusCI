@@ -7,6 +7,9 @@ import yaml
 from cumulusci.core.utils import process_list_arg, process_bool_arg
 from cumulusci.tasks.salesforce import BaseSalesforceApiTask
 from cumulusci.core.exceptions import TaskOptionsError
+from cumulusci.utils.org_schema import get_org_schema
+
+# FIXME: Investigate why it creates RecordTyped more aggessively than the old code
 
 
 class GenerateMapping(BaseSalesforceApiTask):
@@ -76,22 +79,20 @@ class GenerateMapping(BaseSalesforceApiTask):
 
     def _run_task(self):
         self.logger.info("Collecting sObject information")
-        self._collect_objects()
-        self._build_schema()
+        with get_org_schema(self.sf, self.org_config) as org_schema:
+            self._collect_objects(org_schema)
+            self._build_schema(org_schema)
         filename = self.options["path"]
         self.logger.info(f"Creating mapping schema {filename}")
         self._build_mapping()
         with open(filename, "w") as f:
             yaml.dump(self.mapping, f, sort_keys=False)
 
-    def _collect_objects(self):
+    def _collect_objects(self, org_schema):
         """Walk the global describe and identify the sObjects we need to include in a minimal operation."""
         self.mapping_objects = self.options["include"]
 
-        # Cache the global describe, which we'll walk.
-        self.global_describe = self.sf.describe()
-
-        sobject_names = set(obj["name"] for obj in self.global_describe["sobjects"])
+        sobject_names = set(org_schema.keys())
 
         unknown_objects = set(self.mapping_objects) - sobject_names
 
@@ -102,17 +103,15 @@ class GenerateMapping(BaseSalesforceApiTask):
         # (a) custom, no namespace
         # (b) custom, with our namespace
         # (c) not ours (standard or other package), but have fields with our namespace or no namespace
-        self.describes = {}  # Cache per-object describes for efficiency
-        for obj in self.global_describe["sobjects"]:
-            self.describes[obj["name"]] = getattr(self.sf, obj["name"]).describe()
-            if self._is_our_custom_api_name(obj["name"]) or self._has_our_custom_fields(
-                self.describes[obj["name"]]
+        for objname, obj in org_schema.items():
+            if self._is_our_custom_api_name(objname) or self._has_our_custom_fields(
+                obj
             ):
                 if (
                     self._is_object_mappable(obj)
-                    and obj["name"] not in self.mapping_objects
+                    and objname not in self.mapping_objects
                 ):
-                    self.mapping_objects.append(obj["name"])
+                    self.mapping_objects.append(objname)
 
         # Add any objects that are required by our own,
         # meaning any object we are looking up to with a custom field,
@@ -120,7 +119,7 @@ class GenerateMapping(BaseSalesforceApiTask):
         index = 0
         while index < len(self.mapping_objects):
             obj = self.mapping_objects[index]
-            for field in self.describes[obj]["fields"]:
+            for field in org_schema[obj].fields.values():
                 if field["type"] == "reference":
                     if field["relationshipOrder"] == 1 or self._is_any_custom_api_name(
                         field["name"]
@@ -130,13 +129,13 @@ class GenerateMapping(BaseSalesforceApiTask):
                                 obj
                                 for obj in field["referenceTo"]
                                 if obj not in self.mapping_objects
-                                and self._is_object_mappable(self.describes[obj])
+                                and self._is_object_mappable(org_schema[obj])
                             ]
                         )
 
             index += 1
 
-    def _build_schema(self):
+    def _build_schema(self, org_schema):
         """Convert self.mapping_objects into a schema, including field details and interobject references,
         in self.schema and self.refs"""
 
@@ -151,7 +150,7 @@ class GenerateMapping(BaseSalesforceApiTask):
         for obj in self.mapping_objects:
             self.schema[obj] = {}
 
-            for field in self.describes[obj]["fields"]:
+            for field in org_schema[obj]["fields"].values():
                 if any(
                     [
                         self._is_any_custom_api_name(field["name"]),
@@ -173,7 +172,8 @@ class GenerateMapping(BaseSalesforceApiTask):
                                     )
                 if (
                     field["name"] == "RecordTypeId"
-                    and len(self.describes[obj]["recordTypeInfos"]) > 1
+                    and org_schema[obj].recordTypeInfos
+                    and len(org_schema[obj].recordTypeInfos) > 1
                 ):
                     # "Master" is included even if no RTs.
                     self.schema[obj][field["name"]] = field
@@ -181,7 +181,7 @@ class GenerateMapping(BaseSalesforceApiTask):
     def _build_mapping(self):
         """Output self.schema in mapping file format by constructing a dict and serializing to YAML"""
         objs = list(self.schema.keys())
-        assert all(objs)
+
         stack = self._split_dependencies(objs, self.refs)
         ns = self.project_config.project__package__namespace
 
@@ -411,7 +411,7 @@ class GenerateMapping(BaseSalesforceApiTask):
     def _has_our_custom_fields(self, obj):
         """True if the object is owned by us or contains any field owned by us."""
         return any(
-            [self._is_our_custom_api_name(field["name"]) for field in obj["fields"]]
+            [self._is_our_custom_api_name(fieldname) for fieldname in obj.fields]
         )
 
     def _are_lookup_targets_in_operation(self, field):
@@ -431,7 +431,7 @@ class FieldData:
     nillable: bool
 
     def __init__(self, describe_data: dict):
-        self.nillable = describe_data.get("nillable", False)
+        self.nillable = describe_data.nillable
 
     def __eq__(self, other: "FieldData"):
         return self.__dict__ == other.__dict__

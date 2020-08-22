@@ -184,6 +184,10 @@ class FSResource(str):
         else:
             self.fs.makedir(self.filename, recreate=exist_ok)
 
+    @property
+    def suffix(self):
+        return Path(self).suffix
+
     def __truediv__(self, other):
         return self.joinpath(other)
 
